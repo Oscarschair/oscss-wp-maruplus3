@@ -11,23 +11,41 @@ A custom WordPress theme designed for flexibility and performance.
 
 ## Installation
 
-1. Clone the repository:
+1. Clone this repository into your WordPress `wp-content/themes/` directory.
+2. Activate the theme in your WordPress admin panel under "Appearance" > "Themes".
+3. For local development, follow the steps in the section below.
+
+## Local Development (Building CSS)
+
+To modify styles or utilize the full capabilities of Tailwind CSS, you need to set up the local development environment.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (version 18 or higher is recommended)
+- [npm](https://www.npmjs.com/) (usually included with Node.js)
+
+### Setup
+
+1. **Navigate to the theme directory:**
    ```bash
-   git clone https://github.com/Oscarschair/oscss-wp-maruplus3.git
+   cd path/to/wp-content/themes/oscss-wp-maruplus3
    ```
-2. Navigate to the theme directory:
-   ```bash
-   cd oscss-wp-maruplus3
-   ```
-3. Install dependencies:
+2. **Install dependencies:**
+   This command installs Tailwind CSS and its dependencies.
    ```bash
    npm install
    ```
-4. Build Tailwind CSS (if required):
+
+3. **Build CSS:**
+   This command compiles the source CSS file at `assets/css/src/style.css` and generates the final stylesheet at `assets/css/tailwind.css`, which is used by the theme.
    ```bash
-   npx tailwindcss build
+   npm run build
    ```
-5. Activate the theme in your WordPress admin panel.
+   
+   You should run this command whenever you make changes to `tailwind.config.js` or add new Tailwind utility classes to your `.php` files. For continuous development, you can add a `watch` script to your `package.json`.
+
+**Note on build issues:** This project uses a stable version of `tailwindcss` (v3) to ensure compatibility. If you encounter build issues, please ensure you are using a recommended Node.js version and that your file paths do not contain unusual characters that might interfere with Node's module resolution.
+
 
 ## File Structure
 

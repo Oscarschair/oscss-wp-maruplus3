@@ -30,7 +30,6 @@
     <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
-    <script src="https://cdn.tailwindcss.com"></script>
     <?php wp_head(); ?>
 </head>
 
