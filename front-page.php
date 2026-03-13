@@ -62,17 +62,29 @@ get_header();
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-8">ニュース・お知らせ</h2>
             <div class="max-w-3xl mx-auto">
-                <!-- WordPressの投稿ループなどを利用して最新情報を表示します -->
+                <?php
+                $args = array(
+                    'post_type' => 'post',
+                    'posts_per_page' => 3,
+                );
+                $news_query = new WP_Query($args);
+                if ($news_query->have_posts()) :
+                    while ($news_query->have_posts()) : $news_query->the_post();
+                ?>
                 <div class="border-b py-4">
-                    <span class="text-gray-500">2023.10.27</span>
-                    <a href="#" class="ml-4 text-gray-800 hover:underline">お知らせのタイトルが入ります</a>
+                    <span class="text-gray-500"><?php echo get_the_date('Y.m.d'); ?></span>
+                    <a href="<?php the_permalink(); ?>" class="ml-4 text-gray-800 hover:underline"><?php the_title(); ?></a>
                 </div>
-                <div class="border-b py-4">
-                    <span class="text-gray-500">2023.10.20</span>
-                    <a href="#" class="ml-4 text-gray-800 hover:underline">新しいサービスを開始しました</a>
-                </div>
+                <?php
+                    endwhile;
+                    wp_reset_postdata();
+                else :
+                ?>
+                <p class="text-center">お知らせはまだありません。</p>
+                <?php endif; ?>
+
                 <div class="text-center mt-8">
-                    <a href="#" class="text-gray-800 hover:underline font-bold">もっと見る &rarr;</a>
+                    <a href="<?php echo esc_url(home_url('/news')); ?>" class="text-gray-800 hover:underline font-bold">もっと見る &rarr;</a>
                 </div>
             </div>
         </div>
