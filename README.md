@@ -31,11 +31,25 @@ A custom WordPress theme designed for flexibility and performance.
 
 ## File Structure
 
-- `functions/`: Contains modular PHP files for actions, filters, shortcodes, and utilities.
-- `assets/`: Includes CSS, JavaScript, and favicon assets.
-- `page-templates/`: Custom page templates for specific page layouts.
-- `header.php`, `footer.php`: Template files for the theme.
-- `style.css`: Theme metadata and default styles.
+This theme follows the standard WordPress theme structure, with some key organizational choices:
+
+- **`functions.php`**: This file acts as a loader for the modular function files located in the `functions/` directory. **Please do not add custom code directly to this file.**
+
+- **`functions/`**: This directory organizes custom functionality into separate files to improve maintainability.
+  - `action.php`: For all `add_action()` calls (e.g., enqueuing scripts, theme setup).
+  - `filter.php`: For all `add_filter()` calls (e.g., modifying excerpts, changing content).
+  - `shortcode.php`: For all custom `add_shortcode()` definitions.
+  - `utility.php`: For helper and utility functions that are used throughout the theme.
+
+- **`template-*.php`**: Custom page templates (e.g., `template-company.php`).
+
+- **`assets/`**: Contains all static assets.
+  - `css/`: Compiled CSS files.
+  - `js/`: JavaScript files.
+  - `svg/`: SVG icons and images.
+  - `favicon/`: All favicon-related files.
+
+- `header.php`, `footer.php`, `index.php`, etc.: Standard WordPress template files.
 
 ## Contributing
 
