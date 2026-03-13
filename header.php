@@ -30,6 +30,7 @@
     <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
     <?php wp_head(); ?>
 </head>
 
@@ -38,7 +39,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W37BZVZH"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header>
+    <header class="sticky top-0 z-50 bg-white shadow-md p-4 flex justify-between items-center">
         <div class="site-branding">
             <?php
             if (has_custom_logo()) {
@@ -53,6 +54,7 @@
             wp_nav_menu(array(
                 'theme_location' => 'header-menu',
                 'menu_id'        => 'primary-menu',
+                'menu_class'     => 'flex space-x-4',
             ));
             ?>
         </nav><!-- #site-navigation -->
