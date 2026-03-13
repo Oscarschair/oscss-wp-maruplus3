@@ -39,23 +39,29 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W37BZVZH"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header class="sticky top-0 z-50 bg-white shadow-md p-4 flex justify-between items-center">
-        <div class="site-branding">
-            <?php
-            if (has_custom_logo()) {
-                the_custom_logo();
-            } else {
-                echo '<h1>' . get_bloginfo('name') . '</h1>';
-            }
-            ?>
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <div class="site-branding flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path d="M4.5 9.75a4.5 4.5 0 1 0 9 0a4.5 4.5 0 0 0-9 0Z" />
+                    <path fill-rule="evenodd" d="M18.12 4.155a.75.75 0 0 1 .75.75v14.25a.75.75 0 0 1-1.5 0V5.733l-5.42 2.168a.75.75 0 0 1-.93-.343l-2.012-3.715a.75.75 0 0 1 .342-.931l5.42-2.168a.75.75 0 0 1 .59-.043ZM2.25 21a.75.75 0 0 1 .75-.75h14.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                </svg>
+                <?php
+                if (has_custom_logo()) {
+                    the_custom_logo();
+                } else {
+                    echo '<h1 class="text-xl font-bold">' . get_bloginfo('name') . '</h1>';
+                }
+                ?>
+            </div>
+            <nav id="site-navigation" class="main-navigation">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'header-menu',
+                    'menu_id'        => 'primary-menu',
+                    'menu_class'     => 'flex space-x-4',
+                ));
+                ?>
+            </nav><!-- #site-navigation -->
         </div>
-        <nav id="site-navigation" class="main-navigation">
-            <?php
-            wp_nav_menu(array(
-                'theme_location' => 'header-menu',
-                'menu_id'        => 'primary-menu',
-                'menu_class'     => 'flex space-x-4',
-            ));
-            ?>
-        </nav><!-- #site-navigation -->
     </header>
