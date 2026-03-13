@@ -5,7 +5,14 @@ module.exports = {
     './assets/js/**/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        lilac: '#D8BFD8',
+        gold: '#B2AC88',
+        silver: '#D3D3D3',
+        copper: '#F7E7CE',
+      },
+    },
   },
   plugins: [],
 }
