@@ -44,7 +44,7 @@ get_header();
                         <div class="w-40 h-40 mx-auto rounded-full p-2 bg-gradient-to-tr from-brand-400 to-lilac shadow-lg relative">
                             <img src="https://via.placeholder.com/200" alt="代表者の写真" class="w-full h-full object-cover rounded-full border-4 border-white">
                         </div>
-                        <p class="mt-4 font-bold text-gray-900">代表取締役 <br><span class="text-xl">山田 太郎</span></p>
+                        <p class="mt-4 font-bold text-gray-900">代表取締役 <br><span class="text-xl">車 浩文</span></p>
                     </div>
                     <div class="md:w-2/3">
                         <h3 class="text-xl md:text-2xl font-bold mb-4 text-brand-900 italic">「なぜこの事業をやっているのかという想いを語ります」</h3>
@@ -80,7 +80,7 @@ get_header();
                         </div>
                         <div class="flex flex-col md:flex-row py-5 md:py-6 hover:bg-gray-50 transition-colors px-4 rounded-xl">
                             <dt class="md:w-1/3 mb-1 md:mb-0 font-bold text-brand-900">役員</dt>
-                            <dd class="md:w-2/3 text-gray-700">代表取締役 山田 太郎</dd>
+                            <dd class="md:w-2/3 text-gray-700">代表取締役 車 浩文</dd>
                         </div>
                         <div class="flex flex-col md:flex-row py-5 md:py-6 hover:bg-gray-50 transition-colors px-4 rounded-xl">
                             <dt class="md:w-1/3 mb-1 md:mb-0 font-bold text-brand-900">資本金</dt>
