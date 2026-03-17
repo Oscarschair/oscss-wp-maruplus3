@@ -7,6 +7,7 @@ A custom WordPress theme designed for flexibility and performance.
 - **Responsive Design**: Fully responsive and mobile-friendly.
 - **Tailwind CSS Integration**: Styled using Tailwind CSS for rapid development.
 - **Customizable**: Easily extendable with custom actions, filters, and shortcodes.
+- **Custom Post Types**: Includes a pre-configured Custom Post Type for "Services" (`/services/`).
 - **Favicon Support**: Includes a full set of favicons for various devices.
 
 ## Installation
@@ -71,7 +72,9 @@ This theme follows the standard WordPress theme structure, with some key organiz
   - `svg/`: SVG icons and images.
   - `favicon/`: All favicon-related files.
 
-- `header.php`, `footer.php`, `index.php`, etc.: Standard WordPress template files.
+- **Standard Templates**: 
+  - `single.php`: For standard posts and custom post types (e.g., Services).
+  - `header.php`, `footer.php`, `index.php`, `front-page.php`, etc.
 
 ## Contributing
 
