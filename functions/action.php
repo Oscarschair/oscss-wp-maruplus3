@@ -32,3 +32,48 @@ function maruplus_theme_setup()
     ));
 }
 add_action('after_setup_theme', 'maruplus_theme_setup');
+
+/**
+ * Register Custom Post Type: Service
+ */
+function maruplus_register_cpt_service()
+{
+    $labels = array(
+        'name'               => 'サービス',
+        'singular_name'      => 'サービス',
+        'menu_name'          => 'サービス',
+        'name_admin_bar'     => 'サービス',
+        'add_new'            => '新規追加',
+        'add_new_item'       => '新しいサービスを追加',
+        'new_item'           => '新しいサービス',
+        'edit_item'          => 'サービスを編集',
+        'view_item'          => 'サービスを表示',
+        'all_items'          => 'すべてのサービス',
+        'search_items'       => 'サービスを検索',
+        'not_found'          => 'サービスが見つかりませんでした',
+        'not_found_in_trash' => 'ゴミ箱にサービスは見つかりませんでした',
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        // サービスページ（例：/services/）の配下に配置するため slug を services に設定
+        'rewrite'            => array('slug' => 'services', 'with_front' => false),
+        'capability_type'    => 'post',
+        // 固定ページの /services/ と競合させないために archive を false にする
+        'has_archive'        => false, 
+        'hierarchical'       => false,
+        'menu_position'      => 5,
+        // 適切な管理画面アイコンを設定
+        'menu_icon'          => 'dashicons-portfolio', 
+        'supports'           => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
+        'show_in_rest'       => true, // ブロックエディタ(Gutenberg)を有効化
+    );
+
+    register_post_type('service', $args);
+}
+add_action('init', 'maruplus_register_cpt_service');
