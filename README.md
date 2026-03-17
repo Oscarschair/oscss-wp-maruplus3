@@ -42,7 +42,11 @@ To modify styles or utilize the full capabilities of Tailwind CSS, you need to s
    npm run build
    ```
    
-   You should run this command whenever you make changes to `tailwind.config.js` or add new Tailwind utility classes to your `.php` files. For continuous development, you can add a `watch` script to your `package.json`.
+4. **Watch for Changes (Recommended during development):**
+   To automatically rebuild the CSS whenever you save changes to your `.php` files or `tailwind.config.js`, keep this command running in your terminal:
+   ```bash
+   npm run watch
+   ```
 
 **Note on build issues:** This project uses a stable version of `tailwindcss` (v3) to ensure compatibility. If you encounter build issues, please ensure you are using a recommended Node.js version and that your file paths do not contain unusual characters that might interfere with Node's module resolution.
 
