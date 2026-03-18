@@ -6,16 +6,16 @@ get_header(); ?>
 
 <main id="primary" class="site-main font-sans bg-gray-50 pb-24">
     <!-- Hero Section -->
-    <section class="relative overflow-hidden bg-hero-gradient text-white pt-24 pb-32">
+    <section class="relative overflow-hidden bg-hero-gradient text-brand-950 pt-24 pb-32">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
             <div class="absolute w-64 h-64 bg-brand-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float" style="top: -10%; left: -10%;"></div>
             <div class="absolute w-48 h-48 bg-lilac rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow" style="top: 20%; right: -10%;"></div>
         </div>
         <div class="container mx-auto px-6 relative z-10 text-center">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight drop-shadow-lg text-transparent bg-clip-text bg-gradient-to-r from-white to-lilac">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight drop-shadow-lg text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800">
                 ニュース
             </h1>
-            <p class="text-brand-200 text-lg">最新情報をお届けします</p>
+            <p class="text-brand-700 text-lg">最新惁E��をお届けしまぁE/p>
         </div>
         <div class="absolute bottom-0 w-full overflow-hidden leading-none">
             <svg class="relative block w-full h-12 md:h-16" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -51,7 +51,7 @@ get_header(); ?>
                     endwhile;
                 else: 
                 ?>
-                    <p class="text-center text-gray-500 py-12">お知らせはまだありません。</p>
+                    <p class="text-center text-gray-500 py-12">お知らせはまだありません、E/p>
                 <?php
                 endif;
                 wp_reset_postdata();

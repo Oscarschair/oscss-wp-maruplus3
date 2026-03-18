@@ -14,7 +14,7 @@ get_header();
     <?php while (have_posts()) : the_post(); ?>
     
     <!-- Hero Section for Post -->
-    <section class="relative overflow-hidden bg-hero-gradient text-white pt-24 pb-32">
+    <section class="relative overflow-hidden bg-hero-gradient text-brand-950 pt-24 pb-32">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
             <div class="absolute w-64 h-64 bg-brand-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float" style="top: -10%; left: -10%;"></div>
             <div class="absolute w-48 h-48 bg-lilac rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow" style="top: 20%; right: -10%;"></div>
@@ -23,7 +23,7 @@ get_header();
             <div class="max-w-4xl mx-auto border-l-4 border-brand-400 pl-6">
                 <!-- Meta data -->
                 <div class="flex flex-wrap items-center gap-4 mb-4 text-sm font-semibold tracking-wider">
-                    <time datetime="<?php echo get_the_date('c'); ?>" class="bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20">
+                    <time datetime="<?php echo get_the_date('c'); ?>" class="bg-white/60 backdrop-blur-md text-brand-800 px-4 py-1.5 rounded-full border border-white/50">
                         <?php echo get_the_date('Y.m.d'); ?>
                     </time>
                     <?php
@@ -70,7 +70,7 @@ get_header();
                 the_content();
                 
                 wp_link_pages(array(
-                    'before' => '<div class="page-links mt-8 font-bold">' . esc_html__('ページ:', 'oscss-wp-maruplus3'),
+                    'before' => '<div class="page-links mt-8 font-bold">' . esc_html__('ペ�Eジ:', 'oscss-wp-maruplus3'),
                     'after'  => '</div>',
                 ));
                 ?>
@@ -117,8 +117,7 @@ get_header();
                 <?php $news_page = get_page_by_path('news'); ?>
                 <a href="<?php echo $news_page ? esc_url(get_permalink($news_page->ID)) : esc_url(home_url('/')); ?>" class="inline-flex items-center px-8 py-4 text-brand-700 bg-brand-50 hover:bg-brand-100 transition-all duration-300 rounded-full font-bold shadow-sm hover:shadow-md border border-brand-100">
                     <svg class="w-5 h-5 mr-2 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    記事一覧に戻る
-                </a>
+                    記事一覧に戻めE                </a>
             </div>
         </nav>
     </div>

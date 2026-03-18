@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: お問い合わせ
+ * Template Name: お問ぁE��わせ
  *
  * @package oscss-wp-maruplus3
  */
@@ -16,16 +16,16 @@ get_header();
     </div>
 
     <!-- Hero Section -->
-    <section class="relative overflow-hidden bg-hero-gradient text-white pt-24 pb-32">
+    <section class="relative overflow-hidden bg-hero-gradient text-brand-950 pt-24 pb-32">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
             <div class="absolute w-64 h-64 bg-brand-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float" style="top: -10%; left: -10%;"></div>
             <div class="absolute w-64 h-64 bg-brand-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow" style="top: 20%; right: -10%;"></div>
         </div>
         <div class="container mx-auto px-6 relative z-10 text-center">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight drop-shadow-lg text-transparent bg-clip-text bg-gradient-to-r from-white to-lilac">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight drop-shadow-lg text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800">
                 <?php the_title(); ?>
             </h1>
-            <p class="text-brand-200 text-lg">お気軽にご相談ください</p>
+            <p class="text-brand-700 text-lg">お気軽にご相諁E��ださい</p>
         </div>
         <div class="absolute bottom-0 w-full overflow-hidden leading-none">
             <svg class="relative block w-full h-12 md:h-16" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -41,20 +41,18 @@ get_header();
                 
                 <div class="text-center mb-8 relative z-10">
                     <p class="text-gray-600 leading-relaxed text-lg">
-                        お問い合わせは以下のフォームよりお願いいたします。<br class="hidden md:block">
-                        項目を絞り、ユーザーの心理的ハードルを下げています。
-                    </p>
+                        お問ぁE��わせは以下�Eフォームよりお願いぁE��します、Ebr class="hidden md:block">
+                        頁E��を絞り、ユーザーの忁E��皁E��ードルを下げてぁE��す、E                    </p>
                 </div>
 
                 <?php
-                // Contact Form 7 のショートコードを想定
-                // echo do_shortcode('[contact-form-7 id="YOUR_FORM_ID" title="Contact form 1"]');
+                // Contact Form 7 のショートコードを想宁E                // echo do_shortcode('[contact-form-7 id="YOUR_FORM_ID" title="Contact form 1"]');
                 ?>
 
-                <!-- フォーム例 -->
+                <!-- フォーム侁E-->
                 <form action="#" method="POST" class="space-y-6 relative z-10">
                     <div>
-                        <label for="name" class="block text-sm font-bold text-gray-700 mb-1">お名前 <span class="text-red-500 ml-1">*</span></label>
+                        <label for="name" class="block text-sm font-bold text-gray-700 mb-1">お名剁E<span class="text-red-500 ml-1">*</span></label>
                         <input type="text" name="name" id="name" required class="block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl shadow-inner focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all duration-200">
                     </div>
                     <div>
@@ -62,11 +60,11 @@ get_header();
                         <input type="email" name="email" id="email" required class="block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl shadow-inner focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all duration-200">
                     </div>
                     <div>
-                        <label for="message" class="block text-sm font-bold text-gray-700 mb-1">お問い合わせ内容 <span class="text-red-500 ml-1">*</span></label>
+                        <label for="message" class="block text-sm font-bold text-gray-700 mb-1">お問ぁE��わせ冁E�� <span class="text-red-500 ml-1">*</span></label>
                         <textarea name="message" id="message" rows="5" required class="block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl shadow-inner focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all duration-200"></textarea>
                     </div>
                     <div class="text-center pt-4">
-                        <p class="text-sm text-gray-500 mb-6">ご入力いただいた個人情報は、<a href="/privacy-policy" class="text-brand-600 hover:text-brand-800 underline transition-colors">プライバシーポリシー</a>に基づき、適切に取り扱います。</p>
+                        <p class="text-sm text-gray-500 mb-6">ご�E力いただぁE��個人惁E��は、Ea href="/privacy-policy" class="text-brand-600 hover:text-brand-800 underline transition-colors">プライバシーポリシー</a>に基づき、E��刁E��取り扱ぁE��す、E/p>
                         <button type="submit" class="w-full md:w-auto px-10 py-4 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-full shadow-lg hover:shadow-brand-500/50 hover:-translate-y-1 transition-all duration-300 transform text-lg">
                             送信する
                         </button>

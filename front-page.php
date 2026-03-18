@@ -12,27 +12,27 @@ get_header();
 ?>
 
 <main id="primary" class="site-main font-sans">
-    <!-- 1. キャッチコピー : Hero Section with dynamic aesthetics -->
-    <section id="hero" class="relative overflow-hidden bg-hero-gradient text-white pt-32 pb-40">
+    <!-- 1. キャチE��コピ�E : Hero Section with dynamic aesthetics -->
+    <section id="hero" class="relative overflow-hidden bg-hero-gradient text-brand-950 pt-32 pb-40">
         <!-- Abstract Background Shapes (Dynamic feel) -->
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-            <div class="absolute w-96 h-96 bg-brand-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float" style="top: -10%; left: -10%;"></div>
-            <div class="absolute w-96 h-96 bg-brand-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow" style="top: 20%; right: -10%;"></div>
-            <div class="absolute w-64 h-64 bg-lilac rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style="bottom: -10%; left: 30%;"></div>
+            <div class="absolute w-96 h-96 bg-white rounded-full mix-blend-screen filter blur-3xl opacity-60 animate-float" style="top: -10%; left: -10%;"></div>
+            <div class="absolute w-96 h-96 bg-brand-300 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse-slow" style="top: 20%; right: -10%;"></div>
+            <div class="absolute w-64 h-64 bg-lilac rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-float" style="bottom: -10%; left: 30%;"></div>
         </div>
 
         <div class="container mx-auto px-6 relative z-10 text-center">
-            <span class="inline-block py-1 px-3 rounded-full bg-white/10 backdrop-blur-md text-sm font-semibold tracking-wider mb-6 border border-white/20">Data × Marketing × Global</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight tracking-tight drop-shadow-lg">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/60 backdrop-blur-md text-brand-800 text-sm font-semibold tracking-wider mb-6 border border-white/50">Data ÁEMarketing ÁEGlobal</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight tracking-tight">
                 3つのコア・バリューが生む<br class="hidden md:block" />
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-lilac to-white">「3乗」の価値</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800">、E乗」�E価値</span>
             </h1>
-            <div class="max-w-3xl mx-auto text-lg md:text-xl text-brand-100 font-medium leading-relaxed drop-shadow-md">
+            <div class="max-w-3xl mx-auto text-lg md:text-xl text-brand-800 font-medium leading-relaxed">
                 <p class="mb-6">
-                    [分析] × [自動化] × [グローバル]。<br class="hidden md:block"/>これら3つの要素を掛け合わせることで、貴社のマーケティング基盤を次世代へと進化させます。
+                    [刁E��] ÁE[自動化] ÁE[グローバル]、Ebr class="hidden md:block"/>これめEつの要素を掛け合わせることで、貴社のマ�EケチE��ング基盤を次世代へと進化させます、E
                 </p>
-                <p class="text-base text-brand-200 mt-8 font-normal bg-white/5 p-6 rounded-2xl backdrop-blur-sm border border-white/10" style="text-align: left;">
-                    例えば「海外向けECサイトの広告からCRMまでをAPIで統合し、ROASをBigQueryで日次可視化する」といった、通常なら複数社に依頼するような複雑な業務も、私たちならワンストップで実現可能です。
+                <p class="text-base text-brand-700 mt-8 font-normal bg-white/50 p-6 rounded-2xl backdrop-blur-sm border border-white/50" style="text-align: left;">
+                    例えば「海外向けECサイト�E庁E��からCRMまでをAPIで統合し、ROASをBigQueryで日次可視化する」とぁE��た、E��常なら褁E��社に依頼するような褁E��な業務も、私たちならワンストップで実現可能です、E
                 </p>
             </div>
             
@@ -52,7 +52,7 @@ get_header();
         </div>
     </section>
 
-    <!-- 3. 主要サービスへの導線 (Premium Cards Design) -->
+    <!-- 3. 主要サービスへの導緁E(Premium Cards Design) -->
     <section id="service-links" class="bg-brand-50 pb-24 pt-8">
         <div class="container mx-auto px-6 relative z-10 -mt-24 md:-mt-32">
             
@@ -62,8 +62,8 @@ get_header();
                     <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-gold opacity-10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
                     <div class="flex-grow z-10">
                         <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">Concept 01</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Data Enabler】<br/><span class="text-xl">データの実装と可視化</span></h3>
-                        <p class="text-gray-600 leading-relaxed mb-6">「見えないものを、意思決定できる形に変える」領域。Web解析、データマート構築、SQL分析など。</p>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Data Enabler、Ebr/><span class="text-xl">チE�Eタの実裁E��可視化</span></h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">「見えなぁE��のを、意思決定できる形に変える」領域。Web解析、データマ�Eト構築、SQL刁E��など、E/p>
                     </div>
                     <div class="pt-4 border-t border-gray-100 mt-auto z-10">
                         <a href="<?php echo esc_url( get_permalink( get_page_by_path( 'services' ) ) ); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
@@ -78,8 +78,8 @@ get_header();
                     <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-silver opacity-20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
                     <div class="flex-grow z-10">
                         <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">Concept 02</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Marketing Architect】<br/><span class="text-xl">仕組みの自動化と最適化</span></h3>
-                        <p class="text-gray-600 leading-relaxed mb-6">「バラバラな点と点を繋ぎ、自動で回る仕組みを作る」領域。CRM/MA導入、API連携、ワークフロー設計など。</p>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Marketing Architect、Ebr/><span class="text-xl">仕絁E��の自動化と最適匁E/span></h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">「バラバラな点と点を繋ぎ、�E動で回る仕絁E��を作る」領域、ERM/MA導�E、API連携、ワークフロー設計など、E/p>
                     </div>
                     <div class="pt-4 border-t border-gray-100 mt-auto z-10">
                         <a href="<?php echo esc_url( get_permalink( get_page_by_path( 'services' ) ) ); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
@@ -94,8 +94,8 @@ get_header();
                     <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-copper opacity-20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
                     <div class="flex-grow z-10">
                         <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">Concept 03</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Global Tech Director】<br/><span class="text-xl">越境実装とPM</span></h3>
-                        <p class="text-gray-600 leading-relaxed mb-6">「国境や技術の壁を越えてプロジェクトを完遂させる」領域。多言語ローカライズ、Webサイト制作、PMなど。</p>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Global Tech Director、Ebr/><span class="text-xl">越墁E��裁E��PM</span></h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">「国墁E��技術�E壁を越えてプロジェクトを完遂させる」領域。多言語ローカライズ、Webサイト制作、PMなど、E/p>
                     </div>
                     <div class="pt-4 border-t border-gray-100 mt-auto z-10">
                         <a href="<?php echo esc_url( get_permalink( get_page_by_path( 'services' ) ) ); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
@@ -144,7 +144,7 @@ get_header();
                         wp_reset_postdata();
                     else :
                     ?>
-                    <li class="py-8 text-center text-gray-500">お知らせはまだありません。</li>
+                    <li class="py-8 text-center text-gray-500">お知らせはまだありません、E/li>
                     <?php endif; ?>
                 </ul>
 

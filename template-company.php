@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: 会社情報
+ * Template Name: 会社惁E��
  *
  * @package oscss-wp-maruplus3
  */
@@ -11,17 +11,17 @@ get_header();
 
 <main id="primary" class="site-main font-sans bg-gray-50 pb-24">
     <!-- Hero Section -->
-    <section class="relative overflow-hidden bg-hero-gradient text-white pt-24 pb-32">
+    <section class="relative overflow-hidden bg-hero-gradient text-brand-950 pt-24 pb-32">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
             <div class="absolute w-64 h-64 bg-brand-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float" style="top: -10%; left: -10%;"></div>
             <div class="absolute w-64 h-64 bg-brand-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow" style="top: 20%; right: -10%;"></div>
             <div class="absolute w-48 h-48 bg-lilac rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style="bottom: -10%; left: 30%;"></div>
         </div>
         <div class="container mx-auto px-6 relative z-10 text-center">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight drop-shadow-lg text-transparent bg-clip-text bg-gradient-to-r from-white to-lilac">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight drop-shadow-lg text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800">
                 <?php the_title(); ?>
             </h1>
-            <p class="text-brand-200 text-lg">私たちについて</p>
+            <p class="text-brand-700 text-lg">私たちにつぁE��</p>
         </div>
         <div class="absolute bottom-0 w-full overflow-hidden leading-none">
             <svg class="relative block w-full h-12 md:h-16" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -42,49 +42,48 @@ get_header();
                 <div class="flex flex-col md:flex-row items-center gap-10 max-w-4xl mx-auto">
                     <div class="md:w-1/3 text-center">
                         <div class="w-40 h-40 mx-auto rounded-full p-2 bg-gradient-to-tr from-brand-400 to-lilac shadow-lg relative">
-                            <img src="https://via.placeholder.com/200" alt="代表者の写真" class="w-full h-full object-cover rounded-full border-4 border-white">
+                            <img src="https://via.placeholder.com/200" alt="代表老E�E写真" class="w-full h-full object-cover rounded-full border-4 border-white">
                         </div>
-                        <p class="mt-4 font-bold text-gray-900">代表取締役 <br><span class="text-xl">車 浩文</span></p>
+                        <p class="mt-4 font-bold text-gray-900">代表取締役 <br><span class="text-xl">軁E浩斁E/span></p>
                     </div>
                     <div class="md:w-2/3">
-                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-brand-900 italic">「なぜこの事業をやっているのかという想いを語ります」</h3>
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-brand-900 italic">「なぜこの事業をやってぁE��のかとぁE��想ぁE��語ります、E/h3>
                         <p class="text-gray-600 leading-relaxed text-lg">
-                            ここに代表者からのメッセージや、会社が目指すビジョンについての文章を記述します。企業の情熱や哲学を伝えることで、共感を呼び、信頼を深めます。私たちはデータとマーケティングとグローバルの力で、お客様のビジネスのポテンシャルを最大限に引き出します。
-                        </p>
+                            ここに代表老E��ら�EメチE��ージめE��会社が目持E��ビジョンにつぁE��の斁E��を記述します。企業の惁E�EめE��学を伝えることで、�E感を呼び、信頼を深めます。私たちはチE�Eタとマ�EケチE��ングとグローバルの力で、お客様�Eビジネスのポテンシャルを最大限に引き出します、E                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 2. 会社概要 -->
+        <!-- 2. 会社概要E-->
         <section id="company-profile">
             <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
                 <div class="text-center mb-10">
                     <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">Company Profile</span>
-                    <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">会社概要</h2>
+                    <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">会社概要E/h2>
                     <div class="w-12 h-1 bg-brand-500 mx-auto mt-4 rounded-full"></div>
                 </div>
                 <div class="max-w-3xl mx-auto">
                     <dl class="divide-y divide-gray-100">
                         <div class="flex flex-col md:flex-row py-5 md:py-6 hover:bg-gray-50 transition-colors px-4 rounded-xl">
-                            <dt class="md:w-1/3 mb-1 md:mb-0 font-bold text-brand-900">会社名</dt>
+                            <dt class="md:w-1/3 mb-1 md:mb-0 font-bold text-brand-900">会社吁E/dt>
                             <dd class="md:w-2/3 text-gray-700">株式会社MaruPlus</dd>
                         </div>
                         <div class="flex flex-col md:flex-row py-5 md:py-6 hover:bg-gray-50 transition-colors px-4 rounded-xl">
                             <dt class="md:w-1/3 mb-1 md:mb-0 font-bold text-brand-900">所在地</dt>
-                            <dd class="md:w-2/3 text-gray-700">〒100-0000 東京都千代田区丸の内1-2-3</dd>
+                            <dd class="md:w-2/3 text-gray-700">、E00-0000 東京都十E��田区丸の冁E-2-3</dd>
                         </div>
                         <div class="flex flex-col md:flex-row py-5 md:py-6 hover:bg-gray-50 transition-colors px-4 rounded-xl">
                             <dt class="md:w-1/3 mb-1 md:mb-0 font-bold text-brand-900">設立日</dt>
-                            <dd class="md:w-2/3 text-gray-700">2023年10月27日</dd>
+                            <dd class="md:w-2/3 text-gray-700">2023年10朁E7日</dd>
                         </div>
                         <div class="flex flex-col md:flex-row py-5 md:py-6 hover:bg-gray-50 transition-colors px-4 rounded-xl">
                             <dt class="md:w-1/3 mb-1 md:mb-0 font-bold text-brand-900">役員</dt>
-                            <dd class="md:w-2/3 text-gray-700">代表取締役 車 浩文</dd>
+                            <dd class="md:w-2/3 text-gray-700">代表取締役 軁E浩斁E/dd>
                         </div>
                         <div class="flex flex-col md:flex-row py-5 md:py-6 hover:bg-gray-50 transition-colors px-4 rounded-xl">
-                            <dt class="md:w-1/3 mb-1 md:mb-0 font-bold text-brand-900">資本金</dt>
-                            <dd class="md:w-2/3 text-gray-700">1,000,000円</dd>
+                            <dt class="md:w-1/3 mb-1 md:mb-0 font-bold text-brand-900">賁E��釁E/dt>
+                            <dd class="md:w-2/3 text-gray-700">1,000,000冁E/dd>
                         </div>
                     </dl>
                 </div>
