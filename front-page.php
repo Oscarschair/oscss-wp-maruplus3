@@ -12,7 +12,7 @@ get_header();
 ?>
 
 <main id="primary" class="site-main font-sans">
-    <!-- 1. キャチE��コピ�E : Hero Section with dynamic aesthetics -->
+    <!-- 1. キャチE��コピ�E : Hero Section with dynamic aesthetics -->
     <section id="hero" class="relative overflow-hidden bg-hero-gradient text-brand-950 pt-32 pb-40">
         <!-- Abstract Background Shapes (Dynamic feel) -->
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
@@ -22,17 +22,17 @@ get_header();
         </div>
 
         <div class="container mx-auto px-6 relative z-10 text-center">
-            <span class="inline-block py-1 px-3 rounded-full bg-white/60 backdrop-blur-md text-brand-800 text-sm font-semibold tracking-wider mb-6 border border-white/50">Data ÁEMarketing ÁEGlobal</span>
+            <span class="inline-block py-1 px-3 rounded-full bg-white/60 backdrop-blur-md text-brand-800 text-sm font-semibold tracking-wider mb-6 border border-white/50">Mission</span>
             <h1 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight tracking-tight">
-                3つのコア・バリューが生む<br class="hidden md:block" />
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800">、E乗」�E価値</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800">未だ見ぬ「＋」を、</span><br class="hidden md:block" />
+                共創する
             </h1>
-            <div class="max-w-3xl mx-auto text-lg md:text-xl text-brand-800 font-medium leading-relaxed">
+            <div class="max-w-3xl mx-auto text-lg md::text-xl text-brand-800 font-medium leading-relaxed">
                 <p class="mb-6">
-                    [刁E��] ÁE[自動化] ÁE[グローバル]、Ebr class="hidden md:block"/>これめEつの要素を掛け合わせることで、貴社のマ�EケチE��ング基盤を次世代へと進化させます、E
+                    私たちが共創する「＋」とは、事業の行く末を照らす道標であり、<br class="hidden md:block"/>掘り起こされた独自の価値であり、課題を突破する正解です。
                 </p>
                 <p class="text-base text-brand-700 mt-8 font-normal bg-white/50 p-6 rounded-2xl backdrop-blur-sm border border-white/50" style="text-align: left;">
-                    例えば「海外向けECサイト�E庁E��からCRMまでをAPIで統合し、ROASをBigQueryで日次可視化する」とぁE��た、E��常なら褁E��社に依頼するような褁E��な業務も、私たちならワンストップで実現可能です、E
+                    クライアントの隣で、まだ見ぬ方向性や強み、最適解を形にし、確かな成長へ導きます。
                 </p>
             </div>
             
@@ -62,11 +62,11 @@ get_header();
                     <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-gold opacity-10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
                     <div class="flex-grow z-10">
                         <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">Concept 01</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Data Enabler、Ebr/><span class="text-xl">チE�Eタの実裁E��可視化</span></h3>
-                        <p class="text-gray-600 leading-relaxed mb-6">「見えなぁE��のを、意思決定できる形に変える」領域。Web解析、データマ�Eト構築、SQL刁E��など、E/p>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Data Enabler、Ebr/><span class="text-xl">チE�Eタの実裁E��可視化</span></h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">「見えなぁE��のを、意思決定できる形に変える」領域。Web解析、データマ�Eト構築、SQL刁E��など、E/p>
                     </div>
                     <div class="pt-4 border-t border-gray-100 mt-auto z-10">
-                        <a href="<?php echo esc_url( get_permalink( get_page_by_path( 'services' ) ) ); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('services'))); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
                             詳しく見る 
                             <svg class="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -78,11 +78,11 @@ get_header();
                     <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-silver opacity-20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
                     <div class="flex-grow z-10">
                         <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">Concept 02</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Marketing Architect、Ebr/><span class="text-xl">仕絁E��の自動化と最適匁E/span></h3>
-                        <p class="text-gray-600 leading-relaxed mb-6">「バラバラな点と点を繋ぎ、�E動で回る仕絁E��を作る」領域、ERM/MA導�E、API連携、ワークフロー設計など、E/p>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Marketing Architect、Ebr/><span class="text-xl">仕絁E��の自動化と最適匁E/span></h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">「バラバラな点と点を繋ぎ、�E動で回る仕絁E��を作る」領域、ERM/MA導�E、API連携、ワークフロー設計など、E/p>
                     </div>
                     <div class="pt-4 border-t border-gray-100 mt-auto z-10">
-                        <a href="<?php echo esc_url( get_permalink( get_page_by_path( 'services' ) ) ); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('services'))); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
                             詳しく見る 
                             <svg class="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -94,11 +94,11 @@ get_header();
                     <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-copper opacity-20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
                     <div class="flex-grow z-10">
                         <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">Concept 03</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Global Tech Director、Ebr/><span class="text-xl">越墁E��裁E��PM</span></h3>
-                        <p class="text-gray-600 leading-relaxed mb-6">「国墁E��技術�E壁を越えてプロジェクトを完遂させる」領域。多言語ローカライズ、Webサイト制作、PMなど、E/p>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Global Tech Director、Ebr/><span class="text-xl">越墁E��裁E��PM</span></h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">「国墁E��技術�E壁を越えてプロジェクトを完遂させる」領域。多言語ローカライズ、Webサイト制作、PMなど、E/p>
                     </div>
                     <div class="pt-4 border-t border-gray-100 mt-auto z-10">
-                        <a href="<?php echo esc_url( get_permalink( get_page_by_path( 'services' ) ) ); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('services'))); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
                             詳しく見る 
                             <svg class="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -125,14 +125,15 @@ get_header();
             <div class="max-w-4xl mx-auto rounded-3xl p-2 sm:p-6">
                 <ul class="divide-y divide-gray-100">
                     <?php
-                    $args = array(
-                        'post_type' => 'post',
-                        'posts_per_page' => 3,
-                    );
-                    $news_query = new WP_Query($args);
-                    if ($news_query->have_posts()) :
-                        while ($news_query->have_posts()) : $news_query->the_post();
-                    ?>
+$args = array(
+    'post_type' => 'post',
+    'posts_per_page' => 3,
+);
+$news_query = new WP_Query($args);
+if ($news_query->have_posts()):
+    while ($news_query->have_posts()):
+        $news_query->the_post();
+?>
                     <li class="py-6 group">
                         <a href="<?php the_permalink(); ?>" class="flex flex-col sm:flex-row sm:items-center gap-4 hover:bg-brand-50 p-4 -mx-4 rounded-xl transition-colors duration-300">
                             <span class="text-sm font-semibold text-brand-600 whitespace-nowrap bg-brand-100 px-4 py-1.5 rounded-full"><?php echo get_the_date('Y.m.d'); ?></span>
@@ -140,12 +141,13 @@ get_header();
                         </a>
                     </li>
                     <?php
-                        endwhile;
-                        wp_reset_postdata();
-                    else :
-                    ?>
+    endwhile;
+    wp_reset_postdata();
+else:
+?>
                     <li class="py-8 text-center text-gray-500">お知らせはまだありません、E/li>
-                    <?php endif; ?>
+                    <?php
+endif; ?>
                 </ul>
 
                 <div class="text-center mt-12">
