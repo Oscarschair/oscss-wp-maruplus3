@@ -24,8 +24,8 @@ get_header();
         <div class="container mx-auto px-6 relative z-10 text-center">
             <span class="inline-block py-1 px-3 rounded-full bg-white/60 backdrop-blur-md text-brand-800 text-sm font-semibold tracking-wider mb-6 border border-white/50">Mission</span>
             <h1 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight tracking-tight">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800">未だ見ぬ「＋」を、</span><br class="hidden md:block" />
-                共創する
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800"><ruby>未<rt>ま</rt></ruby>だ<ruby>見<rt>み</rt></ruby>ぬ「＋」を、</span><br class="hidden md:block" />
+                <ruby>共創<rt>きょうそう</rt></ruby>する
             </h1>
             <div class="max-w-3xl mx-auto text-lg md::text-xl text-brand-800 font-medium leading-relaxed">
                 <p class="mb-6">

@@ -45,7 +45,7 @@ get_header();
                         <div class="absolute -right-10 -top-10 w-32 h-32 bg-brand-100 rounded-full opacity-50 blur-2xl"></div>
                         <h3 class="text-2xl font-extrabold mb-4 text-brand-900 flex items-center">
                             <span class="bg-brand-600 text-white text-xs px-3 py-1 rounded-full mr-3 uppercase tracking-wider">Mission</span>
-                            未（ま）だ見（み）ぬ「＋」を、共創（きょうそう）する
+                            <ruby>未<rt>ま</rt></ruby>だ<ruby>見<rt>み</rt></ruby>ぬ「＋」を、<ruby>共創<rt>きょうそう</rt></ruby>する
                         </h3>
                         <p class="text-gray-700 leading-relaxed text-lg">
                             私たちが共創する「＋」とは、事業の行く末を照らす道標であり、掘り起こされた独自の価値であり、課題を突破する正解です。クライアントの隣で、まだ見ぬ方向性や強み、最適解を形にし、確かな成長へ導きます。
