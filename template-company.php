@@ -55,14 +55,13 @@ get_header();
                     <!-- Vision -->
                     <div class="bg-gray-50 p-8 rounded-2xl relative overflow-hidden border border-gray-100">
                         <div class="absolute -left-10 -bottom-10 w-32 h-32 bg-lilac/30 rounded-full opacity-50 blur-2xl"></div>
-                        <h3 class="text-2xl font-extrabold mb-4 text-brand-900 flex items-center">
-                            <span class="bg-brand-600 text-white text-xs px-3 py-1 rounded-full mr-3 uppercase tracking-wider">Vision</span>
-                            すべての挑戦が、正しく報われる社会を創る
+                        <h3 class="text-2xl font-extrabold mb-4 text-brand-900 leading-loose">
+                            <span class="inline-block bg-brand-600 text-white text-xs px-3 py-1 rounded-full mr-3 uppercase tracking-wider align-middle -mt-1">Vision</span>
+                            <span class="align-middle">「潜在的な価値を、市場の『正解』へと変換する共創エンジン」</span>
                         </h3>
-                        <div class="space-y-4 text-gray-700 leading-relaxed">
-                            <p><strong>策定の背景:</strong> ユーザーの意図を正しく汲み取り、適切な価値を届けることへの強いこだわりを大切にしています。</p>
-                            <p><strong>具体的内容:</strong> 優れたサービスを持つ企業が、デジタル技術の壁に阻まれることなく、正しく市場に評価されるための架け橋となる存在を目指します。</p>
-                        </div>
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            私たちは、クライアントの中に眠る「強み」を共に掘り起こし、それを確かな価値として磨き上げます。進むべき道標を示すことで視界をひらき、複雑な課題に対する正解を導き出すことで、事業の歩みを加速させる「共創の動力源」であり続けます。
+                        </p>
                     </div>
                 </div>
             </div>
@@ -73,36 +72,57 @@ get_header();
             <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border-t-4 border-lilac hover:shadow-2xl transition-shadow duration-300">
                 <div class="text-center mb-10">
                     <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">Values</span>
-                    <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">3つの行動指針</h2>
+                    <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">4つの行動指針</h2>
                     <div class="w-12 h-1 bg-lilac mx-auto mt-4 rounded-full"></div>
-                    <p class="mt-6 text-gray-600 font-medium">マルプラスが大切にする3つの行動指針です。</p>
+                    <p class="mt-6 text-gray-600 font-medium text-lg">マルプラスが大切にする4つの行動指針です。</p>
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                    <!-- Value 1 -->
-                    <div class="bg-blue-50/50 p-6 rounded-2xl hover:-translate-y-1 transition-transform duration-300 border border-blue-100">
-                        <div class="text-brand-600 font-black text-4xl mb-2 opacity-30">01</div>
-                        <h4 class="text-xl font-bold mb-3 text-brand-900">ユーザーの意図を読み解く<br><span class="text-sm font-normal text-brand-600">User Insight</span></h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            単に数字を追うのではなく「ユーザーが何を求めているか（User Intent）」を深く理解することをすべての出発点とします。
+                <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <!-- Value 1: Guiding Light -->
+                    <div class="bg-blue-50/50 p-8 rounded-2xl hover:-translate-y-1 transition-transform duration-300 border border-blue-100 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="text-brand-600 font-black text-4xl opacity-20">01</div>
+                            <span class="text-xs font-bold text-brand-500 uppercase tracking-widest bg-white px-2 py-1 rounded shadow-sm">Guiding Light</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-brand-900">一歩先の光を灯す</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            現状のデータや課題を整理し、進むべき「方向性」をいち早く提示します。クライアントの不安という霧を晴らし、未来がクリアに<strong class="text-brand-700 text-lg">「見える」</strong>状態を常に作り出すことが、私たちの最初の仕事です。
                         </p>
                     </div>
 
-                    <!-- Value 2 -->
-                    <div class="bg-indigo-50/50 p-6 rounded-2xl hover:-translate-y-1 transition-transform duration-300 border border-indigo-100">
-                        <div class="text-brand-600 font-black text-4xl mb-2 opacity-30">02</div>
-                        <h4 class="text-xl font-bold mb-3 text-brand-900">専門性を「武器」から「価値」へ<br><span class="text-sm font-normal text-brand-600">Expertise into Value</span></h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            AWSやGA4、SEOといった高度な技術・知識を自分たちの誇示のためではなく、あくまで顧客の課題解決のために最適にパッケージ化して提供します。
+                    <!-- Value 2: Value Excavation -->
+                    <div class="bg-indigo-50/50 p-8 rounded-2xl hover:-translate-y-1 transition-transform duration-300 border border-indigo-100 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="text-brand-600 font-black text-4xl opacity-20">02</div>
+                            <span class="text-xs font-bold text-brand-500 uppercase tracking-widest bg-white px-2 py-1 rounded shadow-sm">Value Excavation</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-brand-900">潜在する強みを掘り起こす</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            クライアントさえ気づいていない独自の「価値」を見出し、磨き上げます。自分たちの武器を確信することで、どんな困難な道でも力強く<strong class="text-brand-700 text-lg">「歩める」</strong>自信と原動力を提供します。
                         </p>
                     </div>
 
-                    <!-- Value 3 -->
-                    <div class="bg-purple-50/50 p-6 rounded-2xl hover:-translate-y-1 transition-transform duration-300 border border-purple-100">
-                        <div class="text-brand-600 font-black text-4xl mb-2 opacity-30">03</div>
-                        <h4 class="text-xl font-bold mb-3 text-brand-900">常に「一歩先」の伴走者に<br><span class="text-sm font-normal text-brand-600">Beyond Partnership</span></h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            単なる作業代行ではなく、共に事業を成長させるパートナーとして、期待を超える「プラスアルファ」を提案し続けます。
+                    <!-- Value 3: Optimal Path -->
+                    <div class="bg-purple-50/50 p-8 rounded-2xl hover:-translate-y-1 transition-transform duration-300 border border-purple-100 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="text-brand-600 font-black text-4xl opacity-20">03</div>
+                            <span class="text-xs font-bold text-brand-500 uppercase tracking-widest bg-white px-2 py-1 rounded shadow-sm">Optimal Path</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-brand-900">最短の正解を導き出す</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            高度な専門性と分析力を駆使し、迷いを断ち切る「最適解」を提示します。遠回りをせず、最小のコストで目的地に<strong class="text-brand-700 text-lg">「たどり着ける」</strong>よう、論理に基づいた最短距離の航路を描き続けます。
+                        </p>
+                    </div>
+
+                    <!-- Value 4: Co-Creation Engine -->
+                    <div class="bg-amber-50/50 p-8 rounded-2xl hover:-translate-y-1 transition-transform duration-300 border border-amber-100 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="text-brand-600 font-black text-4xl opacity-20">04</div>
+                            <span class="text-xs font-bold text-brand-500 uppercase tracking-widest bg-white px-2 py-1 rounded shadow-sm">Co-Creation Engine</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-brand-900">共創の熱を絶やさない</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            私たちは外部の支援者ではなく、共に走るエンジンの核となります。お互いの想いを掛け合わせることで、一人では到達できない高みへと事業を加速させ、期待を超える成果を<strong class="text-brand-700 text-lg">「共創」</strong>します。
                         </p>
                     </div>
                 </div>
