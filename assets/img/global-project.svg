@@ -1,0 +1,43 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" rx="24" fill="#F0E7F5"/>
+  
+  <!-- Stylized Globe -->
+  <circle cx="400" cy="225" r="160" fill="white" stroke="#2D1B4D" stroke-width="2"/>
+  <ellipse cx="400" cy="225" rx="60" ry="160" fill="transparent" stroke="#B87333" stroke-width="1" stroke-opacity="0.3"/>
+  <ellipse cx="400" cy="225" rx="120" ry="160" fill="transparent" stroke="#B87333" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="240" y1="225" x2="560" y2="225" stroke="#B87333" stroke-width="1" stroke-opacity="0.3"/>
+  
+  <!-- Stylized Landmasses (Geometric) -->
+  <path d="M350 150L380 180H420L440 140L410 120H370L350 150Z" fill="#2D1B4D" fill-opacity="0.1"/>
+  <path d="M450 250L480 280H520L540 240L510 220H470L450 250Z" fill="#2D1B4D" fill-opacity="0.1"/>
+  
+  <!-- Location Pins (JP/CN/TW) -->
+  <!-- JP -->
+  <path d="M440 160L445 150H455L460 160L450 175L440 160Z" fill="#B87333" stroke="#2D1B4D" stroke-width="1"/>
+  <text x="470" y="165" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#2D1B4D">JP</text>
+  
+  <!-- CN -->
+  <path d="M320 200L325 190H335L340 200L330 215L320 200Z" fill="#B87333" stroke="#2D1B4D" stroke-width="1"/>
+  <text x="280" y="205" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#2D1B4D">CN</text>
+
+  <!-- TW -->
+  <path d="M380 270L385 260H395L400 270L390 285L380 270Z" fill="#B87333" stroke="#2D1B4D" stroke-width="1"/>
+  <text x="410" y="275" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#2D1B4D">TW</text>
+
+  <!-- Bridges / Connections -->
+  <path d="M340 205Q390 225 440 165" stroke="#B87333" stroke-width="2" stroke-dasharray="10 5">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3s" repeatCount="indefinite" />
+  </path>
+  <path d="M340 205Q365 240 380 265" stroke="#B87333" stroke-width="2" stroke-dasharray="10 5">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3.5s" repeatCount="indefinite" />
+  </path>
+  <path d="M440 165Q410 220 395 260" stroke="#B87333" stroke-width="2" stroke-dasharray="10 5">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="4s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Glowing effect -->
+  <circle cx="400" cy="225" r="140" fill="#B87333" fill-opacity="0.05">
+    <animate attributeName="r" values="140;150;140" dur="4s" repeatCount="indefinite" />
+  </circle>
+</svg>

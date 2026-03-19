@@ -71,24 +71,8 @@ get_header();
                     </div>
                 </div>
                 <div class="lg:w-1/2 order-1 lg:order-2">
-                    <div class="relative">
-                        <div class="absolute inset-0 bg-gold/20 rounded-3xl transform rotate-3 -z-10"></div>
-                        <div class="bg-white p-4 rounded-3xl shadow-2xl border border-gold/10 overflow-hidden">
-                            <div class="bg-brand-950 p-8 rounded-2xl text-white">
-                                <div class="flex items-center justify-between mb-8">
-                                    <div class="h-8 w-8 rounded-full bg-[#D4AF37]"></div>
-                                    <div class="text-xs text-brand-300 font-mono italic">DATA_PIPELINE.running</div>
-                                </div>
-                                <div class="space-y-4">
-                                    <div class="h-2 w-3/4 bg-brand-800 rounded"></div>
-                                    <div class="h-2 w-full bg-brand-700 rounded"></div>
-                                    <div class="h-2 w-1/2 bg-[#D4AF37]/50 rounded"></div>
-                                </div>
-                                <div class="mt-12 flex justify-end">
-                                    <span class="text-4xl font-black text-[#D4AF37]">GA4 / BQ</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="relative overflow-hidden rounded-3xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data-strategy.svg" alt="Data Strategy Engineer" class="w-full h-auto block">
                     </div>
                 </div>
             </div>
@@ -96,14 +80,8 @@ get_header();
             <!-- Value 2: Marketing Ops Architect -->
             <div class="mb-32 flex flex-col lg:flex-row items-center gap-12 group">
                 <div class="lg:w-1/2">
-                    <div class="relative">
-                        <div class="absolute inset-0 bg-silver/20 rounded-3xl transform -rotate-3 -z-10"></div>
-                        <div class="bg-white p-4 rounded-3xl shadow-2xl border border-silver/10 overflow-hidden text-center">
-                            <div class="bg-gradient-to-br from-gray-100 to-gray-200 p-12 rounded-2xl">
-                                <svg class="w-32 h-32 mx-auto text-brand-600 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 11-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H7a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
-                                <div class="mt-4 text-xs font-mono text-gray-400">CONNECTING_THE_DOTS</div>
-                            </div>
-                        </div>
+                    <div class="relative overflow-hidden rounded-3xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing-ops.svg" alt="Marketing Ops Architect" class="w-full h-auto block">
                     </div>
                 </div>
                 <div class="lg:w-1/2">
@@ -189,12 +167,8 @@ get_header();
                     </div>
                 </div>
                 <div class="lg:w-1/2 order-1 lg:order-2">
-                    <div class="relative">
-                        <div class="absolute inset-0 bg-copper/30 rounded-full blur-3xl -z-10 animate-pulse-slow"></div>
-                        <div class="bg-white p-8 rounded-3xl shadow-2xl border border-copper/10 overflow-hidden text-center relative">
-                            <div class="text-6xl mb-4">🌏</div>
-                            <div class="text-sm font-bold text-brand-600 tracking-widest px-4 py-1 bg-brand-50 rounded-full inline-block">JP / CN / TW</div>
-                        </div>
+                    <div class="relative overflow-hidden rounded-3xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/global-project.svg" alt="Global Project Controller" class="w-full h-auto block">
                     </div>
                 </div>
             </div>

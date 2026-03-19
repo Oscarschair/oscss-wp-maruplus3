@@ -1,0 +1,45 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" rx="24" fill="#F0E7F5"/>
+  
+  <!-- Workflow Nodes (HubSpot-themed icons) -->
+  <!-- Main Hub -->
+  <rect x="350" y="175" width="100" height="100" rx="50" fill="#2D1B4D" stroke="white" stroke-width="8"/>
+  <!-- HubSpot sprocket-like shape -->
+  <circle cx="400" cy="225" r="30" stroke="#A8A9AD" stroke-width="4" stroke-dasharray="10 5"/>
+  <circle cx="400" cy="225" r="15" fill="#A8A9AD"/>
+
+  <!-- Satellite Nodes (GAS, API, CRM) -->
+  <circle cx="200" cy="125" r="40" fill="white" stroke="#2D1B4D" stroke-width="2"/>
+  <circle cx="200" cy="325" r="40" fill="white" stroke="#2D1B4D" stroke-width="2"/>
+  <circle cx="600" cy="125" r="40" fill="white" stroke="#2D1B4D" stroke-width="2"/>
+  <circle cx="600" cy="325" r="40" fill="white" stroke="#2D1B4D" stroke-width="2"/>
+
+  <!-- Connecting Lines (Flow) -->
+  <path d="M240 125L350 200" stroke="#2D1B4D" stroke-width="2" stroke-dasharray="5 5">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2s" repeatCount="indefinite" />
+  </path>
+  <path d="M240 325L350 250" stroke="#2D1B4D" stroke-width="2" stroke-dasharray="5 5">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2.5s" repeatCount="indefinite" />
+  </path>
+  <path d="M450 200L560 125" stroke="#2D1B4D" stroke-width="2" stroke-dasharray="5 5">
+    <animate attributeName="stroke-dashoffset" from="0" to="100" dur="2.2s" repeatCount="indefinite" />
+  </path>
+  <path d="M450 250L560 325" stroke="#2D1B4D" stroke-width="2" stroke-dasharray="5 5">
+    <animate attributeName="stroke-dashoffset" from="0" to="100" dur="2.8s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Puzzle icons (connecting dots) -->
+  <rect x="185" y="110" width="30" height="30" rx="4" fill="#A8A9AD" fill-opacity="0.3"/>
+  <rect x="185" y="310" width="30" height="30" rx="4" fill="#A8A9AD" fill-opacity="0.3"/>
+  <rect x="585" y="110" width="30" height="30" rx="4" fill="#A8A9AD" fill-opacity="0.3"/>
+  <rect x="585" y="310" width="30" height="30" rx="4" fill="#A8A9AD" fill-opacity="0.3"/>
+
+  <!-- Glowing effect -->
+  <defs>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+    </filter>
+  </defs>
+  <circle cx="400" cy="225" r="80" fill="#A8A9AD" fill-opacity="0.1" filter="url(#blur)"/>
+</svg>
