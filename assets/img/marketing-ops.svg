@@ -2,44 +2,85 @@
   <!-- Background -->
   <rect width="800" height="450" rx="24" fill="#F0E7F5"/>
   
-  <!-- Workflow Nodes (HubSpot-themed icons) -->
-  <!-- Main Hub -->
-  <rect x="350" y="175" width="100" height="100" rx="50" fill="#2D1B4D" stroke="white" stroke-width="8"/>
-  <!-- HubSpot sprocket-like shape -->
-  <circle cx="400" cy="225" r="30" stroke="#A8A9AD" stroke-width="4" stroke-dasharray="10 5"/>
-  <circle cx="400" cy="225" r="15" fill="#A8A9AD"/>
+  <defs>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="hubGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2D1B4D"/>
+      <stop offset="100%" stop-color="#4B2D7F"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Satellite Nodes (GAS, API, CRM) -->
-  <circle cx="200" cy="125" r="40" fill="white" stroke="#2D1B4D" stroke-width="2"/>
-  <circle cx="200" cy="325" r="40" fill="white" stroke="#2D1B4D" stroke-width="2"/>
-  <circle cx="600" cy="125" r="40" fill="white" stroke="#2D1B4D" stroke-width="2"/>
-  <circle cx="600" cy="325" r="40" fill="white" stroke="#2D1B4D" stroke-width="2"/>
+  <!-- Process Headers -->
+  <text x="160" y="80" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="12" fill="#2D1B4D" opacity="0.4">CHANNELS</text>
+  <text x="400" y="80" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="12" fill="#2D1B4D" opacity="0.4">CRM HUB</text>
+  <text x="640" y="80" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="12" fill="#2D1B4D" opacity="0.4">AUTOMATION</text>
 
-  <!-- Connecting Lines (Flow) -->
-  <path d="M240 125L350 200" stroke="#2D1B4D" stroke-width="2" stroke-dasharray="5 5">
-    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2s" repeatCount="indefinite" />
+  <!-- Connecting Lines -->
+  <!-- Left Side Flows -->
+  <path d="M250 150 Q 320 150 350 200" stroke="#2D1B4D" stroke-width="2" stroke-dasharray="8 6" opacity="0.15">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3s" repeatCount="indefinite" />
   </path>
-  <path d="M240 325L350 250" stroke="#2D1B4D" stroke-width="2" stroke-dasharray="5 5">
+  <path d="M250 300 Q 320 300 350 250" stroke="#2D1B4D" stroke-width="2" stroke-dasharray="8 6" opacity="0.15">
     <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2.5s" repeatCount="indefinite" />
   </path>
-  <path d="M450 200L560 125" stroke="#2D1B4D" stroke-width="2" stroke-dasharray="5 5">
-    <animate attributeName="stroke-dashoffset" from="0" to="100" dur="2.2s" repeatCount="indefinite" />
+  <!-- Right Side Flows -->
+  <path d="M450 210 Q 500 150 550 150" stroke="#2D1B4D" stroke-width="2" stroke-dasharray="8 6" opacity="0.15">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2s" repeatCount="indefinite" />
   </path>
-  <path d="M450 250L560 325" stroke="#2D1B4D" stroke-width="2" stroke-dasharray="5 5">
-    <animate attributeName="stroke-dashoffset" from="0" to="100" dur="2.8s" repeatCount="indefinite" />
+  <path d="M450 240 Q 500 300 550 300" stroke="#2D1B4D" stroke-width="2" stroke-dasharray="8 6" opacity="0.15">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="4s" repeatCount="indefinite" />
   </path>
+  
+  <!-- Left Side: Source Icons -->
+  <g transform="translate(140, 100)" filter="url(#subtleShadow)">
+    <circle cx="50" cy="50" r="45" fill="white" stroke="#2D1B4D" stroke-width="1.5"/>
+    <circle cx="50" cy="50" r="25" stroke="#D4AF37" stroke-width="2" fill="none"/>
+    <circle cx="50" cy="50" r="15" stroke="#D4AF37" stroke-width="2" fill="none"/>
+    <circle cx="50" cy="50" r="5" fill="#D4AF37"/>
+    <text x="50" y="120" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="14" fill="#2D1B4D">Ads / SNS</text>
+  </g>
 
-  <!-- Puzzle icons (connecting dots) -->
-  <rect x="185" y="110" width="30" height="30" rx="4" fill="#A8A9AD" fill-opacity="0.3"/>
-  <rect x="185" y="310" width="30" height="30" rx="4" fill="#A8A9AD" fill-opacity="0.3"/>
-  <rect x="585" y="110" width="30" height="30" rx="4" fill="#A8A9AD" fill-opacity="0.3"/>
-  <rect x="585" y="310" width="30" height="30" rx="4" fill="#A8A9AD" fill-opacity="0.3"/>
+  <g transform="translate(140, 250)" filter="url(#subtleShadow)">
+    <circle cx="50" cy="40" r="45" fill="white" stroke="#2D1B4D" stroke-width="1.5"/>
+    <rect x="35" y="35" width="30" height="20" rx="2" stroke="#2D1B4D" stroke-width="2" fill="none"/>
+    <path d="M40 60 L 60 60" stroke="#2D1B4D" stroke-width="2"/>
+    <circle cx="50" cy="30" r="5" fill="#D4AF37"/>
+    <text x="50" y="110" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="14" fill="#2D1B4D">Web Trace</text>
+  </g>
 
-  <!-- Glowing effect -->
-  <defs>
-    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
-    </filter>
-  </defs>
-  <circle cx="400" cy="225" r="80" fill="#A8A9AD" fill-opacity="0.1" filter="url(#blur)"/>
+  <!-- Center Piece: CRM Hub (HubSpot style) -->
+  <g transform="translate(340, 160)" filter="url(#subtleShadow)">
+    <circle cx="60" cy="60" r="65" fill="url(#hubGradient)"/>
+    <circle cx="60" cy="60" r="32" stroke="#D4AF37" stroke-width="6" stroke-dasharray="10 5"/>
+    <circle cx="60" cy="60" r="14" fill="#D4AF37"/>
+    <text x="60" y="150" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="16" fill="#2D1B4D">CRM / HubSpot</text>
+  </g>
+
+  <!-- Right Side: Automation & MA -->
+  <g transform="translate(560, 100)" filter="url(#subtleShadow)">
+    <circle cx="50" cy="50" r="45" fill="white" stroke="#2D1B4D" stroke-width="1.5"/>
+    <path d="M35 40 L 45 40 M 35 50 L 45 50 M 35 60 L 45 60" stroke="#2D1B4D" stroke-width="2"/>
+    <path d="M55 40 L 65 50 L 55 60" stroke="#D4AF37" stroke-width="3" fill="none"/>
+    <text x="50" y="120" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="14" fill="#2D1B4D">GAS / API</text>
+  </g>
+
+  <g transform="translate(560, 250)" filter="url(#subtleShadow)">
+    <circle cx="50" cy="40" r="45" fill="white" stroke="#2D1B4D" stroke-width="1.5"/>
+    <path d="M30 30 H 70 V 55 H 30 Z" stroke="#2D1B4D" stroke-width="2" fill="none"/>
+    <path d="M30 30 L 50 45 L 70 30" stroke="#D4AF37" stroke-width="2" fill="none"/>
+    <text x="50" y="110" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="14" fill="#2D1B4D">Workflows</text>
+  </g>
+
+  <!-- Footer Description (Moved down to avoid overlap) -->
+  <text x="400" y="410" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#2D1B4D" opacity="0.8">各種チャネルとCRM、自動化ツールを統合した最適な運用体制</text>
 </svg>

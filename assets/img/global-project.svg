@@ -2,50 +2,74 @@
   <!-- Background -->
   <rect width="800" height="450" rx="24" fill="#F0E7F5"/>
   
-  <!-- Stylized Globe -->
-  <circle cx="400" cy="225" r="160" fill="white" stroke="#2D1B4D" stroke-width="2"/>
-  <ellipse cx="400" cy="225" rx="60" ry="160" fill="transparent" stroke="#B87333" stroke-width="1" stroke-opacity="0.3"/>
-  <ellipse cx="400" cy="225" rx="120" ry="160" fill="transparent" stroke="#B87333" stroke-width="1" stroke-opacity="0.3"/>
-  <line x1="240" y1="225" x2="560" y2="225" stroke="#B87333" stroke-width="1" stroke-opacity="0.3"/>
-  
-  <!-- Stylized Landmasses (Geometric) -->
-  <path d="M480 190L510 220H540L550 180L525 160H495L480 190Z" fill="#2D1B4D" fill-opacity="0.1"/>
-  <path d="M350 150L380 180H420L440 140L410 120H370L350 150Z" fill="#2D1B4D" fill-opacity="0.1"/>
-  <path d="M450 250L480 280H520L540 240L510 220H470L450 250Z" fill="#2D1B4D" fill-opacity="0.1"/>
-  
-  <!-- Location Pins (EN/JP/CN/TW) -->
-  <!-- EN -->
-  <path d="M520 200L525 190H535L540 200L530 215L520 200Z" fill="#B87333" stroke="#2D1B4D" stroke-width="1"/>
-  <text x="550" y="205" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#2D1B4D">EN</text>
+  <defs>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="globeGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#F0E7F5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
 
-  <!-- JP -->
-  <path d="M390 190L395 180H405L410 190L400 205L390 190Z" fill="#B87333" stroke="#2D1B4D" stroke-width="1"/>
-  <text x="420" y="195" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#2D1B4D">JP</text>
+  <!-- LOCALIZATION & GLOBALIZATION Labels (Far left/right) -->
+  <text x="120" y="230" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="16" fill="#2D1B4D">LOCALIZATION</text>
+  <text x="680" y="230" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="16" fill="#2D1B4D">GLOBALIZATION</text>
+
+  <!-- Globe Rendering -->
+  <!-- Globe Shadow Glow -->
+  <circle cx="400" cy="225" r="160" fill="url(#globeGlow)" opacity="0.5"/>
   
-  <!-- CN -->
-  <path d="M320 200L325 190H335L340 200L330 215L320 200Z" fill="#B87333" stroke="#2D1B4D" stroke-width="1"/>
-  <text x="280" y="205" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#2D1B4D">CN</text>
+  <!-- Stylized Globe Grid Frame -->
+  <circle cx="400" cy="225" r="160" fill="white" stroke="#2D1B4D" stroke-width="1.5" opacity="0.4"/>
+  <ellipse cx="400" cy="225" rx="60" ry="160" fill="transparent" stroke="#2D1B4D" stroke-width="0.3" opacity="0.1"/>
+  <ellipse cx="400" cy="225" rx="120" ry="160" fill="transparent" stroke="#2D1B4D" stroke-width="0.3" opacity="0.1"/>
 
-  <!-- TW -->
-  <path d="M380 270L385 260H395L400 270L390 285L380 270Z" fill="#B87333" stroke="#2D1B4D" stroke-width="1"/>
-  <text x="340" y="275" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#2D1B4D">TW</text>
+  <!-- Landmass Layers (Faint Background Continents) -->
+  <g stroke="#2D1B4D" stroke-width="1" fill="white">
+     <!-- China / East Asia (Shifted inward to stay strictly inside the circle) -->
+     <path d="M260 155 C 285 140, 320 160, 345 185 L 335 240 C 315 255, 280 250, 260 220 Z" opacity="0.7"/>
+     <!-- Americas -->
+     <path d="M495 165 C 505 155, 535 160, 555 180 L 550 210 L 525 225 L 535 250 C 520 260, 500 250, 505 215 L 495 185 Z" opacity="0.7"/>
+     <!-- Taiwan -->
+     <path d="M352 265 Q 360 262 365 275 L 358 282 Q 348 278 352 265 Z" opacity="0.7"/>
+  </g>
 
-  <!-- Bridges / Connections (EN/CN/TW to JP) -->
-  <!-- EN to JP -->
-  <path d="M530 205Q465 180 400 195" stroke="#B87333" stroke-width="2" stroke-dasharray="10 5">
-    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="5s" repeatCount="indefinite" />
-  </path>
-  <!-- CN to JP -->
-  <path d="M330 205Q365 180 400 195" stroke="#B87333" stroke-width="2" stroke-dasharray="10 5">
+  <!-- STRATEGY HUB Label (Layered ABOVE CN/EN as requested) -->
+  <text x="400" y="240" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="42" fill="#2D1B4D" opacity="0.22">STRATEGY HUB</text>
+
+  <!-- Japan Hub (Top Layer Highlight) -->
+  <g stroke="#2D1B4D" stroke-width="1.2" fill="#D4AF37">
+     <path d="M428 162 L 438 153 L 445 165 L 435 172 Z"/>
+     <path d="M425 178 Q 415 200 392 218 L 385 212 Q 410 192 420 172 Z"/>
+     <path d="M382 222 L 373 234 L 365 224 Z"/>
+  </g>
+
+  <!-- Animated Connections -->
+  <path d="M335 210 Q 365 180 400 200" stroke="#2D1B4D" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.3">
     <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3s" repeatCount="indefinite" />
   </path>
-  <!-- TW to JP -->
-  <path d="M390 275Q380 240 400 195" stroke="#B87333" stroke-width="2" stroke-dasharray="10 5">
+  <path d="M365 275 Q 385 240 400 200" stroke="#2D1B4D" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.3">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2.5s" repeatCount="indefinite" />
+  </path>
+  <path d="M515 215 Q 460 185 400 200" stroke="#2D1B4D" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.3">
     <animate attributeName="stroke-dashoffset" from="100" to="0" dur="4s" repeatCount="indefinite" />
   </path>
 
-  <!-- Glowing effect -->
-  <circle cx="400" cy="225" r="140" fill="#B87333" fill-opacity="0.05">
-    <animate attributeName="r" values="140;150;140" dur="4s" repeatCount="indefinite" />
-  </circle>
+  <!-- Map Text Labels -->
+  <text x="405" y="235" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="20" fill="#2D1B4D" filter="url(#subtleShadow)">JP</text>
+  <text x="285" y="200" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="14" fill="#2D1B4D" opacity="0.9">CN</text>
+  <text x="345" y="285" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="14" fill="#2D1B4D" opacity="0.9">TW</text>
+  <text x="525" y="215" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="14" fill="#2D1B4D" opacity="0.9">EN</text>
+
+  <!-- Footer Description -->
+  <text x="400" y="410" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#2D1B4D" opacity="0.8">日本を拠点に、アジアから欧米までをカバーする広範な支援体制</text>
 </svg>
