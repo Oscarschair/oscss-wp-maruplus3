@@ -1,13 +1,13 @@
 {
   "scripts": {
     "build": "npx tailwindcss -i ./assets/css/src/style.css -o ./assets/css/tailwind.css",
-    "watch": "npx tailwindcss -i ./assets/css/src/style.css -o ./assets/css/tailwind.css --watch"
+    "watch": "npx tailwindcss -i ./assets/css/src/style.css -o ./assets/css/tailwind.css --watch",
+    "test": "npx playwright test"
   },
   "dependencies": {
     "tailwindcss": "^3.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2"
   }
 }
-
-
-
-
