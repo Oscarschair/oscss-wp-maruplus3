@@ -9,6 +9,7 @@ A custom, high-performance WordPress theme designed for flexibility and modulari
 - **Modular PHP Logic**: Organized functions to keep the codebase maintainable and scalable.
 - **Custom Post Types (CPT)**: Includes pre-configured CPT for "Services" (`/services/`).
 - **Custom Page Templates**: Specialized templates for Company, Services, Recruiting, and Contact pages.
+- **Visual Identity & Graphics**: Custom-designed, high-fidelity SVG graphics for core services (Data Strategy, Marketing Ops, and Global Projects) with consistent branding and descriptive flow.
 - **AI-Assisted Documentation**: Integrated development skills and workflows documented in the `.agent/` directory.
 
 ## File Structure
