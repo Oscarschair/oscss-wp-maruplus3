@@ -49,11 +49,37 @@
                     the_custom_logo();
                 } else {
                     ?>
-                    <a href="<?php echo esc_url(home_url('/')); ?>" rel="home" class="flex items-center space-x-3 group outline-none focus-visible:ring-2 focus-visible:ring-brand-400 rounded-lg">
-                        <div class="logo-wrapper overflow-hidden rounded-lg shadow-sm group-hover:shadow-md transition-all duration-300 ring-1 ring-black/5">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/favicon/android-icon-192x192.png" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" class="h-10 w-10 transform group-hover:scale-105 transition-transform duration-500">
+                    <a href="<?php echo esc_url(home_url('/')); ?>" rel="home" class="flex items-center space-x-3.5 group outline-none focus-visible:ring-2 focus-visible:ring-brand-400 rounded-xl p-1 -m-1 transition-all duration-300">
+                        <div class="logo-wrapper relative w-11 h-11 flex items-center justify-center overflow-hidden rounded-xl bg-white shadow-sm group-hover:shadow-md transition-all duration-500 ring-1 ring-black/[0.03] group-hover:ring-brand-200">
+                            <!-- SVG Logo from concept -->
+                            <svg class="w-9 h-9 transform group-hover:scale-110 group-hover:rotate-[5deg] transition-transform duration-500 ease-out" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="maruGradHeader" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#FDFBFE" />
+                                        <stop offset="100%" stop-color="#D8BFD8" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="100" cy="100" r="85" fill="url(#maruGradHeader)" stroke="#D8BFD8" stroke-width="0.5" />
+                                <g opacity="0.4" transform="matrix(0.9, -0.2, 0.2, 0.9, 10, 5)">
+                                    <path d="M100 65 V135 M65 100 H135" stroke="#A184A3" stroke-width="18" stroke-linecap="round" />
+                                </g>
+                                <g opacity="0.6" transform="matrix(0.95, 0.1, -0.1, 0.95, -5, -10)">
+                                    <path d="M100 65 V135 M65 100 H135" stroke="#B2AC88" stroke-width="18" stroke-linecap="round" />
+                                </g>
+                                <g transform="matrix(1, 0, 0, 1, 0, 0)">
+                                    <path d="M100 65 V135 M65 100 H135" stroke="#544057" stroke-width="20" stroke-linecap="round" />
+                                    <path d="M100 65 V100 M65 100 H100" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.4" />
+                                </g>
+                            </svg>
+                            <!-- Overlay Shine Effect -->
+                            <div class="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/40 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
                         </div>
-                        <h1 class="text-xl font-extrabold tracking-tight text-gray-900 group-hover:text-brand-600 transition-colors duration-300"><?php bloginfo('name'); ?></h1>
+                        <div class="flex flex-col leading-none">
+                            <span class="text-[9px] md:text-[10px] uppercase tracking-[0.25em] font-bold text-brand-600/70 mb-1">MaruPlus Cube</span>
+                            <h1 class="text-lg md:text-xl font-black tracking-tight text-brand-950 group-hover:text-brand-700 transition-colors duration-300">
+                                マルプラス<span class="text-brand-500 font-extrabold px-0.5">の</span>サンジョウ
+                            </h1>
+                        </div>
                     </a>
                     <?php
                 }
