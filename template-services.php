@@ -1,137 +1,252 @@
 <?php
-
 /**
- * Template Name: サービス・事業紹仁E *
+ * Template Name: サービス・事業
+ *
  * @package oscss-wp-maruplus3
  */
 
 get_header();
 ?>
 
-<main id="primary" class="site-main font-sans bg-gray-50 pb-24">
+<main id="primary" class="site-main font-sans">
     <!-- Hero Section -->
-    <section class="relative overflow-hidden bg-hero-gradient text-brand-950 pt-24 pb-32">
-        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-            <div class="absolute w-64 h-64 bg-brand-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float" style="top: -10%; left: -10%;"></div>
-            <div class="absolute w-64 h-64 bg-brand-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow" style="top: 20%; right: -10%;"></div>
-            <div class="absolute w-48 h-48 bg-lilac rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style="bottom: -10%; left: 30%;"></div>
-        </div>
+    <section class="bg-hero-gradient pt-32 pb-24 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-white/20 skew-x-12 transform origin-top-right z-0"></div>
         <div class="container mx-auto px-6 relative z-10 text-center">
-            <span class="inline-block py-1 px-3 rounded-full bg-white/60 backdrop-blur-md text-brand-800 text-sm font-semibold tracking-wider mb-4 border border-white/50">Data ÁEMarketing ÁEGlobal</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight drop-shadow-lg text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800">
-                <?php the_title(); ?>
+            <span class="inline-block py-1 px-4 rounded-full bg-brand-600 text-white text-xs font-bold uppercase tracking-widest mb-4">Values & Expertise</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-brand-950 mb-6">
+                マルプラスのサンジョウ：<br class="md:hidden" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800">3つのコア・バリュー</span>
             </h1>
-            <p class="text-brand-700 text-lg">事業成長を加速させる独自のバリュー</p>
-        </div>
-        <div class="absolute bottom-0 w-full overflow-hidden leading-none">
-            <svg class="relative block w-full h-12 md:h-16" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.42,120.2,207.2,109.83,248.66,104.34,288.66,82.49,321.39,56.44Z" class="fill-gray-50"></path>
-            </svg>
+            <p class="max-w-2xl mx-auto text-brand-800 text-lg md:text-xl font-medium leading-relaxed">
+                多才なスキルを、クライアントに提供する「価値」の切り口で3つに分類しました。<br />
+                これらが掛け合わさることで、独自の価値が生まれます。
+            </p>
         </div>
     </section>
 
-    <div class="container mx-auto px-6 relative z-10 -mt-16 md:-mt-20">
-        
-        <!-- 3つの要素が重なる、E乗」�E価値 -->
-        <section id="cubed-value" class="mb-24">
-            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border-t-4 border-brand-500">
-                <div class="text-center mb-10">
-                    <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">Our Values</span>
-                    <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">3つのコア・バリューが生む、E乗」�E価値</h2>
-                    <div class="w-12 h-1 bg-brand-500 mx-auto mt-4 rounded-full"></div>
-                </div>
-                
-                <div class="max-w-4xl mx-auto text-lg text-center leading-relaxed text-gray-700">
-                    <p class="mb-8">
-                        SFさんの多才なスキルを、クライアントに提供する「価値」�E刁E��口で3つに刁E��しました、Ebr class="hidden md:block">
-                        これめEつが絁E��合わさることで、SFさんにしか出せなぁE��自の価値が生まれます、E                    </p>
+    <!-- Services Detailed Section -->
+    <section class="bg-white py-24">
+        <div class="container mx-auto px-6">
+            
+            <!-- Value 1: Data Strategy Engineer -->
+            <div class="mb-32 flex flex-col lg:flex-row items-center gap-12 group">
+                <div class="lg:w-1/2 order-2 lg:order-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-5xl font-black text-brand-100 group-hover:text-brand-200 transition-colors">01</span>
+                        <div class="h-1 w-12 bg-[#D4AF37]"></div>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Data Strategy Engineer</h2>
+                    <p class="text-xl font-semibold text-[#D4AF37] mb-6">データ計測基盤の設計・実装</p>
+                    <p class="text-2xl font-bold text-brand-800 mb-8 italic border-l-4 border-brand-200 pl-4">「見えない行動を、意思決定の根拠に変える」</p>
+                    <p class="text-gray-600 leading-relaxed mb-8 text-lg">
+                        単なるレポート作成にとどまらず、GA4やBigQuery、GTMを駆使して「信頼できるデータが蓄積される基盤」そのものを設計・実装します。特にエンジニアリング視点でのデータマート構築（Bronze/Silver/Gold設計）により、高度なビジネス分析を可能にします。
+                    </p>
                     
-                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 text-xl md:text-2xl font-bold my-10 font-sans">
-                        <span class="inline-flex items-center justify-center w-full md:w-auto bg-gray-50 border border-gray-200 rounded-xl px-6 py-4 shadow-sm text-brand-900">刁E��</span> 
-                        <span class="text-gray-400">ÁE/span>
-                        <span class="inline-flex items-center justify-center w-full md:w-auto bg-gray-50 border border-gray-200 rounded-xl px-6 py-4 shadow-sm text-brand-900">自動化</span> 
-                        <span class="text-gray-400">ÁE/span>
-                        <span class="inline-flex items-center justify-center w-full md:w-auto bg-gray-50 border border-gray-200 rounded-xl px-6 py-4 shadow-sm text-brand-900">グローバル</span> 
-                        <span class="text-gray-400">�E�E/span>
-                        <span class="inline-flex items-center justify-center w-full md:w-auto bg-gradient-to-r from-brand-600 to-brand-400 text-white rounded-xl px-6 py-4 shadow-md mt-4 md:mt-0">次世代のマ�EケチE��ング基盤構篁E/span>
-                    </div>
-                    
-                    <p class="bg-brand-50 p-6 rounded-2xl text-left border border-brand-100 text-base md:text-lg">
-                        例えば、「中華圏向け�EECサイトにおいて、庁E��からCRMまでをAPIで統合し、ROASをBigQueryで日次可視化する」とぁE��た、E��常なめE社に発注が忁E��な業務をワンストップで完結できるのが最大の武器です、E                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3つのコア・バリュー (Premium Cards matching Front page) -->
-        <section id="core-values">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">Core Services</h2>
-                <div class="w-12 h-1 bg-brand-500 mx-auto mt-4 rounded-full"></div>
-            </div>
-
-            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-                <!-- 1. Data Enabler -->
-                <div class="group bg-white p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-gold relative overflow-hidden flex flex-col h-full bg-opacity-95 backdrop-blur-sm">
-                    <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-gold opacity-10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none"></div>
-                    <div class="flex-grow z-10">
-                        <span class="text-sm font-bold text-yellow-600 mb-2 block uppercase tracking-wider">Service 01</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 leading-tight">【Data Enabler、Ebr/><span class="text-xl text-gray-700 font-medium">チE�Eタの実裁E��可視化</span></h3>
-                        <div class="bg-gray-50 p-4 rounded-xl mb-6 border-l-4 border-gold">
-                            <p class="font-bold text-gray-800 text-sm md:text-base">「見えなぁE��のを、意思決定できる形に変える、E/p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-brand-50 p-6 rounded-2xl border border-brand-100">
+                            <h4 class="font-bold text-brand-900 mb-3 flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                                Web解析・データ分析
+                            </h4>
+                            <ul class="text-gray-600 text-sm space-y-2">
+                                <li>・GA4/GTMの高度な設計・実装</li>
+                                <li>・ユーザー行動・広告流入分析</li>
+                                <li>・Looker Studioダッシュボード作成</li>
+                                <li>・SQLによるデータ分析</li>
+                            </ul>
                         </div>
-                        <div class="space-y-4 text-gray-600 text-sm md:text-base leading-relaxed">
-                            <p><strong class="font-bold text-gray-900">冁E��:</strong> Web解析、データマ�Eト構築！Eronze/Silver/Gold設計）、SQL刁E��、E/p>
-                            <p><strong class="font-bold text-gray-900">強み:</strong> 単なるレポ�Eト作�Eではなく、BigQueryやGTMを用ぁE��「計測基盤そ�Eも�E」を設計�E実裁E��きる点、E/p>
+                        <div class="bg-brand-50 p-6 rounded-2xl border border-brand-100">
+                            <h4 class="font-bold text-brand-900 mb-3 flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                                データ基盤構築
+                            </h4>
+                            <ul class="text-gray-600 text-sm space-y-2">
+                                <li>・GCP（BigQuery, Dataform）構築</li>
+                                <li>・SQLによるデータマート作成</li>
+                                <li>・広告データの統合・VIEW作成</li>
+                                <li>・GA4 raw data処理の自動化</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <!-- 2. Marketing Architect -->
-                <div class="group bg-white p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-silver relative overflow-hidden flex flex-col h-full bg-opacity-95 backdrop-blur-sm">
-                    <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-silver opacity-20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none"></div>
-                    <div class="flex-grow z-10">
-                        <span class="text-sm font-bold text-gray-500 mb-2 block uppercase tracking-wider">Service 02</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 leading-tight">【Marketing Architect、Ebr/><span class="text-xl text-gray-700 font-medium">仕絁E��の自動化と最適匁E/span></h3>
-                        <div class="bg-gray-50 p-4 rounded-xl mb-6 border-l-4 border-silver">
-                            <p class="font-bold text-gray-800 text-sm md:text-base">「バラバラな点と点を繋ぎ、�E動で回る仕絁E��を作る、E/p>
-                        </div>
-                        <div class="space-y-4 text-gray-600 text-sm md:text-base leading-relaxed">
-                            <p><strong class="font-bold text-gray-900">冁E��:</strong> CRM/MA導�E、API連携、ワークフロー設計、庁E��チE�Eタ統合、E/p>
-                            <p><strong class="font-bold text-gray-900">強み:</strong> マ�EケチE��ングの知見とエンジニアリングのスキルの掛け合わせにより、業務効玁E��LTV�E�顧客生涯価値�E�を同時に高める点、E/p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. Global Tech Director -->
-                <div class="group bg-white p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-copper relative overflow-hidden flex flex-col h-full bg-opacity-95 backdrop-blur-sm">
-                    <div class="absolute top-0 right-0 -mt-8 -mr-8 w-32 h-32 bg-copper opacity-20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none"></div>
-                    <div class="flex-grow z-10">
-                        <span class="text-sm font-bold text-orange-600 mb-2 block uppercase tracking-wider">Service 03</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 leading-tight">【Global Tech Director、Ebr/><span class="text-xl text-gray-700 font-medium">越墁E��裁E��PM</span></h3>
-                        <div class="bg-gray-50 p-4 rounded-xl mb-6 border-l-4 border-copper">
-                            <p class="font-bold text-gray-800 text-sm md:text-base">「国墁E��技術�E壁を越えてプロジェクトを完遂させる、E/p>
-                        </div>
-                        <div class="space-y-4 text-gray-600 text-sm md:text-base leading-relaxed">
-                            <p><strong class="font-bold text-gray-900">冁E��:</strong> 多言語ローカライズ�E�中・繁�E日�E�、Webサイト制作、シスチE��開発、PM/要件定義、E/p>
-                            <p><strong class="font-bold text-gray-900">強み:</strong> 翻訳だけでなく、シスチE��仕様やビジネス要件を理解した上で、海外展開めE��E��なWebプロジェクトをリードできる点、E/p>
+                <div class="lg:w-1/2 order-1 lg:order-2">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gold/20 rounded-3xl transform rotate-3 -z-10"></div>
+                        <div class="bg-white p-4 rounded-3xl shadow-2xl border border-gold/10 overflow-hidden">
+                            <div class="bg-brand-950 p-8 rounded-2xl text-white">
+                                <div class="flex items-center justify-between mb-8">
+                                    <div class="h-8 w-8 rounded-full bg-[#D4AF37]"></div>
+                                    <div class="text-xs text-brand-300 font-mono italic">DATA_PIPELINE.running</div>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="h-2 w-3/4 bg-brand-800 rounded"></div>
+                                    <div class="h-2 w-full bg-brand-700 rounded"></div>
+                                    <div class="h-2 w-1/2 bg-[#D4AF37]/50 rounded"></div>
+                                </div>
+                                <div class="mt-12 flex justify-end">
+                                    <span class="text-4xl font-black text-[#D4AF37]">GA4 / BQ</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <div class="text-center mt-20 bg-brand-50 rounded-3xl p-8 md:p-10 border border-brand-100 max-w-4xl mx-auto shadow-sm">
-             <p class="text-brand-900 font-bold text-lg md:text-xl leading-relaxed">
-                 こ�E3つの刁E��！Eata / Marketing / Global�E�をベ�Eスに、Webサイト�Eサービス紹介やプロフィールを整琁E��ました、E             </p>
-             <p class="text-gray-600 mt-4 text-base md:text-lg">
-                 次は、この3つの柱を�Eに、クライアントに刺さる「�E体的なキャチE��コピ�E」や「サービスパッケージ案」を作�EしましょぁE��E             </p>
-             <div class="mt-8">
-                 <a href="/contact" class="inline-flex items-center px-8 py-4 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-full shadow-lg hover:shadow-brand-500/50 hover:-translate-y-1 transition-all duration-300 transform">
-                     お問ぁE��わせはこちめE                     <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                 </a>
-             </div>
+            <!-- Value 2: Marketing Ops Architect -->
+            <div class="mb-32 flex flex-col lg:flex-row items-center gap-12 group">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-silver/20 rounded-3xl transform -rotate-3 -z-10"></div>
+                        <div class="bg-white p-4 rounded-3xl shadow-2xl border border-silver/10 overflow-hidden text-center">
+                            <div class="bg-gradient-to-br from-gray-100 to-gray-200 p-12 rounded-2xl">
+                                <svg class="w-32 h-32 mx-auto text-brand-600 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 11-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H7a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+                                <div class="mt-4 text-xs font-mono text-gray-400">CONNECTING_THE_DOTS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-5xl font-black text-brand-100 group-hover:text-brand-200 transition-colors">02</span>
+                        <div class="h-1 w-12 bg-[#A8A9AD]"></div>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Marketing Ops Architect</h2>
+                    <p class="text-xl font-semibold text-[#8a8b8d] mb-6">マーケティング運用の自動化・最適化</p>
+                    <p class="text-2xl font-bold text-brand-800 mb-8 italic border-l-4 border-brand-200 pl-4">「点在するデータとツールを繋ぎ、収益を自動最大化する仕組みを作る」</p>
+                    <p class="text-gray-600 leading-relaxed mb-8 text-lg">
+                        HubSpotや各種API、GASを組み合わせ、バラバラな業務フローを一つの「勝手に回る仕組み」へと再構築します。マーケティングの知見と技術力を掛け合わせることで、現場の工数削減とLTV（顧客生涯価値）の向上を同時に実現します。
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-brand-50 p-6 rounded-2xl border border-brand-100">
+                            <h4 class="font-bold text-brand-900 mb-3 flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 15.292M15 21H3v-1a6 6 0 0112 0v1zm0-6a3.375 3.375 0 100-6.75 3.375 3.375 0 000 6.75z"></path></svg>
+                                マーケティングテクノロジー
+                            </h4>
+                            <ul class="text-gray-600 text-sm space-y-2">
+                                <li>・HubSpotの導入支援・運用</li>
+                                <li>・ワークフロー設計・自動化</li>
+                                <li>・UTAGE, Shopify等の活用</li>
+                                <li>・顧客管理（CRM/MA）の最適化</li>
+                            </ul>
+                        </div>
+                        <div class="bg-brand-50 p-6 rounded-2xl border border-brand-100">
+                            <h4 class="font-bold text-brand-900 mb-3 flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                                Web実装・業務自動化
+                            </h4>
+                            <ul class="text-gray-600 text-sm space-y-2">
+                                <li>・WordPress/Shopify構築・運用</li>
+                                <li>・PHP/Liquid/JSによるカスタム改修</li>
+                                <li>・GASを活用したAPI連携</li>
+                                <li>・レポート取得・作成の完全自動化</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value 3: Global Project Controller -->
+            <div class="mb-24 flex flex-col lg:flex-row items-center gap-12 group">
+                <div class="lg:w-1/2 order-2 lg:order-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-5xl font-black text-brand-100 group-hover:text-brand-200 transition-colors">03</span>
+                        <div class="h-1 w-12 bg-[#B87333]"></div>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Global Project Controller</h2>
+                    <p class="text-xl font-semibold text-[#B87333] mb-6">越境プロジェクトの技術統括・PM</p>
+                    <p class="text-2xl font-bold text-brand-800 mb-8 italic border-l-4 border-brand-200 pl-4">「言葉と技術の壁を越え、グローバル・プロジェクトを完遂させる」</p>
+                    <p class="text-gray-600 leading-relaxed mb-8 text-lg">
+                        多言語対応（日・中・繁）とシステム開発、PMスキルの三位一体で、海外展開や複雑な技術要件が絡むプロジェクトをリードします。単なる翻訳者ではなく、ビジネス要件とシステム仕様を深く理解した上で、技術的な「橋渡し」役としてプロジェクトを成功に導きます。
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-brand-50 p-6 rounded-2xl border border-brand-100">
+                            <h4 class="font-bold text-brand-900 mb-3 flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2 2 2 0 012 2v.65M15 3.1a9 9 0 11-11.8 11.8"></path></svg>
+                                グローバル・ローカライズ
+                            </h4>
+                            <ul class="text-gray-600 text-sm space-y-2">
+                                <li>・中華圏（簡・繁）向けサイト構築</li>
+                                <li>・システム・法務文書の多言語翻訳</li>
+                                <li>・Auth0等の認証システムのグローバル展開</li>
+                                <li>・SAML/OAuthなどの高度な認証実装</li>
+                            </ul>
+                        </div>
+                        <div class="bg-brand-50 p-6 rounded-2xl border border-brand-100">
+                            <h4 class="font-bold text-brand-900 mb-3 flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.156-2.049-.446-2.998z"></path></svg>
+                                PM・要件定義
+                            </h4>
+                            <ul class="text-gray-600 text-sm space-y-2">
+                                <li>・クライアント折衝・交渉</li>
+                                <li>・要件定義・技術選定</li>
+                                <li>・開発ディレクション・管理</li>
+                                <li>・高度なセキュリティ・認証実装</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 order-1 lg:order-2">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-copper/30 rounded-full blur-3xl -z-10 animate-pulse-slow"></div>
+                        <div class="bg-white p-8 rounded-3xl shadow-2xl border border-copper/10 overflow-hidden text-center relative">
+                            <div class="text-6xl mb-4">🌏</div>
+                            <div class="text-sm font-bold text-brand-600 tracking-widest px-4 py-1 bg-brand-50 rounded-full inline-block">JP / CN / TW</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
+    </section>
+
+    <!-- Cubed Value Section -->
+    <section class="bg-brand-950 py-32 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100">
+                <defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5"/></pattern></defs>
+                <rect width="100" height="100" fill="url(#grid)" />
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h3 class="text-white text-2xl md:text-3xl font-bold mb-12">3つの要素が重なる<span class="text-[#D4AF37]">「3乗」</span>の価値</h3>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-16 text-white text-3xl md:text-5xl font-black">
+                <div class="bg-white/10 px-8 py-6 rounded-3xl backdrop-blur-md border border-white/20">分析</div>
+                <div class="text-[#D4AF37]">×</div>
+                <div class="bg-white/10 px-8 py-6 rounded-3xl backdrop-blur-md border border-white/20">自動化</div>
+                <div class="text-[#D4AF37]">×</div>
+                <div class="bg-white/10 px-8 py-6 rounded-3xl backdrop-blur-md border border-white/20">グローバル</div>
+            </div>
+
+            <div class="bg-white p-12 rounded-[3rem] shadow-2xl max-w-4xl mx-auto -mb-16 transform hover:scale-[1.02] transition-transform">
+                <h4 class="text-2xl md:text-3xl font-bold text-brand-950 mb-8 underline decoration-[#D4AF37] decoration-4 underline-offset-8">次世代のマーケティング基盤構築</h4>
+                <p class="text-gray-700 text-lg leading-relaxed mb-8">
+                    通常なら3社に発注が必要な高度な要件を、一貫した技術思想で完結できます。
+                </p>
+                <div class="bg-brand-50 p-8 rounded-2xl text-left border-l-8 border-[#D4AF37]">
+                    <p class="text-brand-900 font-bold mb-2">例えば...</p>
+                    <p class="text-gray-700 leading-relaxed italic">
+                        「中華圏向けのECサイトにおいて、広告からCRMまでをAPIで統合し、ROASをBigQueryで日次可視化する」といったプロジェクトを、SFさん（あるいはそのチーム）の手で成功へ導きます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="bg-white pt-40 pb-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">お客様のビジネスの「＋」を、共に。</h2>
+            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white bg-brand-600 rounded-full hover:bg-brand-700 transition-all duration-300 shadow-xl hover:shadow-brand-500/50 hover:-translate-y-1">
+                お問い合わせはこちら
+                <svg class="w-6 h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </div>
+    </section>
 </main>
 
 <?php

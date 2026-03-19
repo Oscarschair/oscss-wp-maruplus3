@@ -57,48 +57,51 @@ get_header();
         <div class="container mx-auto px-6 relative z-10 -mt-24 md:-mt-32">
             
             <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-                <!-- 1. Data Enabler -->
-                <div class="group bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-gold relative overflow-hidden flex flex-col h-full">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-gold opacity-10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+                   <!-- 1. Data Strategy Engineer -->
+                <div class="group bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-[#D4AF37] relative overflow-hidden flex flex-col h-full">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-[#D4AF37] opacity-10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
                     <div class="flex-grow z-10">
-                        <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">Concept 01</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Data Enabler、Ebr/><span class="text-xl">チE�Eタの実裁E��可視化</span></h3>
-                        <p class="text-gray-600 leading-relaxed mb-6">「見えなぁE��のを、意思決定できる形に変える」領域。Web解析、データマ�Eト構築、SQL刁E��など、E/p>
+                        <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">01. Data Strategy</span>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">Data Strategy Engineer<br/><span class="text-lg font-medium">データ計測基盤の設計・実装</span></h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 italic">「見えない行動を、意思決定の根拠に変える」</p>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">GA4やBigQueryを駆使し、信頼できるデータが蓄積される基盤そのものを設計・実装します。</p>
                     </div>
                     <div class="pt-4 border-t border-gray-100 mt-auto z-10">
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('services'))); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
+                        <a href="<?php echo esc_url(home_url('/services')); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
                             詳しく見る 
                             <svg class="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
                 </div>
 
-                <!-- 2. Marketing Architect -->
-                <div class="group bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-silver relative overflow-hidden flex flex-col h-full">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-silver opacity-20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+                <!-- 2. Marketing Ops Architect -->
+                <div class="group bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-[#A8A9AD] relative overflow-hidden flex flex-col h-full">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-[#A8A9AD] opacity-20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
                     <div class="flex-grow z-10">
-                        <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">Concept 02</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Marketing Architect、Ebr/><span class="text-xl">仕絁E��の自動化と最適匁E/span></h3>
-                        <p class="text-gray-600 leading-relaxed mb-6">「バラバラな点と点を繋ぎ、�E動で回る仕絁E��を作る」領域、ERM/MA導�E、API連携、ワークフロー設計など、E/p>
+                        <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">02. Marketing Ops</span>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">Marketing Ops Architect<br/><span class="text-lg font-medium">マーケティング運用の自動化</span></h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 italic">「点在するデータとツールを繋ぎ、収益を自動最大化する」</p>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">HubSpotや各種APIを組み合わせ、業務フローを一つの「勝手に回る仕組み」へと再構築します。</p>
                     </div>
                     <div class="pt-4 border-t border-gray-100 mt-auto z-10">
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('services'))); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
+                        <a href="<?php echo esc_url(home_url('/services')); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
                             詳しく見る 
                             <svg class="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
                 </div>
 
-                <!-- 3. Global Tech Director -->
-                <div class="group bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-copper relative overflow-hidden flex flex-col h-full">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-copper opacity-20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
+                <!-- 3. Global Project Controller -->
+                <div class="group bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-[#B87333] relative overflow-hidden flex flex-col h-full">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-[#B87333] opacity-20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
                     <div class="flex-grow z-10">
-                        <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">Concept 03</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">【Global Tech Director、Ebr/><span class="text-xl">越墁E��裁E��PM</span></h3>
-                        <p class="text-gray-600 leading-relaxed mb-6">「国墁E��技術�E壁を越えてプロジェクトを完遂させる」領域。多言語ローカライズ、Webサイト制作、PMなど、E/p>
+                        <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">03. Global Project</span>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">Global Project Controller<br/><span class="text-lg font-medium">越境プロジェクトの技術統括</span></h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 italic">「言葉と技術の壁を越え、プロジェクトを完遂させる」</p>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">多言語対応とシステム開発、PMスキルの三位一体で、複雑なプロジェクトをリードします。</p>
                     </div>
                     <div class="pt-4 border-t border-gray-100 mt-auto z-10">
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('services'))); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
+                        <a href="<?php echo esc_url(home_url('/services')); ?>" class="inline-flex items-center text-brand-700 font-bold hover:text-brand-900 transition-colors group/link">
                             詳しく見る 
                             <svg class="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
