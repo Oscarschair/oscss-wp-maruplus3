@@ -1,84 +1,74 @@
 # oscss-wp-maruplus3
 
-A custom WordPress theme designed for flexibility and performance.
+A custom, high-performance WordPress theme designed for flexibility and modularity.
 
 ## Features
 
-- **Responsive Design**: Fully responsive and mobile-friendly.
-- **Tailwind CSS Integration**: Styled using Tailwind CSS for rapid development.
-- **Customizable**: Easily extendable with custom actions, filters, and shortcodes.
-- **Custom Post Types**: Includes a pre-configured Custom Post Type for "Services" (`/services/`).
-- **Favicon Support**: Includes a full set of favicons for various devices.
-
-## Installation
-
-1. Clone this repository into your WordPress `wp-content/themes/` directory.
-2. Activate the theme in your WordPress admin panel under "Appearance" > "Themes".
-3. For local development, follow the steps in the section below.
-
-## Local Development (Building CSS)
-
-To modify styles or utilize the full capabilities of Tailwind CSS, you need to set up the local development environment.
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (version 18 or higher is recommended)
-- [npm](https://www.npmjs.com/) (usually included with Node.js)
-
-### Setup
-
-1. **Navigate to the theme directory:**
-   ```bash
-   cd path/to/wp-content/themes/oscss-wp-maruplus3
-   ```
-2. **Install dependencies:**
-   This command installs Tailwind CSS and its dependencies.
-   ```bash
-   npm install
-   ```
-
-3. **Build CSS:**
-   This command compiles the source CSS file at `assets/css/src/style.css` and generates the final stylesheet at `assets/css/tailwind.css`, which is used by the theme.
-   ```bash
-   npm run build
-   ```
-   
-4. **Watch for Changes (Recommended during development):**
-   To automatically rebuild the CSS whenever you save changes to your `.php` files or `tailwind.config.js`, keep this command running in your terminal:
-   ```bash
-   npm run watch
-   ```
-
-**Note on build issues:** This project uses a stable version of `tailwindcss` (v3) to ensure compatibility. If you encounter build issues, please ensure you are using a recommended Node.js version and that your file paths do not contain unusual characters that might interfere with Node's module resolution.
-
+- **Responsive Design**: Mobile-first architecture using standard breakpoints.
+- **Tailwind CSS Integration**: Styled with Tailwind CSS (v3) for rapid and consistent UI development.
+- **Modular PHP Logic**: Organized functions to keep the codebase maintainable and scalable.
+- **Custom Post Types (CPT)**: Includes pre-configured CPT for "Services" (`/services/`).
+- **Custom Page Templates**: Specialized templates for Company, Services, Recruiting, and Contact pages.
+- **AI-Assisted Documentation**: Integrated development skills and workflows documented in the `.agent/` directory.
 
 ## File Structure
 
-This theme follows the standard WordPress theme structure, with some key organizational choices:
+This theme follows a modular structure for better maintainability:
 
-- **`functions.php`**: This file acts as a loader for the modular function files located in the `functions/` directory. **Please do not add custom code directly to this file.**
+- **`functions.php`**: Acts as a loader for modular files in `functions/`. **Do not add code directly here.**
+- **`functions/`**: Modular logic separation:
+  - `action.php`: Theme setup, enqueuing, and `add_action()` hooks.
+  - `filter.php`: Content modification and `add_filter()` hooks.
+  - `shortcode.php`: Definitions for custom shortcodes.
+  - `utility.php`: Reusable helper functions.
+- **`template-*.php`**: Custom page-level templates.
+- **`assets/`**:
+  - `css/src/style.css`: Source CSS for Tailwind compilation.
+  - `css/tailwind.css`: Compiled Tailwind styles.
+  - `js/main.js`: Primary JavaScript logic.
+- **`.agent/skills/`**: Detailed documentation for required development skills (Wordpress, PHP, Tailwind, Docker, etc.).
 
-- **`functions/`**: This directory organizes custom functionality into separate files to improve maintainability.
-  - `action.php`: For all `add_action()` calls (e.g., enqueuing scripts, theme setup).
-  - `filter.php`: For all `add_filter()` calls (e.g., modifying excerpts, changing content).
-  - `shortcode.php`: For all custom `add_shortcode()` definitions.
-  - `utility.php`: For helper and utility functions that are used throughout the theme.
+## Local Development
 
-- **`template-*.php`**: Custom page templates (e.g., `template-company.php`).
+### Prerequisites
 
-- **`assets/`**: Contains all static assets.
-  - `css/`: Compiled CSS files.
-  - `js/`: JavaScript files.
-  - `svg/`: SVG icons and images.
-  - `favicon/`: All favicon-related files.
+- **Node.js**: v18+ recommended.
+- **npm**: Included with Node.js.
+- **Docker**: Recommended for consistent containerized environments.
 
-- **Standard Templates**: 
-  - `single.php`: For standard posts and custom post types (e.g., Services).
-  - `header.php`, `footer.php`, `index.php`, `front-page.php`, etc.
+### Setup
+
+1.  **Clone the Repository**:
+    ```bash
+    git clone [repository-url] wp-content/themes/oscss-wp-maruplus3
+    ```
+2.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
+3.  **Build Styles**:
+    ```bash
+    npm run build
+    ```
+4.  **Watch for Changes**:
+    Keep this running during development to automatically recompile CSS:
+    ```bash
+    npm run watch
+    ```
+
+## Docker Development
+
+To ensure environment parity, it is recommended to develop within a Dockerized WordPress instance. Refer to the documented skill in [.agent/skills/docker-environment/SKILL.md](file:///.agent/skills/docker-environment/SKILL.md) for more details.
+
+## Quality Assurance & Testing
+
+Development should prioritize visual accuracy and cross-browser compatibility. Follow the guidelines in [.agent/skills/theme-testing-qa/SKILL.md](file:///.agent/skills/theme-testing-qa/SKILL.md) to perform thorough QA before deployment.
 
 ## Contributing
 
-Feel free to fork the repository and submit pull requests. Contributions are welcome!
+1. Fork the repository.
+2. Create a feature branch.
+3. Submit a pull request with a detailed description of changes.
 
 ## License
 

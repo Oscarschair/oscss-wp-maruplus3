@@ -1,12 +1,13 @@
 <?php
 // Add your action hooks here
 
-// Enqueue Tailwind CSS
-function enqueue_tailwind_css()
+// Enqueue Assets
+function maruplus_enqueue_assets()
 {
     wp_enqueue_style('tailwind', get_template_directory_uri() . '/assets/css/tailwind.css');
+    wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0.0', true);
 }
-add_action('wp_enqueue_scripts', 'enqueue_tailwind_css');
+add_action('wp_enqueue_scripts', 'maruplus_enqueue_assets');
 
 /**
  * Theme setup

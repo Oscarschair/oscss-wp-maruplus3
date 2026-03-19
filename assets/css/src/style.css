@@ -1,3 +1,76 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    /* Premium Menu Container */
+    .main-navigation ul {
+        @apply flex items-center space-x-1 lg:space-x-4 list-none m-0 p-0;
+    }
+
+    .main-navigation ul li {
+        @apply relative list-none;
+    }
+
+    /* Standard Menu Item */
+    .main-navigation ul li a {
+        @apply block px-4 py-2 text-gray-700 font-medium text-sm lg:text-base border-b-2 border-transparent 
+               transition-all duration-300 ease-out hover:text-brand-600;
+    }
+
+    /* Animated underline hover effect */
+    .main-navigation ul li:not(:last-child) a::after {
+        content: '';
+        @apply absolute left-1/2 bottom-1 w-0 h-[2px] bg-brand-400 transition-all duration-300 ease-in-out -translate-x-1/2 opacity-0;
+    }
+
+    .main-navigation ul li:not(:last-child) a:hover::after {
+        @apply w-1/2 opacity-100;
+    }
+
+    /* Last item (CTA Button) Style */
+    .main-navigation ul li:last-child a {
+        @apply ml-4 px-6 py-2.5 bg-brand-600 text-white rounded-full font-bold
+               shadow-md shadow-brand-200/50 hover:bg-brand-700 hover:shadow-lg hover:shadow-brand-300/50 
+               hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300;
+        border-bottom: none;
+    }
+
+    /* Animation for the whole header on scroll */
+    header {
+        @apply transition-all duration-500 ease-in-out;
+    }
+
+    /* Mobile Navigation Styles */
+    @media (max-width: 767px) {
+        .main-navigation:not(.hidden) {
+            @apply absolute top-[73px] left-0 w-full bg-white/95 backdrop-blur-lg shadow-2xl border-t border-gray-100 z-40 py-8 px-6 flex flex-col;
+            animation: slideDown 0.4s ease-out forwards;
+        }
+
+        .main-navigation ul {
+            @apply flex-col space-x-0 space-y-2 items-stretch;
+        }
+
+        .main-navigation ul li {
+            @apply w-full;
+        }
+
+        .main-navigation ul li a {
+            @apply text-lg font-semibold py-4 px-4 rounded-xl hover:bg-brand-50 hover:text-brand-700 transition-all duration-200;
+        }
+
+        .main-navigation ul li:not(:last-child) a::after {
+            @apply hidden;
+        }
+
+        .main-navigation ul li:last-child a {
+            @apply ml-0 mt-6 py-4 text-lg shadow-lg;
+        }
+    }
+
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+}

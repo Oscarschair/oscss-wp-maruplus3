@@ -41,30 +41,43 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W37BZVZH"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="container mx-auto p-4 flex justify-between items-center">
-            <div class="site-branding flex items-center space-x-2">
+    <header id="masthead" class="site-header sticky top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="site-branding flex items-center">
                 <?php
                 if (has_custom_logo()) {
                     the_custom_logo();
                 } else {
                     ?>
-                    <a href="<?php echo esc_url(home_url('/')); ?>" rel="home" class="flex items-center space-x-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/favicon/android-icon-192x192.png" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" class="h-10 w-10">
-                        <h1 class="text-xl font-bold"><?php bloginfo('name'); ?></h1>
+                    <a href="<?php echo esc_url(home_url('/')); ?>" rel="home" class="flex items-center space-x-3 group outline-none focus-visible:ring-2 focus-visible:ring-brand-400 rounded-lg">
+                        <div class="logo-wrapper overflow-hidden rounded-lg shadow-sm group-hover:shadow-md transition-all duration-300 ring-1 ring-black/5">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/favicon/android-icon-192x192.png" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" class="h-10 w-10 transform group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h1 class="text-xl font-extrabold tracking-tight text-gray-900 group-hover:text-brand-600 transition-colors duration-300"><?php bloginfo('name'); ?></h1>
                     </a>
                     <?php
                 }
                 ?>
             </div>
-            <nav id="site-navigation" class="main-navigation">
+
+            <nav id="site-navigation" class="main-navigation hidden md:block">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'header-menu',
+                    'container'      => false,
                     'menu_id'        => 'primary-menu',
-                    'menu_class'     => 'flex space-x-4',
+                    'menu_class'     => 'flex items-center space-x-2 lg:space-x-4',
+                    'fallback_cb'    => false,
                 ));
                 ?>
             </nav><!-- #site-navigation -->
+
+            <div class="flex items-center space-x-4 md:hidden">
+                <button id="mobile-menu-toggle" class="flex flex-col space-y-1.5 p-2 focus:outline-none group" aria-label="<?php esc_html_e('Menu', 'maruplus'); ?>">
+                    <span class="block w-6 h-0.5 bg-gray-600 group-hover:bg-brand-500 transition-colors"></span>
+                    <span class="block w-6 h-0.5 bg-gray-600 group-hover:bg-brand-500 transition-colors"></span>
+                    <span class="block w-6 h-0.5 bg-gray-600 group-hover:bg-brand-500 transition-colors"></span>
+                </button>
+            </div>
         </div>
     </header>
