@@ -141,23 +141,23 @@ get_header();
                     <dl class="divide-y divide-gray-100">
                         <div class="flex flex-col md:flex-row py-5 md:py-6 hover:bg-gray-50 transition-colors px-4 rounded-xl">
                             <dt class="md:w-1/3 mb-1 md:mb-0 font-bold text-brand-900">会社名</dt>
-                            <dd class="md:w-2/3 text-gray-700">株式会社マルプラス (MaruPlus Inc.)</dd>
+                            <dd class="md:w-2/3 text-gray-700">会社マルプラスのサンジョウ (MaruPlus' Cube)</dd>
                         </div>
                         <div class="flex flex-col md:flex-row py-5 md:py-6 hover:bg-gray-50 transition-colors px-4 rounded-xl">
                             <dt class="md:w-1/3 mb-1 md:mb-0 font-bold text-brand-900">所在地</dt>
-                            <dd class="md:w-2/3 text-gray-700">〒100-0000 東京都千代田区丸の内</dd>
+                            <dd class="md:w-2/3 text-gray-700">-</dd>
                         </div>
                         <div class="flex flex-col md:flex-row py-5 md:py-6 hover:bg-gray-50 transition-colors px-4 rounded-xl">
                             <dt class="md:w-1/3 mb-1 md:mb-0 font-bold text-brand-900">設立日</dt>
-                            <dd class="md:w-2/3 text-gray-700">2023年10月7日</dd>
+                            <dd class="md:w-2/3 text-gray-700">-</dd>
                         </div>
                         <div class="flex flex-col md:flex-row py-5 md:py-6 hover:bg-gray-50 transition-colors px-4 rounded-xl">
                             <dt class="md:w-1/3 mb-1 md:mb-0 font-bold text-brand-900">役員</dt>
-                            <dd class="md:w-2/3 text-gray-700">代表取締役</dd>
+                            <dd class="md:w-2/3 text-gray-700">代表取締役 -</dd>
                         </div>
                         <div class="flex flex-col md:flex-row py-5 md:py-6 hover:bg-gray-50 transition-colors px-4 rounded-xl">
                             <dt class="md:w-1/3 mb-1 md:mb-0 font-bold text-brand-900">資本金</dt>
-                            <dd class="md:w-2/3 text-gray-700">1,000,000円</dd>
+                            <dd class="md:w-2/3 text-gray-700">-円</dd>
                         </div>
                     </dl>
                 </div>
