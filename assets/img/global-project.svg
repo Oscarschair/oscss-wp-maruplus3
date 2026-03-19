@@ -9,13 +9,18 @@
   <line x1="240" y1="225" x2="560" y2="225" stroke="#B87333" stroke-width="1" stroke-opacity="0.3"/>
   
   <!-- Stylized Landmasses (Geometric) -->
+  <path d="M480 190L510 220H540L550 180L525 160H495L480 190Z" fill="#2D1B4D" fill-opacity="0.1"/>
   <path d="M350 150L380 180H420L440 140L410 120H370L350 150Z" fill="#2D1B4D" fill-opacity="0.1"/>
   <path d="M450 250L480 280H520L540 240L510 220H470L450 250Z" fill="#2D1B4D" fill-opacity="0.1"/>
   
-  <!-- Location Pins (JP/CN/TW) -->
+  <!-- Location Pins (EN/JP/CN/TW) -->
+  <!-- EN -->
+  <path d="M520 200L525 190H535L540 200L530 215L520 200Z" fill="#B87333" stroke="#2D1B4D" stroke-width="1"/>
+  <text x="550" y="205" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#2D1B4D">EN</text>
+
   <!-- JP -->
-  <path d="M440 160L445 150H455L460 160L450 175L440 160Z" fill="#B87333" stroke="#2D1B4D" stroke-width="1"/>
-  <text x="470" y="165" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#2D1B4D">JP</text>
+  <path d="M390 190L395 180H405L410 190L400 205L390 190Z" fill="#B87333" stroke="#2D1B4D" stroke-width="1"/>
+  <text x="420" y="195" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#2D1B4D">JP</text>
   
   <!-- CN -->
   <path d="M320 200L325 190H335L340 200L330 215L320 200Z" fill="#B87333" stroke="#2D1B4D" stroke-width="1"/>
@@ -23,16 +28,19 @@
 
   <!-- TW -->
   <path d="M380 270L385 260H395L400 270L390 285L380 270Z" fill="#B87333" stroke="#2D1B4D" stroke-width="1"/>
-  <text x="410" y="275" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#2D1B4D">TW</text>
+  <text x="340" y="275" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#2D1B4D">TW</text>
 
-  <!-- Bridges / Connections -->
-  <path d="M340 205Q390 225 440 165" stroke="#B87333" stroke-width="2" stroke-dasharray="10 5">
+  <!-- Bridges / Connections (EN/CN/TW to JP) -->
+  <!-- EN to JP -->
+  <path d="M530 205Q465 180 400 195" stroke="#B87333" stroke-width="2" stroke-dasharray="10 5">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="5s" repeatCount="indefinite" />
+  </path>
+  <!-- CN to JP -->
+  <path d="M330 205Q365 180 400 195" stroke="#B87333" stroke-width="2" stroke-dasharray="10 5">
     <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3s" repeatCount="indefinite" />
   </path>
-  <path d="M340 205Q365 240 380 265" stroke="#B87333" stroke-width="2" stroke-dasharray="10 5">
-    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="3.5s" repeatCount="indefinite" />
-  </path>
-  <path d="M440 165Q410 220 395 260" stroke="#B87333" stroke-width="2" stroke-dasharray="10 5">
+  <!-- TW to JP -->
+  <path d="M390 275Q380 240 400 195" stroke="#B87333" stroke-width="2" stroke-dasharray="10 5">
     <animate attributeName="stroke-dashoffset" from="100" to="0" dur="4s" repeatCount="indefinite" />
   </path>
 
