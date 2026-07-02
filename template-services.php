@@ -250,14 +250,14 @@ get_header();
                 class="bg-white p-12 rounded-[3rem] shadow-2xl max-w-4xl mx-auto -mb-16 transform hover:scale-[1.02] transition-transform">
                 <h4
                     class="text-2xl md:text-3xl font-bold text-brand-950 mb-8 underline decoration-[#D4AF37] decoration-4 underline-offset-8">
-                    次世代のマーケティング基盤構築</h4>
+                    スタートアップ初期開発 & DevSecOps一貫対応</h4>
                 <p class="text-gray-700 text-lg leading-relaxed mb-8">
-                    通常なら3社に発注が必要な高度な要件を、一貫した技術思想で完結できます。
+                    大手に依頼すると高額になりがちな「開発（Dev）」「セキュリティ対策（Sec）」「インフラ運用（Ops）」を一貫した技術思想で完結させ、圧倒的なコストパフォーマンスで提供します。
                 </p>
                 <div class="bg-brand-50 p-8 rounded-2xl text-left border-l-8 border-[#D4AF37]">
                     <p class="text-brand-900 font-bold mb-2">例えば...</p>
                     <p class="text-gray-700 leading-relaxed italic">
-                        「中華圏向けのECサイトにおいて、広告からCRMまでをAPIで統合し、ROASをBigQueryで日次可視化する」といったプロジェクトを成功へ導きます。
+                        「起業したばかりで予算面で大手に頼むのは心細いが、堅牢なセキュリティを担保しつつ、初期開発を丸ごと任せてスピーディにサービスを立ち上げたい」というご要望に、一気通貫でお応えします。
                     </p>
                 </div>
             </div>

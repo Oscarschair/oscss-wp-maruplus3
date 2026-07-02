@@ -27,18 +27,18 @@ get_header();
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800 pb-2"><ruby>未<rt class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800 pb-2">ま</rt></ruby>だ<ruby>見<rt class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800 pb-2">み</rt></ruby>ぬ「<ruby>＋<rt class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800 pb-2">ぷらす</rt></ruby>」を、</span><br class="hidden md:block" />
                 <ruby>共創<rt>きょうそう</rt></ruby>する
             </h1>
-            <div class="max-w-3xl mx-auto text-lg md::text-xl text-brand-800 font-medium leading-relaxed">
+            <div class="max-w-3xl mx-auto text-lg md:text-xl text-brand-800 font-medium leading-relaxed">
                 <p class="mb-6">
                     私たちが共創する「＋」とは、事業の行く末を照らす道標であり、<br class="hidden md:block"/>掘り起こされた独自の価値であり、課題を突破する正解です。
                 </p>
                 <p class="text-base text-brand-700 mt-8 font-normal bg-white/50 p-6 rounded-2xl backdrop-blur-sm border border-white/50" style="text-align: left;">
-                    クライアントの隣で、まだ見ぬ方向性や強み、最適解を形にし、確かな成長へ導きます。
+                    「大手に依頼するのは予算面で心細い」「初期開発から運用まで完全にお任せしたい」「セキュリティやインフラ運用までDevSecOpsで一貫して任せたい」— 起業直後のスタートアップや新規事業立ち上げにおけるあらゆる不安に寄り添い、確かな技術で形にします。
                 </p>
             </div>
             
             <div class="mt-12">
-                <a href="#service-links" class="inline-flex items-center justify-center px-8 py-4 text-brand-900 bg-white hover:bg-brand-50 transition-all duration-300 rounded-full font-bold shadow-lg hover:shadow-brand-500/50 hover:-translate-y-1">
-                    サービスを見る
+                <a href="#for-startups" class="inline-flex items-center justify-center px-8 py-4 text-brand-900 bg-white hover:bg-brand-50 transition-all duration-300 rounded-full font-bold shadow-lg hover:shadow-brand-500/50 hover:-translate-y-1">
+                    マルプラスの強みを見る
                     <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
                 </a>
             </div>
@@ -49,6 +49,45 @@ get_header();
             <svg class="relative block w-full h-12 md:h-24" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.42,120.2,207.2,109.83,248.66,104.34,288.66,82.49,321.39,56.44Z" class="fill-brand-50"></path>
             </svg>
+        </div>
+    </section>
+
+    <!-- Startups & Budget Friendly Section (New) -->
+    <section id="for-startups" class="bg-brand-50 py-16">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">For Startups & Entrepreneurs</span>
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">
+                    こんなお悩み、ありませんか？
+                </h2>
+                <div class="w-12 h-1 bg-brand-500 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-6 text-brand-700 font-bold text-xl">01</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">大手に頼むのは予算が心細い</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        大手開発会社の見積もりに不安を感じていませんか？少数精鋭の柔軟な体制だからこそ、中間マージンをカットした納得のコスト感で、高品質な開発をご提案します。
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-6 text-brand-700 font-bold text-xl">02</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">初期開発を完全にお任せしたい</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        要件定義からデザイン、実装、インフラ構築、リリースまで「完全お任せ」いただけます。技術的な専門知識がなくても、ビジネスのアイデアを最短で形にします。
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-6 text-brand-700 font-bold text-xl">03</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">DevSecOpsまで一貫して任せたい</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        単なるシステム実装だけでなく、セキュリティ（Sec）の担保やインフラ運用（Ops）を見据えた開発（DevSecOps）に一貫対応。安全かつ安定したサービス稼働を実現します。
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
