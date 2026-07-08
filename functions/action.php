@@ -214,3 +214,24 @@ function maruplus_customize_title_parts($title)
 }
 add_filter('document_title_parts', 'maruplus_customize_title_parts');
 
+/**
+ * Automatically create the privacy-policy page in the WordPress database if it doesn't exist
+ */
+function maruplus_create_privacy_policy_page()
+{
+    $slug = 'privacy-policy';
+    $page = get_page_by_path($slug);
+    
+    if (!$page) {
+        $post_data = array(
+            'post_title'   => 'プライバシーポリシー',
+            'post_name'    => $slug,
+            'post_status'  => 'publish',
+            'post_type'    => 'page',
+            'post_content' => '<!-- handled by template file page-privacy-policy.php -->',
+        );
+        wp_insert_post($post_data);
+    }
+}
+add_action('init', 'maruplus_create_privacy_policy_page');
+
