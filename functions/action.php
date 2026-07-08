@@ -231,6 +231,12 @@ function maruplus_create_privacy_policy_page()
             'post_content' => '<!-- handled by template file page-privacy-policy.php -->',
         );
         wp_insert_post($post_data);
+        flush_rewrite_rules();
+    }
+
+    // Force flush rules via query parameter for deployment verification
+    if (isset($_GET['flush_rules'])) {
+        flush_rewrite_rules();
     }
 }
 add_action('init', 'maruplus_create_privacy_policy_page');
