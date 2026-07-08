@@ -1,0 +1,19 @@
+# oscss-wp-maruplus3 プロジェクト運用ルール
+
+このドキュメントは、本プロジェクト（`oscss-wp-maruplus3`）固有の開発およびデプロイルールを定義します。
+
+---
+
+## 1. 開発フロー
+- **ブランチ運用**: `main` ブランチを本番用として運用します。
+- **デプロイ方法**:
+  - `deploy.ps1` を使用して、リモートサーバー（ロリポップ環境）に `ssh` を介して SSH PULL (git pull) を実行します。
+  - SSH接続用のパスワード等は、ルートの `.env.deploy` ファイルで一元管理しています。
+
+## 2. コーディング規約
+- **テーマ構造**: WordPress の標準構造に則り、各種テンプレートファイル（`front-page.php`, `template-contact.php` 等）を配置しています。
+- **スタイル設定**: Tailwind CSS v3 を使用しており、ローカルでのビルド環境が整備されています。
+- **SEO/メタタグ**: 共通のメタタグ（Canonical、Meta Description、OGP、JSON-LD）は、 `functions/action.php` 内の `maruplus_seo_meta_tags()` 関数にて一元管理し、 `wp_head` にて自動出力します。
+
+## 3. グローバルルールとの連携
+- 親階層（グローバル）で定義されている共通ルール（Google APIの管理、見積もり基準等）に準拠します。

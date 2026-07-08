@@ -102,13 +102,19 @@ function maruplus_seo_meta_tags()
     echo '<link rel="canonical" href="' . esc_url($canonical_url) . '">' . "\n";
 
     // 2. Meta Description
-    $description = 'スタートアップの初期開発からDevSecOps（開発・セキュリティ・運用の一気通貫）まで、低予算から完全お任せで共創するマルプラスのサンジョウ。'; // Default description
+    $default_description = 'スタートアップの初期開発からDevSecOps（開発・セキュリティ・運用の一気通貫）まで、低予算から完全お任せで共創するマルプラスのサンジョウ。';
+    $description = $default_description;
     if (is_singular()) {
         $post = get_post();
-        if (!empty($post->post_excerpt)) {
-            $description = wp_strip_all_tags($post->post_excerpt);
-        } else {
-            $description = wp_strip_all_tags(wp_trim_words($post->post_content, 120));
+        if ($post) {
+            if (!empty($post->post_excerpt)) {
+                $description = wp_strip_all_tags($post->post_excerpt);
+            } elseif (!empty($post->post_content)) {
+                $description = wp_strip_all_tags(wp_trim_words($post->post_content, 120));
+            }
+        }
+        if (empty($description)) {
+            $description = $default_description;
         }
     }
     echo '<meta name="description" content="' . esc_attr($description) . '">' . "\n";
