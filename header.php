@@ -93,10 +93,10 @@
                             <span
                                 class="text-[9px] md:text-[10px] uppercase tracking-[0.25em] font-bold text-brand-600/70 mb-1">MaruPlus
                                 Cube</span>
-                            <h1
+                            <div
                                 class="text-lg md:text-xl font-black tracking-tight text-brand-950 group-hover:text-brand-700 transition-colors duration-300">
                                 マルプラス<span class="text-brand-500 font-extrabold px-0.5">の</span>サンジョウ
-                            </h1>
+                            </div>
                         </div>
                     </a>
                     <?php

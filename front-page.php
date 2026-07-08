@@ -101,7 +101,7 @@ get_header();
                     <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-[#D4AF37] opacity-10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
                     <div class="flex-grow z-10">
                         <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">01. Data Strategy</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">Data Strategy Engineer<br/><span class="text-lg font-medium">データ計測基盤の設計・実装</span></h3>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">Data Strategy Engineer<br/><span class="text-lg font-medium">データ計測基盤の設計・実装</span></h2>
                         <p class="text-gray-600 leading-relaxed mb-6 italic">「見えない行動を、意思決定の根拠に変える」</p>
                         <p class="text-gray-500 text-sm leading-relaxed mb-6">GA4やBigQueryを駆使し、信頼できるデータが蓄積される基盤そのものを設計・実装します。</p>
                     </div>
@@ -118,7 +118,7 @@ get_header();
                     <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-[#A8A9AD] opacity-20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
                     <div class="flex-grow z-10">
                         <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">02. Marketing Ops</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">Marketing Ops Architect<br/><span class="text-lg font-medium">マーケティング運用の自動化</span></h3>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">Marketing Ops Architect<br/><span class="text-lg font-medium">マーケティング運用の自動化</span></h2>
                         <p class="text-gray-600 leading-relaxed mb-6 italic">「点在するデータとツールを繋ぎ、収益を自動最大化する」</p>
                         <p class="text-gray-500 text-sm leading-relaxed mb-6">HubSpotや各種APIを組み合わせ、業務フローを一つの「勝手に回る仕組み」へと再構築します。</p>
                     </div>
@@ -135,7 +135,7 @@ get_header();
                     <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-[#B87333] opacity-20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500"></div>
                     <div class="flex-grow z-10">
                         <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">03. Global Project</span>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">Global Project Controller<br/><span class="text-lg font-medium">越境プロジェクトの技術統括</span></h3>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-brand-600 transition-colors">Global Project Controller<br/><span class="text-lg font-medium">越境プロジェクトの技術統括</span></h2>
                         <p class="text-gray-600 leading-relaxed mb-6 italic">「言葉と技術の壁を越え、プロジェクトを完遂させる」</p>
                         <p class="text-gray-500 text-sm leading-relaxed mb-6">多言語対応とシステム開発、PMスキルの三位一体で、複雑なプロジェクトをリードします。</p>
                     </div>

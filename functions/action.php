@@ -31,6 +31,9 @@ function maruplus_theme_setup()
         'flex-width'  => true,
         'header-text' => array('site-title', 'site-description'),
     ));
+
+    // Add support for title tag (SEO)
+    add_theme_support('title-tag');
 }
 add_action('after_setup_theme', 'maruplus_theme_setup');
 
@@ -78,3 +81,107 @@ function maruplus_register_cpt_service()
     register_post_type('service', $args);
 }
 add_action('init', 'maruplus_register_cpt_service');
+
+/**
+ * Output dynamic SEO Meta tags, Canonical URL, OGP, and JSON-LD structured data in wp_head
+ */
+function maruplus_seo_meta_tags()
+{
+    global $wp;
+    
+    // 1. Canonical URL
+    $canonical_url = '';
+    if (is_home() || is_front_page()) {
+        $canonical_url = home_url('/');
+    } elseif (is_singular()) {
+        $canonical_url = get_permalink();
+    } else {
+        $canonical_url = home_url(add_query_arg(array(), $wp->request));
+    }
+    $canonical_url = user_trailingslashit($canonical_url);
+    echo '<link rel="canonical" href="' . esc_url($canonical_url) . '">' . "\n";
+
+    // 2. Meta Description
+    $description = 'スタートアップの初期開発からDevSecOps（開発・セキュリティ・運用の一気通貫）まで、低予算から完全お任せで共創するマルプラスのサンジョウ。'; // Default description
+    if (is_singular()) {
+        $post = get_post();
+        if (!empty($post->post_excerpt)) {
+            $description = wp_strip_all_tags($post->post_excerpt);
+        } else {
+            $description = wp_strip_all_tags(wp_trim_words($post->post_content, 120));
+        }
+    }
+    echo '<meta name="description" content="' . esc_attr($description) . '">' . "\n";
+
+    // 3. OGP Meta Tags
+    $title = wp_get_document_title();
+    $type = (is_home() || is_front_page()) ? 'website' : 'article';
+    $url = $canonical_url;
+    
+    // Default screenshot image as fall-back
+    $image = get_template_directory_uri() . '/screenshot.png';
+    if (is_singular() && has_post_thumbnail()) {
+        $image = get_the_post_thumbnail_url(null, 'large');
+    }
+
+    echo '<meta property="og:title" content="' . esc_attr($title) . '">' . "\n";
+    echo '<meta property="og:description" content="' . esc_attr($description) . '">' . "\n";
+    echo '<meta property="og:url" content="' . esc_url($url) . '">' . "\n";
+    echo '<meta property="og:type" content="' . esc_attr($type) . '">' . "\n";
+    echo '<meta property="og:image" content="' . esc_url($image) . '">' . "\n";
+    echo '<meta property="og:site_name" content="' . esc_attr(get_bloginfo('name')) . '">' . "\n";
+    echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+
+    // 4. JSON-LD Structured Data
+    $json_ld = array(
+        '@context' => 'https://schema.org',
+        '@graph'   => array()
+    );
+
+    // Organization Structured Data
+    $organization = array(
+        '@type' => 'Organization',
+        '@id'   => home_url('/#organization'),
+        'name'  => get_bloginfo('name'),
+        'url'   => home_url('/'),
+        'logo'  => get_template_directory_uri() . '/screenshot.png',
+    );
+    
+    $custom_logo_id = get_theme_mod('custom_logo');
+    if ($custom_logo_id) {
+        $logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
+        if ($logo_url) {
+            $organization['logo'] = $logo_url;
+        }
+    }
+    $json_ld['@graph'][] = $organization;
+
+    // WebSite Structured Data
+    $website = array(
+        '@type'     => 'WebSite',
+        '@id'       => home_url('/#website'),
+        'url'       => home_url('/'),
+        'name'      => get_bloginfo('name'),
+        'publisher' => array(
+            '@id' => home_url('/#organization')
+        )
+    );
+    $json_ld['@graph'][] = $website;
+
+    // WebPage Structured Data
+    $webpage = array(
+        '@type'       => 'WebPage',
+        '@id'         => $url . '#webpage',
+        'url'         => $url,
+        'name'        => $title,
+        'description' => $description,
+        'isPartOf'    => array(
+            '@id' => home_url('/#website')
+        )
+    );
+    $json_ld['@graph'][] = $webpage;
+
+    echo '<script type="application/ld+json">' . json_encode($json_ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) . '</script>' . "\n";
+}
+add_action('wp_head', 'maruplus_seo_meta_tags', 1);
+
