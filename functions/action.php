@@ -138,6 +138,12 @@ function maruplus_seo_meta_tags()
     echo '<meta property="og:site_name" content="' . esc_attr(get_bloginfo('name')) . '">' . "\n";
     echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
 
+    // OGP published and modified timestamps
+    if (is_singular()) {
+        echo '<meta property="article:published_time" content="' . esc_attr(get_the_date('c')) . '">' . "\n";
+        echo '<meta property="article:modified_time" content="' . esc_attr(get_the_modified_date('c')) . '">' . "\n";
+    }
+
     // 4. JSON-LD Structured Data
     $json_ld = array(
         '@context' => 'https://schema.org',
@@ -185,6 +191,10 @@ function maruplus_seo_meta_tags()
             '@id' => home_url('/#website')
         )
     );
+    if (is_singular()) {
+        $webpage['datePublished'] = get_the_date('c');
+        $webpage['dateModified'] = get_the_modified_date('c');
+    }
     $json_ld['@graph'][] = $webpage;
 
     echo '<script type="application/ld+json">' . json_encode($json_ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) . '</script>' . "\n";

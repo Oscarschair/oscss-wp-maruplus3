@@ -23,7 +23,7 @@ get_header();
             </h1>
             <p class="max-w-2xl mx-auto text-brand-800 text-lg md:text-xl font-medium leading-relaxed">
                 多才なスキルを、クライアントに提供する「価値」の切り口で3つに分類しました。<br />
-                これらが掛け合わさることで、独自の価値が生まれます。
+                これら3つのコア・バリューが掛け合わさることで、独自の価値が生まれます。
             </p>
         </div>
     </section>

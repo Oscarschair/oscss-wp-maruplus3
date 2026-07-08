@@ -151,6 +151,49 @@ get_header();
         </div>
     </section>
 
+    <!-- 4. よくある質問 (FAQ Section) -->
+    <section id="faq" class="bg-brand-50 py-24 relative isolate border-t border-brand-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-sm font-bold text-brand-600 mb-2 block uppercase tracking-wider">FAQ</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">よくある質問</h2>
+                <div class="w-16 h-1 bg-brand-500 mx-auto mt-6 rounded-full"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto rounded-3xl p-8 bg-white shadow-xl">
+                <ul class="divide-y divide-gray-100">
+                    <li class="py-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-start">
+                            <span class="text-brand-600 font-extrabold mr-2">Q.</span>
+                            初期開発はどの程度の規模から依頼できますか？
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed pl-6">
+                            MVP（実証可能な最小限のプロダクト）の立ち上げから、大規模なシステム開発まで幅広く対応しています。起業直後で予算が限られているスタートアップ企業様の状況に合わせ、納得感のあるコスト感で最適な開発をご提案します。
+                        </p>
+                    </li>
+                    <li class="py-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-start">
+                            <span class="text-brand-600 font-extrabold mr-2">Q.</span>
+                            DevSecOpsとは何ですか？どのようなメリットがありますか？
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed pl-6">
+                            開発（Dev）、セキュリティ対策（Sec）、インフラ運用（Ops）を一貫して統合して行う設計思想です。セキュリティを後付けするのではなく、設計段階から組み込むことで脆弱性を未然に防ぎ、低コストかつ安全でスピーディなシステムリリースを実現します。
+                        </p>
+                    </li>
+                    <li class="py-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-start">
+                            <span class="text-brand-600 font-extrabold mr-2">Q.</span>
+                            システムの初期開発後、データ計測やマーケティングの自動化も依頼できますか？
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed pl-6">
+                            はい、可能です。データ計測基盤（GA4やBigQuery）の構築から、HubSpotなどのマーケティング運用の自動化、CRMのAPI連携まで一気通貫でサポートします。技術実装とマーケティング運用の双方を深く理解するエンジニアが直接対応いたします。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <!-- 2. ニュース/お知らせ (Clean Premium List) -->
     <section id="news" class="bg-white py-24 relative isolate">
         <!-- Subtle background pattern or blob -->
