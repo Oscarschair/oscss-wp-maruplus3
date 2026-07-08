@@ -93,7 +93,7 @@ get_header();
 
     <!-- 3. 主要サービスへの導緁E(Premium Cards Design) -->
     <section id="service-links" class="bg-brand-50 pb-24 pt-8">
-        <div class="container mx-auto px-6 relative z-10 -mt-24 md:-mt-32">
+        <div class="container mx-auto px-6 relative z-10 pt-8">
             
             <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
                    <!-- 1. Data Strategy Engineer -->
