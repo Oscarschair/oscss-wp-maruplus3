@@ -232,6 +232,13 @@ function maruplus_create_privacy_policy_page()
         );
         wp_insert_post($post_data);
         flush_rewrite_rules();
+    } elseif ($page->post_status !== 'publish') {
+        $post_data = array(
+            'ID'          => $page->ID,
+            'post_status' => 'publish',
+        );
+        wp_update_post($post_data);
+        flush_rewrite_rules();
     }
 
     // Force flush rules via query parameter for deployment verification
