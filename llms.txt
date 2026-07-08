@@ -1,0 +1,12 @@
+# マルプラスのサンジョウ
+
+> スタートアップの初期開発からDevSecOps（開発・セキュリティ・運用の一気通貫）まで、低予算から完全お任せで共創するマルプラスのサンジョウ。
+
+## 概要
+このファイルは、大型言語モデル(LLM)やAIエージェントが当サイトのコンテンツを迅速かつ構造的に巡回・理解するための公式ドキュメント（/llms.txt）です。
+
+## 主要セクションとリソース
+- [wp-sitemap-posts-post-1.xml](https://maruplus3.oscarchair.jp/wp-sitemap-posts-post-1.xml): サイト内の主要リソース (/wp-sitemap-posts-post-1.xml)
+- [wp-sitemap-posts-page-1.xml](https://maruplus3.oscarchair.jp/wp-sitemap-posts-page-1.xml): サイト内の主要リソース (/wp-sitemap-posts-page-1.xml)
+- [wp-sitemap-taxonomies-category-1.xml](https://maruplus3.oscarchair.jp/wp-sitemap-taxonomies-category-1.xml): サイト内の主要リソース (/wp-sitemap-taxonomies-category-1.xml)
+- [wp-sitemap-users-1.xml](https://maruplus3.oscarchair.jp/wp-sitemap-users-1.xml): サイト内の主要リソース (/wp-sitemap-users-1.xml)

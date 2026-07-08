@@ -34,7 +34,7 @@ if (-not ($u -and $h -and $p -and $d)) {
 Write-Host "Connecting to $h via SSH and running git pull..." -ForegroundColor Cyan
 
 # Execute SSH pull directly using SSH Key (No password needed)
-ssh -p $p -o BatchMode=yes "$u@$h" "cd $d && git pull origin main"
+ssh -p $p -o BatchMode=yes "$u@$h" "cd $d && git pull origin main && cp llms.txt ../../../"
 
 if ($LASTEXITCODE -eq 0) {
     Write-Host "`n--------------------------------------------------------" -ForegroundColor Cyan
