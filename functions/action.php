@@ -191,3 +191,16 @@ function maruplus_seo_meta_tags()
 }
 add_action('wp_head', 'maruplus_seo_meta_tags', 1);
 
+/**
+ * Customize document title parts for SEO optimization
+ */
+function maruplus_customize_title_parts($title)
+{
+    if (is_home() || is_front_page()) {
+        $title['title'] = 'マルプラスのサンジョウ';
+        $title['tagline'] = 'スタートアップ初期開発・DevSecOps一貫対応';
+    }
+    return $title;
+}
+add_filter('document_title_parts', 'maruplus_customize_title_parts');
+
