@@ -1,6 +1,6 @@
 # マルプラスのサンジョウ プロジェクトドキュメント (docs)
 
-本ディレクトリは、`oscss-wp-maruplus3` プロジェクトの仕様書、アーキテクチャ設計書、環境構築手順書、および Architecture Decision Records (ADR) を一括管理する正本ドキュメント階層です。
+本ディレクトリは、`oscss-wp-maruplus3` プロジェクトの仕様書、アーキテクチャ設計書、UI/UXデザイン標準、環境構築手順書、および Architecture Decision Records (ADR) を一括管理する正本ドキュメント階層です。
 
 ---
 
@@ -19,8 +19,9 @@
 
 ## 📂 ドキュメント目次 (Navigation)
 
-### 1. 全体設計 & 環境構築
+### 1. 全体設計 & UI/UX標準 & 環境構築
 - [全体構成・インフラ・セキュリティ設計書 (architecture.md)](file:///c:/Users/user/git/oscss-wp-maruplus3/docs/architecture.md)
+- [UI/UX デザイン ＆ 設計標準 (uiux-design-standard.md)](file:///c:/Users/user/git/oscss-wp-maruplus3/docs/uiux-design-standard.md)
 - [デプロイ・CI/CD・環境構築手順書 (deployment.md)](file:///c:/Users/user/git/oscss-wp-maruplus3/docs/deployment.md)
 
 ### 2. 生きたドメイン・機能仕様書 (`docs/domains/`)
