@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <!-- Navigation Columns (Right: 8 cols) - Using WP Nav Menu (プライマリメニュー) -->
+            <!-- Navigation Columns (Right: 8 cols) - Using Primary Menu (プライマリメニュー) -->
             <div class="site-footer__nav-wrapper lg:col-span-8 flex flex-col justify-start">
                 <h4 style="color: #FFFFFF !important; border-bottom: 2px solid #A184A3 !important;" class="site-footer__nav-title text-xs font-bold tracking-widest uppercase mb-4 pb-1 inline-block w-fit">
                     ナビゲーション
@@ -45,7 +45,6 @@
                             <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/product')); ?>">プロダクト</a></li>
                             <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/company')); ?>">会社情報</a></li>
                             <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a></li>
-                            <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/privacy-policy')); ?>">プライバシーポリシー</a></li>
                         </ul>
                         <?php
                     }
@@ -97,7 +96,7 @@
             </div>
         </div>
 
-        <!-- 2nd Layer: Bottom Sub-nav & Copyright -->
+        <!-- 2nd Layer: Bottom Sub-nav & Copyright (Privacy Policy located here) -->
         <div style="border-top: 1px solid rgba(255, 255, 255, 0.15) !important;" class="site-footer__bottom pt-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <!-- Inline Sub-navigation with explicit gap -->
             <ul class="site-footer__subnav flex flex-wrap items-center gap-x-6 md:gap-x-8 gap-y-2 text-xs list-none p-0 m-0">
@@ -107,6 +106,18 @@
                 <li class="site-footer__subnav-item"><span style="color: rgba(255,255,255,0.3);" class="site-footer__subnav-separator">|</span></li>
                 <li class="site-footer__subnav-item"><a style="color: #DECDE0 !important;" class="site-footer__subnav-link hover:text-white hover:underline transition-colors" href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a></li>
             </ul>
+            <style>
+                .site-footer__subnav {
+                    display: flex !important;
+                    flex-wrap: wrap !important;
+                    align-items: center !important;
+                    gap: 0.5rem 1.75rem !important;
+                }
+                .site-footer__subnav-item {
+                    display: inline-flex !important;
+                    align-items: center !important;
+                }
+            </style>
 
             <!-- Copyright -->
             <p style="color: #DECDE0 !important; opacity: 0.85;" class="site-footer__copyright text-xs font-medium tracking-wider">
