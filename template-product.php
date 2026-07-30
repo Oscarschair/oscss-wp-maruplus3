@@ -40,15 +40,15 @@ get_header();
         </div>
     </section>
 
-    <!-- Wave Divider: Safely Separated Outside Hero Section (Zero Text Collision) -->
+    <!-- Wave Divider: Safely Separated Outside Hero Section -->
     <div style="background: linear-gradient(135deg, #1A0C1E 0%, #0F0512 100%) !important;" class="product-page__wave-wrapper relative w-full overflow-hidden leading-none">
         <svg class="product-page__wave-svg relative block w-full h-10 sm:h-14 md:h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.42,120.2,207.2,109.83,248.66,104.34,288.66,82.49,321.39,56.44Z" fill="#F9FAFB"></path>
         </svg>
     </div>
 
-    <!-- Main Product List Container: Clean & Completely Unobstructed -->
-    <div class="product-page__main-container container mx-auto px-4 sm:px-6 relative z-20 pt-8 sm:pt-12 pb-24 space-y-16 sm:space-y-24 md:space-y-36">
+    <!-- Main Product List Container -->
+    <div class="product-page__main-container container mx-auto px-4 sm:px-6 relative z-20 pt-8 sm:pt-12 pb-12 sm:pb-20 space-y-16 sm:space-y-24 md:space-y-36">
 
         <!-- Product 1: GEOマル (geomaru) -->
         <section id="geomaru" class="product-card product-card--geomaru bg-white rounded-2xl sm:rounded-3xl shadow-xl p-6 sm:p-8 md:p-12 border-t-8 border-purple-600 border border-gray-100 hover:shadow-2xl transition-all duration-500">
@@ -108,13 +108,13 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Enhanced Responsive CTA Button -->
-                    <div class="product-card__action pt-1">
+                    <!-- Enhanced Ultra-High Visibility & Heavy Clickable Button -->
+                    <div class="product-card__action pt-2">
                         <a href="https://geomaru.oscarchair.jp" target="_blank" rel="noopener noreferrer" 
-                           style="background: linear-gradient(135deg, #7E22CE 0%, #6B21A8 100%) !important; color: #FFFFFF !important;"
-                           class="product-card__button w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl font-black text-sm sm:text-base md:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5 group/btn">
+                           style="background: linear-gradient(135deg, #6B21A8 0%, #4C1D95 100%) !important; border: 2px solid #581C87 !important; color: #FFFFFF !important;"
+                           class="product-card__button w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-10 py-4 sm:py-5 rounded-2xl font-black text-base sm:text-lg md:text-xl shadow-2xl hover:shadow-purple-900/40 transition-all duration-300 transform hover:-translate-y-1 group/btn">
                             <span>GEOマル Webサイトを開く</span>
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 ml-2 transform group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7-7 7M5 12h14"></path></svg>
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-3 transform group-hover/btn:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7-7 7M5 12h14"></path></svg>
                         </a>
                     </div>
                 </div>
@@ -186,13 +186,13 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Enhanced Responsive CTA Button -->
-                    <div class="product-card__action pt-1">
+                    <!-- Enhanced Ultra-High Visibility & Heavy Clickable Button -->
+                    <div class="product-card__action pt-2">
                         <a href="https://stocksmaru.oscarchair.jp" target="_blank" rel="noopener noreferrer" 
-                           style="background: linear-gradient(135deg, #4F46E5 0%, #3730A3 100%) !important; color: #FFFFFF !important;"
-                           class="product-card__button w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl font-black text-sm sm:text-base md:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5 group/btn">
+                           style="background: linear-gradient(135deg, #3730A3 0%, #1E1B4B 100%) !important; border: 2px solid #312E81 !important; color: #FFFFFF !important;"
+                           class="product-card__button w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-10 py-4 sm:py-5 rounded-2xl font-black text-base sm:text-lg md:text-xl shadow-2xl hover:shadow-indigo-900/40 transition-all duration-300 transform hover:-translate-y-1 group/btn">
                             <span>STOCKSマル Webサイトを開く</span>
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 ml-2 transform group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7-7 7M5 12h14"></path></svg>
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-3 transform group-hover/btn:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7-7 7M5 12h14"></path></svg>
                         </a>
                     </div>
                 </div>
@@ -264,13 +264,13 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Enhanced Responsive CTA Button -->
-                    <div class="product-card__action pt-1">
+                    <!-- Enhanced Ultra-High Visibility & Heavy Clickable Button -->
+                    <div class="product-card__action pt-2">
                         <a href="https://risemaru.oscarchair.jp" target="_blank" rel="noopener noreferrer" 
-                           style="background: linear-gradient(135deg, #E11D48 0%, #BE123C 100%) !important; color: #FFFFFF !important;"
-                           class="product-card__button w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl font-black text-sm sm:text-base md:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5 group/btn">
+                           style="background: linear-gradient(135deg, #BE123C 0%, #881337 100%) !important; border: 2px solid #9F1239 !important; color: #FFFFFF !important;"
+                           class="product-card__button w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-10 py-4 sm:py-5 rounded-2xl font-black text-base sm:text-lg md:text-xl shadow-2xl hover:shadow-rose-900/40 transition-all duration-300 transform hover:-translate-y-1 group/btn">
                             <span>RISEマル Webサイトを開く</span>
-                            <svg class="w-4 h-4 sm:w-5 sm:h-5 ml-2 transform group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7-7 7M5 12h14"></path></svg>
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-3 transform group-hover/btn:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7-7 7M5 12h14"></path></svg>
                         </a>
                     </div>
                 </div>
@@ -308,21 +308,23 @@ get_header();
         }
     </style>
 
-    <!-- Bottom High-Impact Contact CTA Section -->
-    <section style="background: linear-gradient(135deg, #1F1122 0%, #100812 100%) !important; color: #FFFFFF !important;" class="product-page__cta relative overflow-hidden py-16 sm:py-24 mt-20 sm:mt-32 border-t border-purple-900/50">
-        <div class="product-page__cta-container container mx-auto px-4 sm:px-6 text-center relative z-10">
-            <h2 style="color: #FFFFFF !important;" class="product-page__cta-title text-2xl sm:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 tracking-tight">
+    <!-- Bottom High-Impact Contact CTA Section (Spacious Margins & Elegant Padding) -->
+    <section style="background: linear-gradient(135deg, #1F1122 0%, #100812 100%) !important; color: #FFFFFF !important;" class="product-page__cta relative overflow-hidden py-24 sm:py-32 md:py-36 mt-28 sm:mt-40 md:mt-48 border-t border-purple-900/50">
+        <div class="product-page__cta-container container max-w-4xl mx-auto px-6 sm:px-8 text-center relative z-10">
+            <h2 style="color: #FFFFFF !important;" class="product-page__cta-title text-2xl sm:text-4xl lg:text-5xl font-black mb-6 sm:mb-8 tracking-tight leading-tight">
                 自社SaaSの導入・開発カスタマイズのご相談
             </h2>
-            <p style="color: #E9D5FF !important; opacity: 1 !important;" class="product-page__cta-desc max-w-2xl mx-auto mb-8 sm:mb-10 text-sm sm:text-lg md:text-xl font-bold leading-relaxed">
+            <p style="color: #E9D5FF !important; opacity: 1 !important;" class="product-page__cta-desc max-w-2xl mx-auto mb-10 sm:mb-12 text-base sm:text-lg md:text-xl font-bold leading-relaxed">
                 各プロダクトのAPI連携、企業向けカスタマイズ開発、データ基盤の構築支援までお気軽にお問い合わせください。
             </p>
-            <a href="<?php echo esc_url(home_url('/contact')); ?>" 
-               style="background: linear-gradient(135deg, #FFFFFF 0%, #F5EBF7 100%) !important; color: #2D1E2F !important;"
-               class="product-page__cta-button w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-10 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-black text-base sm:text-lg md:text-xl shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 transform hover:-translate-y-1.5 group">
-                <span>お問い合わせはこちら</span>
-                <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-2.5 sm:ml-3 text-purple-700 transform group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7-7 7M5 12h14"></path></svg>
-            </a>
+            <div class="product-page__cta-action">
+                <a href="<?php echo esc_url(home_url('/contact')); ?>" 
+                   style="background: linear-gradient(135deg, #FFFFFF 0%, #F5EBF7 100%) !important; color: #2D1E2F !important;"
+                   class="product-page__cta-button w-full sm:w-auto inline-flex items-center justify-center px-10 sm:px-12 py-4 sm:py-5 rounded-2xl font-black text-base sm:text-lg md:text-xl shadow-2xl hover:shadow-purple-500/30 transition-all duration-300 transform hover:-translate-y-1.5 group">
+                    <span>お問い合わせはこちら</span>
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-3 text-purple-700 transform group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7-7 7M5 12h14"></path></svg>
+                </a>
+            </div>
         </div>
     </section>
 </main>
