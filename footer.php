@@ -26,30 +26,15 @@
                 ナビゲーション
             </h4>
             <nav class="footer-navigation">
-                <?php
-                if (has_nav_menu('footer-menu')) {
-                    wp_nav_menu(array(
-                        'theme_location' => 'footer-menu',
-                        'menu_id'        => 'footer-menu',
-                        'depth'          => 1,
-                        'container'      => false,
-                        'menu_class'     => 'grid grid-cols-2 sm:grid-cols-3 gap-3.5 text-sm list-none p-0 m-0',
-                    ));
-                } else {
-                    // Fallback Navigation Chips (Privacy policy included directly)
-                    ?>
-                    <ul class="grid grid-cols-2 sm:grid-cols-3 gap-3.5 text-sm list-none p-0 m-0">
-                        <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
-                        <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/services')); ?>">サービス・事業</a></li>
-                        <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/product')); ?>">自社プロダクト</a></li>
-                        <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/company')); ?>">会社概要・代表</a></li>
-                        <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/news')); ?>">お知らせ・ブログ</a></li>
-                        <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a></li>
-                        <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/privacy-policy')); ?>">プライバシーポリシー</a></li>
-                    </ul>
-                    <?php
-                }
-                ?>
+                <ul class="grid grid-cols-2 sm:grid-cols-3 gap-3.5 text-sm list-none p-0 m-0">
+                    <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
+                    <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/services')); ?>">サービス・事業</a></li>
+                    <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/product')); ?>">自社プロダクト</a></li>
+                    <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/company')); ?>">会社概要・代表</a></li>
+                    <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/news')); ?>">お知らせ・ブログ</a></li>
+                    <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a></li>
+                    <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/privacy-policy')); ?>">プライバシーポリシー</a></li>
+                </ul>
             </nav>
             <style>
                 .footer-navigation ul {
