@@ -98,53 +98,56 @@ function maruplus_seo_meta_tags()
     } else {
         $canonical_url = home_url(add_query_arg(array(), $wp->request));
     }
-    $canonical_url = user_trailingslashit($canonical_url);
-    echo '<link rel="canonical" href="' . esc_url($canonical_url) . '">' . "\n";
+    echo '<link rel="canonical" href="' . esc_url($canonical_url) . '" />' . "\n";
 
-    // 2. Meta Description
-    $default_description = 'スタートアップの初期開発からDevSecOps（開発・セキュリティ・運用の一気通貫）まで、低予算から完全お任せで共創するマルプラスのサンジョウ。';
-    $description = $default_description;
-    if (is_singular()) {
-        $post = get_post();
-        if ($post) {
-            if (!empty($post->post_excerpt)) {
-                $description = wp_strip_all_tags($post->post_excerpt);
-            } elseif (!empty($post->post_content)) {
-                $description = wp_strip_all_tags(wp_trim_words($post->post_content, 120));
-            }
-        }
+    // 2. Meta Description & Title & OGP
+    $title = '';
+    $description = '';
+
+    if (is_home() || is_front_page()) {
+        $title = get_bloginfo('name') . ' - ' . get_bloginfo('description');
+        $description = 'マルプラスのサンジョウは、スタートアップの初期開発・DevSecOps一気通貫対応・データ計測基盤の設計・マーケティング運用自動化まで、技術とビジネスを共創するパートナーです。';
+    } elseif (is_page('services') || is_page('service')) {
+        $title = 'サービス・事業 | ' . get_bloginfo('name');
+        $description = 'マルプラスのサンジョウが提供する3つのコア・バリュー（Data Strategy Engineer, Marketing Ops Architect, DevSecOps Engineer）と事業内容のご紹介。';
+    } elseif (is_page('product') || is_page('products')) {
+        $title = 'プロダクト | ' . get_bloginfo('name');
+        $description = 'マルプラスが提供する自社SaaSプロダクト群（geomaru, stocksmaru, risemaru）のご紹介。';
+    } elseif (is_page('company')) {
+        $title = '会社概要・代表 | ' . get_bloginfo('name');
+        $description = 'マルプラスのサンジョウの会社概要、ビジョン、代表プロフィールのご紹介。';
+    } elseif (is_page('contact')) {
+        $title = 'お問い合わせ | ' . get_bloginfo('name');
+        $description = 'マルプラスのサンジョウへのお問い合わせ・無料相談フォーム。Web開発、データ基盤構築、マーケティング自動化のご相談を受け付けております。';
+    } elseif (is_page('privacy-policy')) {
+        $title = 'プライバシーポリシー | ' . get_bloginfo('name');
+        $description = 'マルプラスのサンジョウのプライバシーポリシー（個人情報保護方針）に関する記述。';
+    } elseif (is_singular('service')) {
+        $title = get_the_title() . ' | サービス | ' . get_bloginfo('name');
+        $description = wp_strip_all_tags(get_the_excerpt());
         if (empty($description)) {
-            $description = $default_description;
+            $description = mb_substr(wp_strip_all_tags(get_the_content()), 0, 120) . '...';
         }
-    }
-    echo '<meta name="description" content="' . esc_attr($description) . '">' . "\n";
-
-    // 3. OGP Meta Tags
-    $title = wp_get_document_title();
-    $type = (is_home() || is_front_page()) ? 'website' : 'article';
-    $url = $canonical_url;
-    
-    // Default screenshot image as fall-back
-    $image = get_template_directory_uri() . '/screenshot.png';
-    if (is_singular() && has_post_thumbnail()) {
-        $image = get_the_post_thumbnail_url(null, 'large');
+    } elseif (is_singular('post')) {
+        $title = get_the_title() . ' | 技術ブログ | ' . get_bloginfo('name');
+        $description = wp_strip_all_tags(get_the_excerpt());
+        if (empty($description)) {
+            $description = mb_substr(wp_strip_all_tags(get_the_content()), 0, 120) . '...';
+        }
+    } else {
+        $title = wp_get_document_title();
+        $description = 'マルプラスのサンジョウ - 技術とビジネスを加速する開発・基盤・マーケティングパートナー';
     }
 
-    echo '<meta property="og:title" content="' . esc_attr($title) . '">' . "\n";
-    echo '<meta property="og:description" content="' . esc_attr($description) . '">' . "\n";
-    echo '<meta property="og:url" content="' . esc_url($url) . '">' . "\n";
-    echo '<meta property="og:type" content="' . esc_attr($type) . '">' . "\n";
-    echo '<meta property="og:image" content="' . esc_url($image) . '">' . "\n";
-    echo '<meta property="og:site_name" content="' . esc_attr(get_bloginfo('name')) . '">' . "\n";
-    echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+    echo '<meta name="description" content="' . esc_attr($description) . '" />' . "\n";
+    echo '<meta property="og:title" content="' . esc_attr($title) . '" />' . "\n";
+    echo '<meta property="og:description" content="' . esc_attr($description) . '" />' . "\n";
+    echo '<meta property="og:url" content="' . esc_url($canonical_url) . '" />' . "\n";
+    echo '<meta property="og:type" content="' . (is_singular() ? 'article' : 'website') . '" />' . "\n";
+    echo '<meta property="og:site_name" content="' . esc_attr(get_bloginfo('name')) . '" />' . "\n";
 
-    // OGP published and modified timestamps
-    if (is_singular()) {
-        echo '<meta property="article:published_time" content="' . esc_attr(get_the_date('c')) . '">' . "\n";
-        echo '<meta property="article:modified_time" content="' . esc_attr(get_the_modified_date('c')) . '">' . "\n";
-    }
-
-    // 4. JSON-LD Structured Data
+    // 3. JSON-LD Structured Data
+    $url = esc_url($canonical_url);
     $json_ld = array(
         '@context' => 'https://schema.org',
         '@graph'   => array()
@@ -248,3 +251,35 @@ function maruplus_create_privacy_policy_page()
 }
 add_action('init', 'maruplus_create_privacy_policy_page');
 
+/**
+ * Automatically create the product page in the WordPress database if it doesn't exist
+ */
+function maruplus_create_product_page()
+{
+    $slug = 'product';
+    $page = get_page_by_path($slug);
+    
+    if (!$page) {
+        $post_data = array(
+            'post_title'   => 'プロダクト',
+            'post_name'    => $slug,
+            'post_status'  => 'publish',
+            'post_type'    => 'page',
+            'post_content' => '<!-- handled by template file page-product.php -->',
+        );
+        $page_id = wp_insert_post($post_data);
+        if ($page_id && !is_wp_error($page_id)) {
+            update_post_meta($page_id, '_wp_page_template', 'template-product.php');
+        }
+        flush_rewrite_rules();
+    } elseif ($page->post_status !== 'publish') {
+        $post_data = array(
+            'ID'          => $page->ID,
+            'post_status' => 'publish',
+        );
+        wp_update_post($post_data);
+        update_post_meta($page->ID, '_wp_page_template', 'template-product.php');
+        flush_rewrite_rules();
+    }
+}
+add_action('init', 'maruplus_create_product_page');
