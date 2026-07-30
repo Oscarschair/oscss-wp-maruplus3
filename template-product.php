@@ -46,7 +46,7 @@ get_header();
 
         <!-- Product 1: GEOマル (geomaru) -->
         <section id="geomaru" class="product-card product-card--geomaru bg-white rounded-3xl shadow-xl p-8 md:p-12 border-t-4 border-purple-500 hover:shadow-2xl transition-all duration-500 border border-gray-100">
-            <div class="product-card__inner flex flex-col lg:flex-row items-stretch gap-12 group">
+            <div class="product-card__inner flex flex-col lg:flex-row items-center gap-10 group">
                 <!-- Content Area -->
                 <div class="product-card__content lg:w-1/2 flex flex-col justify-between space-y-6">
                     <div class="product-card__header-group">
@@ -105,10 +105,10 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Media Preview Frame (Real Screenshot Image) -->
+                <!-- Media Preview Frame (Optimized & Compact Height) -->
                 <div class="product-card__media lg:w-1/2 flex items-center justify-center">
-                    <div class="product-card__media-wrapper relative overflow-hidden rounded-2xl shadow-lg border border-gray-200 group-hover:scale-[1.02] transition-transform duration-500 w-full bg-gray-100">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/geomaru-preview.png" alt="GEOマル (geomaru) ランディングページ画像" class="product-card__image w-full h-auto block object-cover">
+                    <div class="product-card__media-wrapper relative overflow-hidden rounded-2xl shadow-lg border border-gray-200 group-hover:scale-[1.02] transition-transform duration-500 w-full max-h-[320px] md:max-h-[360px] bg-gray-100 flex items-start">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/geomaru-preview.png" alt="GEOマル (geomaru) ランディングページ画像" class="product-card__image w-full h-auto block object-cover object-top">
                     </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@ get_header();
 
         <!-- Product 2: STOCKSマル (stocksmaru) -->
         <section id="stocksmaru" class="product-card product-card--stocksmaru bg-white rounded-3xl shadow-xl p-8 md:p-12 border-t-4 border-indigo-600 hover:shadow-2xl transition-all duration-500 border border-gray-100">
-            <div class="product-card__inner flex flex-col lg:flex-row items-stretch gap-12 group">
+            <div class="product-card__inner flex flex-col lg:flex-row items-center gap-10 group">
                 <!-- Content Area -->
                 <div class="product-card__content lg:w-1/2 flex flex-col justify-between space-y-6">
                     <div class="product-card__header-group">
@@ -175,10 +175,10 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Media Preview Frame (Real Screenshot Image) -->
+                <!-- Media Preview Frame (Optimized & Compact Height) -->
                 <div class="product-card__media lg:w-1/2 flex items-center justify-center">
-                    <div class="product-card__media-wrapper relative overflow-hidden rounded-2xl shadow-lg border border-gray-200 group-hover:scale-[1.02] transition-transform duration-500 w-full bg-gray-100">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/stocksmaru-preview.png" alt="STOCKSマル (stocksmaru) ランディングページ画像" class="product-card__image w-full h-auto block object-cover">
+                    <div class="product-card__media-wrapper relative overflow-hidden rounded-2xl shadow-lg border border-gray-200 group-hover:scale-[1.02] transition-transform duration-500 w-full max-h-[320px] md:max-h-[360px] bg-gray-100 flex items-start">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/stocksmaru-preview.png" alt="STOCKSマル (stocksmaru) ランディングページ画像" class="product-card__image w-full h-auto block object-cover object-top">
                     </div>
                 </div>
             </div>
@@ -186,7 +186,7 @@ get_header();
 
         <!-- Product 3: RISEマル (risemaru) -->
         <section id="risemaru" class="product-card product-card--risemaru bg-white rounded-3xl shadow-xl p-8 md:p-12 border-t-4 border-rose-500 hover:shadow-2xl transition-all duration-500 border border-gray-100">
-            <div class="product-card__inner flex flex-col lg:flex-row items-stretch gap-12 group">
+            <div class="product-card__inner flex flex-col lg:flex-row items-center gap-10 group">
                 <!-- Content Area -->
                 <div class="product-card__content lg:w-1/2 flex flex-col justify-between space-y-6">
                     <div class="product-card__header-group">
@@ -245,10 +245,10 @@ get_header();
                     </div>
                 </div>
 
-                <!-- Media Preview Frame (Real Screenshot Image) -->
+                <!-- Media Preview Frame (Optimized & Compact Height) -->
                 <div class="product-card__media lg:w-1/2 flex items-center justify-center">
-                    <div class="product-card__media-wrapper relative overflow-hidden rounded-2xl shadow-lg border border-gray-200 group-hover:scale-[1.02] transition-transform duration-500 w-full bg-gray-100">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/risemaru-preview.png" alt="RISEマル (risemaru) ランディングページ画像" class="product-card__image w-full h-auto block object-cover">
+                    <div class="product-card__media-wrapper relative overflow-hidden rounded-2xl shadow-lg border border-gray-200 group-hover:scale-[1.02] transition-transform duration-500 w-full max-h-[320px] md:max-h-[360px] bg-gray-100 flex items-start">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/risemaru-preview.png" alt="RISEマル (risemaru) ランディングページ画像" class="product-card__image w-full h-auto block object-cover object-top">
                     </div>
                 </div>
             </div>
