@@ -87,21 +87,14 @@
             </style>
         </div>
 
-        <!-- Column 3: Authority / Advisor Profile -->
+        <!-- Column 3: Legal & Policy -->
         <div>
-            <h4 style="color: #FFFFFF !important; border-bottom: 3px solid #A184A3 !important;" class="text-lg font-bold mb-6 pb-2 inline-block">運営責任</h4>
-            <div style="background-color: #2D1F2E !important; border: 2px solid #A184A3 !important;" class="rounded-2xl p-6 shadow-xl">
-                <p style="color: #FFFFFF !important;" class="text-base leading-relaxed mb-5 font-medium">
-                    <span style="color: #FFD700 !important;" class="block text-xs font-black uppercase tracking-wider mb-1">監修・執筆</span>
-                    <strong style="color: #FFFFFF !important;" class="font-extrabold text-base">マルプラス開発局</strong><br>
-                    <span style="color: #DECDE0 !important;" class="text-xs">（シニアデータエンジニア、SecOpsコンサルタント監修）</span>
-                </p>
-                <div class="pt-1">
-                    <a style="background-color: #A184A3 !important; color: #FFFFFF !important; border: 1px solid #FFFFFF !important;" href="<?php echo esc_url(home_url('/privacy-policy')); ?>" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-extrabold shadow-md hover:bg-white hover:text-[#3D2D3F] transition-all duration-300 text-decoration-none">
-                        プライバシーポリシー
-                        <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </a>
-                </div>
+            <h4 style="color: #FFFFFF !important; border-bottom: 3px solid #A184A3 !important;" class="text-lg font-bold mb-6 pb-2 inline-block">ポリシー・規約</h4>
+            <div class="flex flex-col space-y-4">
+                <a style="background-color: rgba(255, 255, 255, 0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255, 255, 255, 0.25) !important;" href="<?php echo esc_url(home_url('/privacy-policy')); ?>" class="footer-btn inline-flex items-center justify-between px-6 py-3.5 rounded-xl font-bold text-sm transition-all duration-300">
+                    <span>プライバシーポリシー</span>
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
             </div>
         </div>
     </div>
