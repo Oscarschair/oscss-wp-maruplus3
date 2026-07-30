@@ -83,13 +83,28 @@
 
             <nav id="site-navigation" class="main-navigation hidden md:block">
                 <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'header-menu',
-                    'container' => false,
-                    'menu_id' => 'primary-menu',
-                    'menu_class' => 'flex items-center space-x-2 lg:space-x-4',
-                    'fallback_cb' => false,
-                ));
+                if (has_nav_menu('header-menu')) {
+                    wp_nav_menu(array(
+                        'theme_location' => 'header-menu',
+                        'container'      => false,
+                        'menu_id'        => 'primary-menu',
+                        'menu_class'     => 'flex items-center space-x-2 lg:space-x-6 text-sm font-bold text-gray-700',
+                    ));
+                } else {
+                    ?>
+                    <ul id="primary-menu" class="flex items-center space-x-4 lg:space-x-6 text-sm font-bold text-gray-700">
+                        <li><a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-brand-600 transition-colors py-2 px-1">ホーム</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/services')); ?>" class="hover:text-brand-600 transition-colors py-2 px-1">サービス</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/product')); ?>" class="hover:text-brand-600 transition-colors py-2 px-1 text-brand-600">プロダクト</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/company')); ?>" class="hover:text-brand-600 transition-colors py-2 px-1">会社情報</a></li>
+                        <li>
+                            <a href="<?php echo esc_url(home_url('/contact')); ?>" style="background-color: #A184A3 !important; color: #FFFFFF !important;" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full font-bold shadow-sm hover:opacity-90 transition-all duration-300 ml-2">
+                                お問い合わせ
+                            </a>
+                        </li>
+                    </ul>
+                    <?php
+                }
                 ?>
             </nav><!-- #site-navigation -->
 
