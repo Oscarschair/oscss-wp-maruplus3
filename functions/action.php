@@ -98,105 +98,78 @@ function maruplus_seo_meta_tags()
     } else {
         $canonical_url = home_url(add_query_arg(array(), $wp->request));
     }
-    echo '<link rel="canonical" href="' . esc_url($canonical_url) . '" />' . "\n";
 
-    // 2. Meta Description & Title & OGP
-    $title = '';
-    $description = '';
+    // 2. Title & Description
+    $site_name = get_bloginfo('name');
+    $title = is_front_page() ? $site_name . ' | スタートアップ初期開発・DevSecOps一貫対応' : wp_get_document_title();
+    $description = 'マルプラスのサンジョウは、スタートアップの初期開発・DevSecOps一気通貫対応・データ計測基盤の設計・マーケティング運用の自動化まで、技術とビジネスを共創するパートナーです。';
 
-    if (is_home() || is_front_page()) {
-        $title = get_bloginfo('name') . ' - ' . get_bloginfo('description');
-        $description = 'マルプラスのサンジョウは、スタートアップの初期開発・DevSecOps一気通貫対応・データ計測基盤の設計・マーケティング運用自動化まで、技術とビジネスを共創するパートナーです。';
-    } elseif (is_page('services') || is_page('service')) {
-        $title = 'サービス・事業 | ' . get_bloginfo('name');
-        $description = 'マルプラスのサンジョウが提供する3つのコア・バリュー（Data Strategy Engineer, Marketing Ops Architect, DevSecOps Engineer）と事業内容のご紹介。';
-    } elseif (is_page('product') || is_page('products')) {
-        $title = 'プロダクト | ' . get_bloginfo('name');
-        $description = 'マルプラスが提供する自社SaaSプロダクト群（geomaru, stocksmaru, risemaru）のご紹介。';
-    } elseif (is_page('company')) {
-        $title = '会社概要・代表 | ' . get_bloginfo('name');
-        $description = 'マルプラスのサンジョウの会社概要、ビジョン、代表プロフィールのご紹介。';
-    } elseif (is_page('contact')) {
-        $title = 'お問い合わせ | ' . get_bloginfo('name');
-        $description = 'マルプラスのサンジョウへのお問い合わせ・無料相談フォーム。Web開発、データ基盤構築、マーケティング自動化のご相談を受け付けております。';
-    } elseif (is_page('privacy-policy')) {
-        $title = 'プライバシーポリシー | ' . get_bloginfo('name');
-        $description = 'マルプラスのサンジョウのプライバシーポリシー（個人情報保護方針）に関する記述。';
-    } elseif (is_singular('service')) {
-        $title = get_the_title() . ' | サービス | ' . get_bloginfo('name');
-        $description = wp_strip_all_tags(get_the_excerpt());
-        if (empty($description)) {
-            $description = mb_substr(wp_strip_all_tags(get_the_content()), 0, 120) . '...';
+    if (is_singular()) {
+        $post_excerpt = get_the_excerpt();
+        if (!empty($post_excerpt)) {
+            $description = esc_attr(wp_strip_all_tags($post_excerpt));
         }
-    } elseif (is_singular('post')) {
-        $title = get_the_title() . ' | 技術ブログ | ' . get_bloginfo('name');
-        $description = wp_strip_all_tags(get_the_excerpt());
-        if (empty($description)) {
-            $description = mb_substr(wp_strip_all_tags(get_the_content()), 0, 120) . '...';
-        }
-    } else {
-        $title = wp_get_document_title();
-        $description = 'マルプラスのサンジョウ - 技術とビジネスを加速する開発・基盤・マーケティングパートナー';
     }
 
+    // Output Meta Tags
+    echo '<link rel="canonical" href="' . esc_url($canonical_url) . '" />' . "\n";
     echo '<meta name="description" content="' . esc_attr($description) . '" />' . "\n";
+
+    // OGP Tags
+    echo '<meta property="og:site_name" content="' . esc_attr($site_name) . '" />' . "\n";
     echo '<meta property="og:title" content="' . esc_attr($title) . '" />' . "\n";
     echo '<meta property="og:description" content="' . esc_attr($description) . '" />' . "\n";
+    echo '<meta property="og:type" content="' . (is_front_page() ? 'website' : 'article') . '" />' . "\n";
     echo '<meta property="og:url" content="' . esc_url($canonical_url) . '" />' . "\n";
-    echo '<meta property="og:type" content="' . (is_singular() ? 'article' : 'website') . '" />' . "\n";
-    echo '<meta property="og:site_name" content="' . esc_attr(get_bloginfo('name')) . '" />' . "\n";
 
-    // 3. JSON-LD Structured Data
-    $url = esc_url($canonical_url);
+    // Twitter Card
+    echo '<meta name="twitter:card" content="summary_large_image" />' . "\n";
+    echo '<meta name="twitter:title" content="' . esc_attr($title) . '" />' . "\n";
+    echo '<meta name="twitter:description" content="' . esc_attr($description) . '" />' . "\n";
+
+    // JSON-LD Structured Data
     $json_ld = array(
         '@context' => 'https://schema.org',
         '@graph'   => array()
     );
 
-    // Organization Structured Data
+    // Organization Schema
     $organization = array(
         '@type' => 'Organization',
         '@id'   => home_url('/#organization'),
-        'name'  => get_bloginfo('name'),
+        'name'  => '株式会社マルプラス',
         'url'   => home_url('/'),
-        'logo'  => get_template_directory_uri() . '/screenshot.png',
+        'logo'  => get_template_directory_uri() . '/assets/favicon/android-icon-192x192.png',
+        'sameAs' => array()
     );
-    
-    $custom_logo_id = get_theme_mod('custom_logo');
-    if ($custom_logo_id) {
-        $logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
-        if ($logo_url) {
-            $organization['logo'] = $logo_url;
-        }
-    }
     $json_ld['@graph'][] = $organization;
 
-    // WebSite Structured Data
+    // WebSite Schema
     $website = array(
-        '@type'     => 'WebSite',
-        '@id'       => home_url('/#website'),
-        'url'       => home_url('/'),
-        'name'      => get_bloginfo('name'),
+        '@type' => 'WebSite',
+        '@id'   => home_url('/#website'),
+        'url'   => home_url('/'),
+        'name'  => $site_name,
         'publisher' => array(
             '@id' => home_url('/#organization')
         )
     );
     $json_ld['@graph'][] = $website;
 
-    // WebPage Structured Data
+    // WebPage Schema
     $webpage = array(
-        '@type'       => 'WebPage',
-        '@id'         => $url . '#webpage',
-        'url'         => $url,
-        'name'        => $title,
-        'description' => $description,
-        'isPartOf'    => array(
+        '@type' => 'WebPage',
+        '@id'   => $canonical_url . '#webpage',
+        'url'   => $canonical_url,
+        'name'  => $title,
+        'isPartOf' => array(
             '@id' => home_url('/#website')
-        )
+        ),
+        'description' => $description
     );
     if (is_singular()) {
         $webpage['datePublished'] = get_the_date('c');
-        $webpage['dateModified'] = get_the_modified_date('c');
+        $webpage['dateModified']  = get_the_modified_date('c');
     }
     $json_ld['@graph'][] = $webpage;
 
@@ -283,3 +256,24 @@ function maruplus_create_product_page()
     }
 }
 add_action('init', 'maruplus_create_product_page');
+
+/**
+ * Automatically create the "Product Page Release" news post in the WordPress database if it doesn't exist
+ */
+function maruplus_create_product_news_post()
+{
+    $slug = 'product-page-release';
+    $post = get_page_by_path($slug, OBJECT, 'post');
+    
+    if (!$post) {
+        $post_data = array(
+            'post_title'   => '自社プロダクトページ（GEOマル / STOCKSマル / RISEマル）を公開いたしました',
+            'post_name'    => $slug,
+            'post_status'  => 'publish',
+            'post_type'    => 'post',
+            'post_content' => '自社プロダクト（GEOマル・STOCKSマル・RISEマル）の情報をまとめた「自社プロダクトページ」を開設・公開いたしました。各プロダクトの機能概要、各種リンクを掲載しておりますので、ぜひご覧ください。',
+        );
+        wp_insert_post($post_data);
+    }
+}
+add_action('init', 'maruplus_create_product_news_post');
