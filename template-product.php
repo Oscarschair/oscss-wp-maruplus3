@@ -9,45 +9,45 @@ get_header();
 ?>
 
 <main id="primary" class="site-main product-page font-sans bg-gray-50/70">
-    <!-- Hero Section: Pure Inline-Style Dark Purple Banner -->
-    <section style="background: linear-gradient(135deg, #1A0C1E 0%, #0F0512 100%) !important; color: #FFFFFF !important;" class="product-page__hero relative overflow-hidden pt-20 pb-16 sm:pt-24 sm:pb-20 md:pt-32 md:pb-24">
+    <!-- Hero Section: Pastel Color Palette Aligned with Company & Services Pages -->
+    <section style="background: linear-gradient(135deg, #F8F0FC 0%, #E9D5FF 60%, #F3E8FF 100%) !important; color: #1F1122 !important;" class="product-page__hero relative overflow-hidden pt-20 pb-16 sm:pt-24 sm:pb-20 md:pt-32 md:pb-24">
         <!-- Floating Animated Orbs -->
         <div class="product-page__hero-bg absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
-            <div class="product-page__hero-orb product-page__hero-orb--1 absolute w-72 h-72 md:w-96 md:h-96 rounded-full mix-blend-screen filter blur-3xl opacity-25 animate-float" style="top: -15%; left: -10%; background-color: #D8BFD8;"></div>
-            <div class="product-page__hero-orb product-page__hero-orb--2 absolute w-72 h-72 md:w-96 md:h-96 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-pulse-slow" style="top: 10%; right: -10%; background-color: #B2AC88;"></div>
+            <div class="product-page__hero-orb product-page__hero-orb--1 absolute w-72 h-72 md:w-96 md:h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-float" style="top: -15%; left: -10%; background-color: #D8BFD8;"></div>
+            <div class="product-page__hero-orb product-page__hero-orb--2 absolute w-72 h-72 md:w-96 md:h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-35 animate-pulse-slow" style="top: 10%; right: -10%; background-color: #B2AC88;"></div>
         </div>
 
         <div class="product-page__hero-container container mx-auto px-4 sm:px-6 relative z-10 text-center">
-            <!-- Badge -->
-            <div style="background: rgba(255, 255, 255, 0.15) !important; border: 1px solid rgba(255, 255, 255, 0.3) !important;" class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full mb-6 shadow-md">
-                <span style="color: #F3E8FF !important;" class="text-xs sm:text-sm font-black uppercase tracking-widest">Flexible 3-Plus SaaS Suite</span>
-                <span style="background-color: #B2AC88 !important; color: #1F1122 !important;" class="text-xs font-black px-2.5 py-0.5 rounded-full">＋ × 3</span>
+            <!-- Pastel Badge -->
+            <div style="background: rgba(126, 34, 206, 0.08) !important; border: 1px solid rgba(126, 34, 206, 0.2) !important;" class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full mb-6 shadow-sm">
+                <span style="color: #6B21A8 !important;" class="text-xs sm:text-sm font-black uppercase tracking-widest">Flexible 3-Plus SaaS Suite</span>
+                <span style="background-color: #7E22CE !important; color: #FFFFFF !important;" class="text-xs font-black px-2.5 py-0.5 rounded-full">＋ × 3</span>
             </div>
 
-            <!-- Title: High Contrast White & Light Purple -->
-            <h1 style="color: #FFFFFF !important;" class="product-page__hero-title text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 tracking-tight leading-tight drop-shadow-md">
+            <!-- Title: High Contrast Deep Navy Purple Text on Pastel Background -->
+            <h1 style="color: #1F1122 !important;" class="product-page__hero-title text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 tracking-tight leading-tight drop-shadow-sm">
                 マルプラスの自社プロダクト：<br class="hidden sm:inline" />
-                <span style="color: #E9D5FF !important;" class="font-black">
+                <span style="color: #6B21A8 !important;" class="font-black">
                     技術とビジネスを加速するSaaS群
                 </span>
             </h1>
 
-            <!-- Description: Guaranteed Readable Light Purple Text -->
-            <p style="color: #F3E8FF !important; opacity: 1 !important;" class="product-page__hero-description max-w-3xl mx-auto text-sm sm:text-lg md:text-xl font-bold leading-relaxed text-center drop-shadow">
+            <!-- Description: Guaranteed Readable Dark Text -->
+            <p style="color: #3B2040 !important; opacity: 1 !important;" class="product-page__hero-description max-w-3xl mx-auto text-sm sm:text-lg md:text-xl font-bold leading-relaxed text-center">
                 生成AI時代のSEO/GEO最適化、東証株価データ分析、ソロプレナー向けCRMまで。<br class="hidden sm:inline" />
                 実務から生まれた3つの自社プロダクト群が、貴社と個人の成長を強力にサポートします。
             </p>
         </div>
     </section>
 
-    <!-- Wave Divider: Safely Separated Outside Hero Section -->
-    <div style="background: linear-gradient(135deg, #1A0C1E 0%, #0F0512 100%) !important;" class="product-page__wave-wrapper relative w-full overflow-hidden leading-none">
-        <svg class="product-page__wave-svg relative block w-full h-10 sm:h-14 md:h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.42,120.2,207.2,109.83,248.66,104.34,288.66,82.49,321.39,56.44Z" fill="#F9FAFB"></path>
+    <!-- Wave Divider: Ultra-Smooth Cubic Bezier Wave (Zero Angular Artifacts) -->
+    <div style="background: #F3E8FF !important;" class="product-page__wave-wrapper relative w-full overflow-hidden leading-none">
+        <svg class="product-page__wave-svg relative block w-full h-12 sm:h-16 md:h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,45 C200,95 400,10 600,55 C800,100 1000,20 1200,50 L1200,120 L0,120 Z" fill="#F9FAFB"></path>
         </svg>
     </div>
 
-    <!-- Main Product List Container -->
+    <!-- Main Product List Container: Clean & Completely Unobstructed -->
     <div class="product-page__main-container container mx-auto px-4 sm:px-6 relative z-20 pt-8 sm:pt-12 pb-12 sm:pb-20 space-y-16 sm:space-y-24 md:space-y-36">
 
         <!-- Product 1: GEOマル (geomaru) -->
@@ -108,11 +108,11 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Enhanced Ultra-High Visibility & Heavy Clickable Button -->
+                    <!-- Enhanced Responsive CTA Button -->
                     <div class="product-card__action pt-2">
                         <a href="https://geomaru.oscarchair.jp" target="_blank" rel="noopener noreferrer" 
-                           style="background: linear-gradient(135deg, #6B21A8 0%, #4C1D95 100%) !important; border: 2px solid #581C87 !important; color: #FFFFFF !important;"
-                           class="product-card__button w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-10 py-4 sm:py-5 rounded-2xl font-black text-base sm:text-lg md:text-xl shadow-2xl hover:shadow-purple-900/40 transition-all duration-300 transform hover:-translate-y-1 group/btn">
+                           style="background: linear-gradient(135deg, #7E22CE 0%, #6B21A8 100%) !important; color: #FFFFFF !important;"
+                           class="product-card__button w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-10 py-4 sm:py-5 rounded-2xl font-black text-base sm:text-lg md:text-xl shadow-xl hover:shadow-purple-700/30 transition-all duration-300 transform hover:-translate-y-1 group/btn">
                             <span>GEOマル Webサイトを開く</span>
                             <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-3 transform group-hover/btn:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7-7 7M5 12h14"></path></svg>
                         </a>
@@ -186,11 +186,11 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Enhanced Ultra-High Visibility & Heavy Clickable Button -->
+                    <!-- Enhanced Responsive CTA Button -->
                     <div class="product-card__action pt-2">
                         <a href="https://stocksmaru.oscarchair.jp" target="_blank" rel="noopener noreferrer" 
-                           style="background: linear-gradient(135deg, #3730A3 0%, #1E1B4B 100%) !important; border: 2px solid #312E81 !important; color: #FFFFFF !important;"
-                           class="product-card__button w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-10 py-4 sm:py-5 rounded-2xl font-black text-base sm:text-lg md:text-xl shadow-2xl hover:shadow-indigo-900/40 transition-all duration-300 transform hover:-translate-y-1 group/btn">
+                           style="background: linear-gradient(135deg, #4F46E5 0%, #3730A3 100%) !important; color: #FFFFFF !important;"
+                           class="product-card__button w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-10 py-4 sm:py-5 rounded-2xl font-black text-base sm:text-lg md:text-xl shadow-xl hover:shadow-indigo-700/30 transition-all duration-300 transform hover:-translate-y-1 group/btn">
                             <span>STOCKSマル Webサイトを開く</span>
                             <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-3 transform group-hover/btn:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7-7 7M5 12h14"></path></svg>
                         </a>
@@ -264,11 +264,11 @@ get_header();
                         </div>
                     </div>
 
-                    <!-- Enhanced Ultra-High Visibility & Heavy Clickable Button -->
+                    <!-- Enhanced Responsive CTA Button -->
                     <div class="product-card__action pt-2">
                         <a href="https://risemaru.oscarchair.jp" target="_blank" rel="noopener noreferrer" 
-                           style="background: linear-gradient(135deg, #BE123C 0%, #881337 100%) !important; border: 2px solid #9F1239 !important; color: #FFFFFF !important;"
-                           class="product-card__button w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-10 py-4 sm:py-5 rounded-2xl font-black text-base sm:text-lg md:text-xl shadow-2xl hover:shadow-rose-900/40 transition-all duration-300 transform hover:-translate-y-1 group/btn">
+                           style="background: linear-gradient(135deg, #E11D48 0%, #BE123C 100%) !important; color: #FFFFFF !important;"
+                           class="product-card__button w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-10 py-4 sm:py-5 rounded-2xl font-black text-base sm:text-lg md:text-xl shadow-xl hover:shadow-rose-700/30 transition-all duration-300 transform hover:-translate-y-1 group/btn">
                             <span>RISEマル Webサイトを開く</span>
                             <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-3 transform group-hover/btn:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7-7 7M5 12h14"></path></svg>
                         </a>
@@ -308,21 +308,21 @@ get_header();
         }
     </style>
 
-    <!-- Bottom High-Impact Contact CTA Section (Spacious Margins & Elegant Padding) -->
-    <section style="background: linear-gradient(135deg, #1F1122 0%, #100812 100%) !important; color: #FFFFFF !important;" class="product-page__cta relative overflow-hidden py-24 sm:py-32 md:py-36 mt-28 sm:mt-40 md:mt-48 border-t border-purple-900/50">
+    <!-- Bottom Contact CTA Section (Pastel Aligned Theme) -->
+    <section style="background: linear-gradient(135deg, #FAF5FC 0%, #F3E8FF 100%) !important; color: #1F1122 !important;" class="product-page__cta relative overflow-hidden py-24 sm:py-32 md:py-36 mt-28 sm:mt-40 md:mt-48 border-t border-purple-200">
         <div class="product-page__cta-container container max-w-4xl mx-auto px-6 sm:px-8 text-center relative z-10">
-            <h2 style="color: #FFFFFF !important;" class="product-page__cta-title text-2xl sm:text-4xl lg:text-5xl font-black mb-6 sm:mb-8 tracking-tight leading-tight">
+            <h2 style="color: #1F1122 !important;" class="product-page__cta-title text-2xl sm:text-4xl lg:text-5xl font-black mb-6 sm:mb-8 tracking-tight leading-tight">
                 自社SaaSの導入・開発カスタマイズのご相談
             </h2>
-            <p style="color: #E9D5FF !important; opacity: 1 !important;" class="product-page__cta-desc max-w-2xl mx-auto mb-10 sm:mb-12 text-base sm:text-lg md:text-xl font-bold leading-relaxed">
+            <p style="color: #4B2854 !important;" class="product-page__cta-desc max-w-2xl mx-auto mb-10 sm:mb-12 text-base sm:text-lg md:text-xl font-bold leading-relaxed">
                 各プロダクトのAPI連携、企業向けカスタマイズ開発、データ基盤の構築支援までお気軽にお問い合わせください。
             </p>
             <div class="product-page__cta-action">
                 <a href="<?php echo esc_url(home_url('/contact')); ?>" 
-                   style="background: linear-gradient(135deg, #FFFFFF 0%, #F5EBF7 100%) !important; color: #2D1E2F !important;"
-                   class="product-page__cta-button w-full sm:w-auto inline-flex items-center justify-center px-10 sm:px-12 py-4 sm:py-5 rounded-2xl font-black text-base sm:text-lg md:text-xl shadow-2xl hover:shadow-purple-500/30 transition-all duration-300 transform hover:-translate-y-1.5 group">
+                   style="background: linear-gradient(135deg, #7E22CE 0%, #6B21A8 100%) !important; color: #FFFFFF !important;"
+                   class="product-page__cta-button w-full sm:w-auto inline-flex items-center justify-center px-10 sm:px-12 py-4 sm:py-5 rounded-2xl font-black text-base sm:text-lg md:text-xl shadow-2xl hover:shadow-purple-700/40 transition-all duration-300 transform hover:-translate-y-1.5 group">
                     <span>お問い合わせはこちら</span>
-                    <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-3 text-purple-700 transform group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7-7 7M5 12h14"></path></svg>
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6 ml-3 text-white transform group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7-7 7M5 12h14"></path></svg>
                 </a>
             </div>
         </div>
