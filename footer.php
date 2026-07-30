@@ -1,8 +1,8 @@
-<footer style="background-color: #3D2D3F !important; color: #FFFFFF !important; border-top: 4px solid #A184A3 !important;" class="py-16 md:py-20 relative overflow-hidden isolate">
-    <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 relative z-10">
+<footer style="background-color: #3D2D3F !important; color: #FFFFFF !important; border-top: 4px solid #A184A3 !important; padding-top: 6rem !important; padding-bottom: 5rem !important;" class="relative overflow-hidden isolate">
+    <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 relative z-10">
         <!-- Column 1: Brand & Description (5 cols) -->
         <div class="lg:col-span-5 flex flex-col justify-between space-y-6">
-            <div>
+            <div class="pr-0 lg:pr-8">
                 <a href="<?php echo esc_url(home_url('/')); ?>" rel="home" class="inline-flex items-center space-x-3.5 group outline-none mb-6">
                     <div class="logo-wrapper relative w-11 h-11 flex items-center justify-center overflow-hidden rounded-xl bg-white shadow-sm group-hover:shadow-md transition-all duration-500 ring-1 ring-black/[0.03]">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/logo-mark.svg" alt="マルプラスのサンジョウ Logo" class="w-9 h-9 transform group-hover:scale-110 group-hover:rotate-[5deg] transition-transform duration-500 ease-out">
@@ -14,7 +14,7 @@
                         </div>
                     </div>
                 </a>
-                <p style="color: #F1E6F2 !important;" class="text-sm md:text-base leading-relaxed max-w-md font-medium">
+                <p style="color: #F1E6F2 !important;" class="text-sm md:text-base leading-relaxed font-medium">
                     スタートアップの初期開発・DevSecOps一気通貫対応・データ計測基盤の設計・マーケティング運用の自動化まで、技術とビジネスを共創するパートナーです。
                 </p>
             </div>
@@ -43,7 +43,7 @@
                     margin: 0 !important;
                     display: grid !important;
                     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-                    gap: 0.875rem !important;
+                    gap: 1rem !important;
                 }
                 @media (min-width: 640px) {
                     .footer-navigation ul {
@@ -59,7 +59,7 @@
                     background-color: rgba(255, 255, 255, 0.12) !important;
                     color: #FFFFFF !important;
                     border: 1px solid rgba(255, 255, 255, 0.25) !important;
-                    padding: 10px 16px !important;
+                    padding: 12px 18px !important;
                     border-radius: 10px !important;
                     font-size: 0.875rem !important;
                     font-weight: 700 !important;
