@@ -1,4 +1,3 @@
-<?php wp_footer(); ?>
 <footer class="bg-gradient-to-b from-brand-950 to-gray-950 text-gray-300 py-16 border-t border-brand-900 relative overflow-hidden isolate">
     <!-- Background glow effect -->
     <div class="absolute inset-x-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl opacity-10 pointer-events-none" aria-hidden="true">
@@ -30,21 +29,45 @@
             <h4 class="text-white text-base font-bold mb-6 pb-2 border-b border-white/10 w-24">ナビゲーション</h4>
             <nav class="footer-navigation">
                 <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'footer-menu',
-                    'menu_id'        => 'footer-menu',
-                    'depth'          => 1,
-                    'container'      => false,
-                    'menu_class'     => 'flex flex-col space-y-3.5 text-sm',
-                ));
+                if (has_nav_menu('footer-menu')) {
+                    wp_nav_menu(array(
+                        'theme_location' => 'footer-menu',
+                        'menu_id'        => 'footer-menu',
+                        'depth'          => 1,
+                        'container'      => false,
+                        'menu_class'     => 'flex flex-col space-y-3 text-sm list-none p-0 m-0',
+                    ));
+                } else {
+                    // Fallback Navigation
+                    ?>
+                    <ul class="flex flex-col space-y-3 text-sm list-none p-0 m-0">
+                        <li><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/services')); ?>">サービス・事業</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/product')); ?>">プロダクト</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/company')); ?>">会社概要・代表</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/news')); ?>">お知らせ・技術ブログ</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a></li>
+                    </ul>
+                    <?php
+                }
                 ?>
             </nav>
             <!-- Custom CSS for menu link hover animations in footer -->
             <style>
+                .footer-navigation ul {
+                    list-style: none !important;
+                    padding: 0 !important;
+                    margin: 0 !important;
+                }
+                .footer-navigation ul li {
+                    list-style: none !important;
+                    margin: 0 !important;
+                }
                 .footer-navigation ul li a {
                     color: #9ca3af;
                     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
                     display: inline-block;
+                    text-decoration: none;
                 }
                 .footer-navigation ul li a:hover {
                     color: #d8bfd8;
@@ -75,6 +98,7 @@
         <p class="text-xs text-gray-500">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
     </div>
 </footer>
+<?php wp_footer(); ?>
 </body>
 
 </html>

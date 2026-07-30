@@ -90,15 +90,10 @@ get_header();
                     </div>
                 </div>
 
-                <div class="lg:w-1/2 flex items-center justify-center bg-purple-900/5 rounded-2xl p-6 border border-purple-100 relative overflow-hidden">
-                    <div class="w-full h-full min-h-[280px] flex flex-col justify-center items-center text-center p-6 bg-white rounded-xl shadow-inner border border-purple-100/60">
-                        <div class="w-16 h-16 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center text-3xl font-black mb-4 shadow-sm">
-                            GEO
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Generative Engine Optimization</h3>
-                        <p class="text-sm text-gray-500 max-w-md">
-                            検索エンジン最適化(SEO)を超えて、AI回答エンジンに選ばれるWebサイト構造を構築するための次世代診断ツール
-                        </p>
+                <!-- Product Image Frame -->
+                <div class="lg:w-1/2 flex items-center justify-center">
+                    <div class="relative overflow-hidden rounded-2xl shadow-xl border border-purple-100/80 group-hover:scale-[1.02] transition-transform duration-500 w-full">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/geomaru.svg" alt="geomaru (GEOマル) プレビュー画像枠" class="w-full h-auto block object-cover">
                     </div>
                 </div>
             </div>
@@ -160,15 +155,10 @@ get_header();
                     </div>
                 </div>
 
-                <div class="lg:w-1/2 flex items-center justify-center bg-slate-800/40 rounded-2xl p-6 border border-slate-800 relative overflow-hidden">
-                    <div class="w-full h-full min-h-[280px] flex flex-col justify-center items-center text-center p-6 bg-slate-900/90 rounded-xl border border-indigo-500/20 shadow-2xl">
-                        <div class="w-16 h-16 rounded-2xl bg-indigo-500/20 border border-indigo-400/30 text-indigo-400 flex items-center justify-center text-3xl font-black mb-4">
-                            📊
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">J-Quants Powered Analytics</h3>
-                        <p class="text-sm text-slate-400 max-w-md">
-                            日本取引所グループ(JPX)の公式データ基盤と直結。正確でタイムリーな市場データを提供する本格的な株式分析コンソール
-                        </p>
+                <!-- Product Image Frame -->
+                <div class="lg:w-1/2 flex items-center justify-center">
+                    <div class="relative overflow-hidden rounded-2xl shadow-xl border border-slate-700/80 group-hover:scale-[1.02] transition-transform duration-500 w-full">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/stocksmaru.svg" alt="stocksmaru (STOCKSマル) プレビュー画像枠" class="w-full h-auto block object-cover">
                     </div>
                 </div>
             </div>
@@ -230,15 +220,10 @@ get_header();
                     </div>
                 </div>
 
-                <div class="lg:w-1/2 flex items-center justify-center bg-rose-900/5 rounded-2xl p-6 border border-rose-100 relative overflow-hidden">
-                    <div class="w-full h-full min-h-[280px] flex flex-col justify-center items-center text-center p-6 bg-white rounded-xl shadow-inner border border-rose-100/60">
-                        <div class="w-16 h-16 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center text-3xl font-black mb-4 shadow-sm">
-                            🚀
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Rise & Grow Together</h3>
-                        <p class="text-sm text-gray-500 max-w-md">
-                            一人企業の複雑な管理業務をZero-Input発想でシンプルに。「履歴書作成は無料、勝率アップはAI」で支えるキャリアOS
-                        </p>
+                <!-- Product Image Frame -->
+                <div class="lg:w-1/2 flex items-center justify-center">
+                    <div class="relative overflow-hidden rounded-2xl shadow-xl border border-rose-100/80 group-hover:scale-[1.02] transition-transform duration-500 w-full">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/risemaru.svg" alt="risemaru (RISEマル) プレビュー画像枠" class="w-full h-auto block object-cover">
                     </div>
                 </div>
             </div>
