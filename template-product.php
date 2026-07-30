@@ -9,8 +9,8 @@ get_header();
 ?>
 
 <main id="primary" class="site-main product-page font-sans bg-gray-50/70">
-    <!-- Hero Section: Ultra High-Contrast Dark Purple Premium Banner -->
-    <section class="product-page__hero relative overflow-hidden bg-hero-gradient text-brand-950 pt-20 pb-20 md:pt-28 md:pb-28">
+    <!-- Hero Section: Pure Inline-Style Dark Purple Banner -->
+    <section style="background: linear-gradient(135deg, #1A0C1E 0%, #0F0512 100%) !important; color: #FFFFFF !important;" class="product-page__hero relative overflow-hidden pt-20 pb-16 sm:pt-24 sm:pb-20 md:pt-32 md:pb-24">
         <!-- Floating Animated Orbs -->
         <div class="product-page__hero-bg absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
             <div class="product-page__hero-orb product-page__hero-orb--1 absolute w-72 h-72 md:w-96 md:h-96 rounded-full mix-blend-screen filter blur-3xl opacity-25 animate-float" style="top: -15%; left: -10%; background-color: #D8BFD8;"></div>
@@ -19,36 +19,36 @@ get_header();
 
         <div class="product-page__hero-container container mx-auto px-4 sm:px-6 relative z-10 text-center">
             <!-- Badge -->
-            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-5 shadow-md">
-                <span style="color: #D8BFD8 !important;" class="text-xs sm:text-sm font-black uppercase tracking-widest">Flexible 3-Plus SaaS Suite</span>
-                <span style="background-color: #B2AC88 !important; color: #1F1122 !important;" class="text-xs font-black px-2 py-0.5 rounded-full">＋ × 3</span>
+            <div style="background: rgba(255, 255, 255, 0.15) !important; border: 1px solid rgba(255, 255, 255, 0.3) !important;" class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full mb-6 shadow-md">
+                <span style="color: #F3E8FF !important;" class="text-xs sm:text-sm font-black uppercase tracking-widest">Flexible 3-Plus SaaS Suite</span>
+                <span style="background-color: #B2AC88 !important; color: #1F1122 !important;" class="text-xs font-black px-2.5 py-0.5 rounded-full">＋ × 3</span>
             </div>
 
-            <!-- Title: High Contrast White & Gold -->
-            <h1 style="color: #FFFFFF !important;" class="product-page__hero-title text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-5 tracking-tight leading-snug drop-shadow-md">
+            <!-- Title: High Contrast White & Light Purple -->
+            <h1 style="color: #FFFFFF !important;" class="product-page__hero-title text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 tracking-tight leading-tight drop-shadow-md">
                 マルプラスの自社プロダクト：<br class="hidden sm:inline" />
-                <span style="color: #E6CBE8 !important;" class="font-black">
+                <span style="color: #E9D5FF !important;" class="font-black">
                     技術とビジネスを加速するSaaS群
                 </span>
             </h1>
 
-            <!-- Description: Guaranteed Readable High-Contrast Light Purple -->
+            <!-- Description: Guaranteed Readable Light Purple Text -->
             <p style="color: #F3E8FF !important; opacity: 1 !important;" class="product-page__hero-description max-w-3xl mx-auto text-sm sm:text-lg md:text-xl font-bold leading-relaxed text-center drop-shadow">
                 生成AI時代のSEO/GEO最適化、東証株価データ分析、ソロプレナー向けCRMまで。<br class="hidden sm:inline" />
                 実務から生まれた3つの自社プロダクト群が、貴社と個人の成長を強力にサポートします。
             </p>
         </div>
-
-        <!-- Wave Divider -->
-        <div class="product-page__hero-wave absolute bottom-0 w-full overflow-hidden leading-none z-10">
-            <svg class="product-page__wave-svg relative block w-full h-10 sm:h-14 md:h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.42,120.2,207.2,109.83,248.66,104.34,288.66,82.49,321.39,56.44Z" fill="#F9FAFB"></path>
-            </svg>
-        </div>
     </section>
 
-    <!-- Main Product List Container: Clean & No Overlapping Negative Margins -->
-    <div class="product-page__main-container container mx-auto px-4 sm:px-6 relative z-10 pt-10 sm:pt-16 pb-20 space-y-16 sm:space-y-24 md:space-y-36">
+    <!-- Wave Divider: Safely Separated Outside Hero Section (Zero Text Collision) -->
+    <div style="background: linear-gradient(135deg, #1A0C1E 0%, #0F0512 100%) !important;" class="product-page__wave-wrapper relative w-full overflow-hidden leading-none">
+        <svg class="product-page__wave-svg relative block w-full h-10 sm:h-14 md:h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.42,120.2,207.2,109.83,248.66,104.34,288.66,82.49,321.39,56.44Z" fill="#F9FAFB"></path>
+        </svg>
+    </div>
+
+    <!-- Main Product List Container: Clean & Completely Unobstructed -->
+    <div class="product-page__main-container container mx-auto px-4 sm:px-6 relative z-20 pt-8 sm:pt-12 pb-24 space-y-16 sm:space-y-24 md:space-y-36">
 
         <!-- Product 1: GEOマル (geomaru) -->
         <section id="geomaru" class="product-card product-card--geomaru bg-white rounded-2xl sm:rounded-3xl shadow-xl p-6 sm:p-8 md:p-12 border-t-8 border-purple-600 border border-gray-100 hover:shadow-2xl transition-all duration-500">

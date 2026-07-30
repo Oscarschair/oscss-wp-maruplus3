@@ -1,26 +1,27 @@
 # WordPress & Web App 高品質 UI/UX デザイン ＆ 設計標準 (uiux-design-standard.md)
 
-本ドキュメントは、`oscss-wp-maruplus3` において確立された UI/UX デザイン原則、BEM完全構造化クラス規約、画像プレビュー裁断、および Docker/本番デプロイ一貫運用標準を記述します。
+本ドキュメントは、`oscss-wp-maruplus3` において確立された UI/UX デザイン原則、BEM完全構造化クラス規約、Waveイラスト絶対セパレート設計、および Playwright 3画面実機視覚検証プロトコルを記述します。
 
 ---
 
-## 🎨 1. UI/UX 4 大デザイン原則
+## 🎨 1. UI/UX 4 大デザイン原則 ＆ 構造設計
 
-1. **絶対視認性の保証 (Zero Text-Invisibility)**:
-   - 明るい背景上のテキストには `color: #111827 !important;` (ダークネイビー/ブラック) や `color: #374151 !important;` を明示設定。
-   - 暗い背景上では `#FFFFFF` または高輝度な淡色（`#E9D5FF`）を100%保証。
-2. **明確な Call to Action (CTA Alignment)**:
-   - 「Webサイトを開く」「お問い合わせはこちら」などの主要ボタンは、グラデーション背景 (`linear-gradient`) + 大型フォント + アラートスライド矢印アイコンを配置。
-3. **贅沢でストレスのない余白設計 (160px Spacing)**:
-   - 主要カード要素（`product-card` 等）同士の間隔には、デスクトップ `10rem` (160px) の垂直余白（`.product-card + .product-card { margin-top: 10rem !important; }`）を確保。
-4. **アセット・画像領域のコンパクト裁断 (Compact Crop)**:
-   - 画像領域はアッパーファーストビュー（`1920x960` / `16:10`）にトリミングし、`max-h-[360px]` + `object-top` で縦長長大化を防止。
+1. **絶対視認性の保証 (Zero Text-Invisibility & Guaranteed Inline Styles)**:
+   - WordPress 側での Tailwind CSS 未コンパイル事故を回避するため、背景色・文字色には明確なインラインスタイル（`style="background: linear-gradient(135deg, #1A0C1E 0%, #0F0512 100%) !important; color: #FFFFFF !important;"`）を重複付与し可読性を100%保証。
+2. **Waveイラストの絶対セパレート分離設計 (Isolated Wave Divider)**:
+   - 波型 Wave SVG は Hero セクションの中に `absolute` で入れず、独立した要素 `<div class="product-page__wave-wrapper">` としてセクションの外側に設置する。これによりテキストへの被り事故を構造的に100%遮断する。
+3. **明確な Call to Action (CTA Alignment)**:
+   - 「Webサイトを開く」「お問い合わせはこちら」などの主要ボタンは、グラデーション背景 + 大型フォント + アニメーション矢印アイコンを配置。
+4. **贅沢でストレスのない余白設計 (Spacious Card Spacing)**:
+   - 主要カード要素（`product-card` 等）同士の間隔には、デスクトップ `9rem` (144px) の垂直余白（`.product-card + .product-card { margin-top: 9rem !important; }`）を確保。
 
 ---
 
-## 🏷️ 2. BEM構造化クラス付与規約
-- フッター: `site-footer__container`, `site-footer__brand`, `site-footer__subnav`
-- プロダクトページ: `product-page__hero`, `product-card`, `product-card__inner`, `product-card__content`, `product-card__features`, `product-card__media`
+## 🔍 2. 事前デプロイ必須条件: Playwright 3 端末自動実機視覚検証 Protocol
+本番デプロイ前に、必ず以下の3画面サイズで Playwright スクリーンショットを取得し、視覚的に問題がないことを自ら検証した上でデプロイを実行する。
+- **PC (1920x1080)**
+- **Tablet (768x1024)**
+- **Mobile (375x812)**
 
 ---
 
