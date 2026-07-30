@@ -232,18 +232,19 @@ get_header();
     </section>
 
     <!-- Bottom Contact CTA Section -->
-    <section class="bg-gradient-to-r from-brand-900 to-brand-950 text-white py-20 relative overflow-hidden">
+    <section style="background: linear-gradient(135deg, #3D2D3F 0%, #201322 100%) !important; color: #ffffff !important;" class="py-20 relative overflow-hidden">
         <div class="container mx-auto px-6 text-center relative z-10">
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
+            <h2 style="color: #ffffff !important;" class="text-3xl md:text-4xl font-extrabold mb-4">
                 自社SaaSの導入・開発カスタマイズのご相談
             </h2>
-            <p class="text-brand-200 max-w-2xl mx-auto mb-8 text-base md:text-lg">
+            <p style="color: #E6D8E8 !important;" class="max-w-2xl mx-auto mb-8 text-base md:text-lg">
                 各プロダクトのAPI連携、企業向けカスタマイズ開発、データ基盤の構築支援までお気軽にお問い合わせください。
             </p>
             <a href="<?php echo esc_url(home_url('/contact')); ?>" 
-               class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white text-brand-950 font-extrabold text-base shadow-2xl hover:bg-brand-50 transition-all duration-300 transform hover:-translate-y-1">
+               style="background-color: #ffffff !important; color: #3D2D3F !important;"
+               class="inline-flex items-center justify-center px-8 py-4 rounded-xl font-extrabold text-base shadow-2xl hover:bg-purple-50 transition-all duration-300 transform hover:-translate-y-1">
                 お問い合わせはこちら
-                <svg class="w-5 h-5 ml-2 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7-7 7M5 12h14"></path></svg>
+                <svg class="w-5 h-5 ml-2 text-purple-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7-7 7M5 12h14"></path></svg>
             </a>
         </div>
     </section>
