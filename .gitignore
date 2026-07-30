@@ -29,10 +29,15 @@ wp-config.php
 /wp-content/cache/
 /wp-content/languages/
 
-# Environments
+# Environments & Sensitive Files
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-.env.deploy
+.env.*
+!.env.example
+*.env
+*token*.json
+*credentials*.json
+*.key
+*.pem
+*.pfx
+*.p12
+*.secret
