@@ -216,11 +216,6 @@ function maruplus_create_privacy_policy_page()
         wp_update_post($post_data);
         flush_rewrite_rules();
     }
-
-    // Force flush rules via query parameter for deployment verification
-    if (isset($_GET['flush_rules'])) {
-        flush_rewrite_rules();
-    }
 }
 add_action('init', 'maruplus_create_privacy_policy_page');
 
@@ -256,6 +251,72 @@ function maruplus_create_product_page()
     }
 }
 add_action('init', 'maruplus_create_product_page');
+
+/**
+ * Automatically create company page in the WordPress database
+ */
+function maruplus_create_company_page()
+{
+    $slug = 'company';
+    $page = get_page_by_path($slug);
+    
+    if (!$page) {
+        $post_data = array(
+            'post_title'   => '会社情報',
+            'post_name'    => $slug,
+            'post_status'  => 'publish',
+            'post_type'    => 'page',
+            'post_content' => '<!-- handled by template file page-company.php -->',
+        );
+        $page_id = wp_insert_post($post_data);
+        if ($page_id && !is_wp_error($page_id)) {
+            update_post_meta($page_id, '_wp_page_template', 'template-company.php');
+        }
+        flush_rewrite_rules();
+    } elseif ($page->post_status !== 'publish') {
+        $post_data = array(
+            'ID'          => $page->ID,
+            'post_status' => 'publish',
+        );
+        wp_update_post($post_data);
+        update_post_meta($page->ID, '_wp_page_template', 'template-company.php');
+        flush_rewrite_rules();
+    }
+}
+add_action('init', 'maruplus_create_company_page');
+
+/**
+ * Automatically create services page in the WordPress database
+ */
+function maruplus_create_services_page()
+{
+    $slug = 'services';
+    $page = get_page_by_path($slug);
+    
+    if (!$page) {
+        $post_data = array(
+            'post_title'   => 'サービス',
+            'post_name'    => $slug,
+            'post_status'  => 'publish',
+            'post_type'    => 'page',
+            'post_content' => '<!-- handled by template file page-services.php -->',
+        );
+        $page_id = wp_insert_post($post_data);
+        if ($page_id && !is_wp_error($page_id)) {
+            update_post_meta($page_id, '_wp_page_template', 'template-services.php');
+        }
+        flush_rewrite_rules();
+    } elseif ($page->post_status !== 'publish') {
+        $post_data = array(
+            'ID'          => $page->ID,
+            'post_status' => 'publish',
+        );
+        wp_update_post($post_data);
+        update_post_meta($page->ID, '_wp_page_template', 'template-services.php');
+        flush_rewrite_rules();
+    }
+}
+add_action('init', 'maruplus_create_services_page');
 
 /**
  * Automatically create the "Product Page Release" news post in the WordPress database if it doesn't exist
