@@ -4,24 +4,7 @@
         <div class="flex flex-col space-y-6">
             <a href="<?php echo esc_url(home_url('/')); ?>" rel="home" class="flex items-center space-x-3.5 group outline-none">
                 <div class="logo-wrapper relative w-11 h-11 flex items-center justify-center overflow-hidden rounded-xl bg-white shadow-sm group-hover:shadow-md transition-all duration-500 ring-1 ring-black/[0.03]">
-                    <svg class="w-9 h-9 transform group-hover:scale-110 group-hover:rotate-[5deg] transition-transform duration-500 ease-out" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="maruGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#FDFBFE" />
-                                <stop offset="100%" stop-color="#D8BFD8" />
-                            </linearGradient>
-                        </defs>
-                        <circle cx="100" cy="100" r="85" fill="url(#maruGradFooter)" stroke="#D8BFD8" stroke-width="0.5" />
-                        <g opacity="0.4" transform="matrix(0.9, -0.2, 0.2, 0.9, 10, 5)">
-                            <path d="M100 65 V135 M65 100 H135" stroke="#A184A3" stroke-width="18" stroke-linecap="round" />
-                        </g>
-                        <g opacity="0.6" transform="matrix(0.95, 0.1, -0.1, 0.95, -5, -10)">
-                            <path d="M100 65 V135 M65 100 H135" stroke="#B2AC88" stroke-width="18" stroke-linecap="round" />
-                        </g>
-                        <g transform="matrix(1, 0, 0, 1, 0, 0)">
-                            <path d="M100 65 V135 M65 100 H135" stroke="#544057" stroke-width="20" stroke-linecap="round" />
-                        </g>
-                    </svg>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/logo-mark.svg" alt="マルプラスのサンジョウ Logo" class="w-9 h-9 transform group-hover:scale-110 group-hover:rotate-[5deg] transition-transform duration-500 ease-out">
                 </div>
                 <div class="flex flex-col leading-none">
                     <span style="color: #D8BFD8 !important;" class="text-[9px] md:text-[10px] uppercase tracking-[0.25em] font-bold mb-1">MaruPlus Cube</span>
