@@ -1,30 +1,45 @@
-# WordPress & Web App 高品質 UI/UX デザイン ＆ 設計標準 (uiux-design-standard.md)
+# マルプラス（oscss-wp-maruplus3）UI/UX デザイン・品質標準規格ドキュメント
 
-本ドキュメントは、`oscss-wp-maruplus3` において確立された UI/UX デザイン原則、BEM完全構造化クラス規約、Waveイラスト絶対セパレート設計、および Playwright 3画面実機視覚検証プロトコルを記述します。
-
----
-
-## 🎨 1. UI/UX 4 大デザイン原則 ＆ 構造設計
-
-1. **絶対視認性の保証 (Zero Text-Invisibility & Guaranteed Inline Styles)**:
-   - WordPress 側での Tailwind CSS 未コンパイル事故を回避するため、背景色・文字色には明確なインラインスタイル（`style="background: linear-gradient(135deg, #1A0C1E 0%, #0F0512 100%) !important; color: #FFFFFF !important;"`）を重複付与し可読性を100%保証。
-2. **Waveイラストの絶対セパレート分離設計 (Isolated Wave Divider)**:
-   - 波型 Wave SVG は Hero セクションの中に `absolute` で入れず、独立した要素 `<div class="product-page__wave-wrapper">` としてセクションの外側に設置する。これによりテキストへの被り事故を構造的に100%遮断する。
-3. **明確な Call to Action (CTA Alignment)**:
-   - 「Webサイトを開く」「お問い合わせはこちら」などの主要ボタンは、グラデーション背景 + 大型フォント + アニメーション矢印アイコンを配置。
-4. **贅沢でストレスのない余白設計 (Spacious Card Spacing)**:
-   - 主要カード要素（`product-card` 等）同士の間隔には、デスクトップ `9rem` (144px) の垂直余白（`.product-card + .product-card { margin-top: 9rem !important; }`）を確保。
+本ドキュメントは、マルプラス公式サイトおよびプロダクトページにおける UI/UX デザイン、レスポンシブ表示、ブランドテーマ調和、視認性アクセシビリティ、余白システム、およびデプロイ前の自動視覚検証に関する世界標準の品質規格を定めたプロジェクト不可侵の設計ドキュメントです。
 
 ---
 
-## 🔍 2. 事前デプロイ必須条件: Playwright 3 端末自動実機視覚検証 Protocol
-本番デプロイ前に、必ず以下の3画面サイズで Playwright スクリーンショットを取得し、視覚的に問題がないことを自ら検証した上でデプロイを実行する。
-- **PC (1920x1080)**
-- **Tablet (768x1024)**
-- **Mobile (375x812)**
+## 1. Web UI/UX 6 大標準規格 (Modern Web Standards)
+
+### 1.1 📐 8pt Grid余白システム (8pt Grid System)
+- すべての `margin`, `padding`, `gap`, `width`, `height` は **8の倍数（8px, 16px, 24px, 32px, 40px, 48px, 64px, 96px, 128px）** をベースに設計すること。
+- 細かなアイコン位置・小さな補正には 4px グリッドを併用。
+
+### 1.2 🎨 サイト全体のパステルカラーテーマとの調和 ＆ WCAG 4.5:1 コントラスト
+- トップページ・会社情報（`/company`）・サービス（`/services`）で採用されている**パステルパープル・ラベンダー・ライラック・ライトグレー**の上品なパステル世界観を全ページで維持すること。
+- テキストと背景のコントラスト比は **WCAG 2.2 基準の 4.5:1 以上**（大型テキストは 3:1 以上）を物理保証すること。
+- パステル・白背景上のテキストには、視認性100%の**濃色ネイビーパープルテキスト**（`#111827`, `#1F1122`, `#2D1E2F`）を使用すること。
+
+### 1.3 ✍️ タイポグラフィ ＆ 可読性 (Typography & Readability)
+- **最小フォントサイズ**: 本文テキストの最小サイズは **16px (1rem)** とし、視認性を損ねる極小文字を避ける。
+- **行高 (line-height)**: 本文の `line-height` は **1.6 〜 1.8** に設定し、文字の詰まりを防止。
+- **近接の原則 (Proximity)**: 関連する要素同士（見出しと説明文）を近づけ、無関係なグループとの間に広い余白を配置。
+
+### 1.4 🛡️ 「文字いっぱいいっぱい」防止・余白絶対保証規格 (Anti-Crammed Padding)
+- **文字いっぱいいっぱい禁忌**: 枠線やカードの端にテキストが密接し、窮屈に見える状態を100%排除。
+- **機能カードアイテム (`.product-card__feature-item`)**: 最低 **`1rem`（16px / `p-4`）** の内部パディングを確保。
+- **ヒーローコンテナ (`.product-page__hero-container`)**: **`2rem`（32px / `p-8`）** の内部パディングを明示指定。
+- **メインコンテナボトム (`.product-page__main-container`)**: 後続セクションとの衝突を防ぐため **`pb-24`（6rem）〜 `pb-48`（12rem）** の広大なボトムパディングを確保。
+
+### 1.5 🌊 滑らかな三次ベジェ曲線 (Smooth Cubic Bezier Wave) ＆ テキスト分離
+- Wave SVG は折れ線ノイズを排除したなめらかな三次ベジェ曲線（`C` コマンド: `M0,45 C200,95...`）で記述すること。
+- Hero セクションの外側に独立した `<div class="product-page__wave-wrapper">` として完全上下分離配置し、レスポンシブ時の文字被りを物理遮断。
+
+### 1.6 ✨ マイクロインタラクション ＆ 自然なフィードバック
+- ボタンには `transform hover:-translate-y-1` や `shadow-xl hover:shadow-2xl` などの自然なホバーフィードバックを 300ms イージング（`transition-all duration-300`）で付与する。
 
 ---
 
-## 🐳 3. Dockerローカル環境 ＆ 本番SSHパージ一貫運用
-- **ローカル環境**: `docker compose up -d` + WP-CLI 自動DBセットアップ (`http://localhost:8003`)
-- **本番環境**: Git Push + Python Paramiko SSH デプロイ + OPcache/LiteSpeed パージ (`https://maruplus3.oscarchair.jp`)
+## 2. 視覚実機テスト ＆ 本番デプロイプロトコル
+
+1. **Playwright 3 端末スクリーンショット撮影**:
+   `python scratch_capture_verify.py` を実行し、PC (`1920x1080`)、Tablet (`768x1024`)、Mobile (`375x812`) のキャプチャを生成。
+2. **`view_file` による目視確認**:
+   表示崩れ、文字被り、文字の詰め込みすぎがないか視覚的にチェック。
+3. **SSH 自動パージデプロイ**:
+   Paramiko 経由で Git Pull 後、`wp-content/cache/*` の物理削除スクリプトと PHP キャッシュクリアを実行。
