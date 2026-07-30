@@ -47,8 +47,8 @@ get_header();
         </div>
     </section>
 
-    <!-- Main Product List Container with Spacious Distance (space-y-28 md:space-y-36) -->
-    <div class="product-page__main-container container mx-auto px-6 relative z-20 -mt-16 md:-mt-20 space-y-28 md:space-y-36">
+    <!-- Main Product List Container with Spacious Distance (space-y-36 md:space-y-48 lg:space-y-56) -->
+    <div class="product-page__main-container container mx-auto px-6 relative z-20 -mt-16 md:-mt-20 space-y-36 md:space-y-48 lg:space-y-56">
 
         <!-- Product 1: GEOマル (geomaru) -->
         <section id="geomaru" class="product-card product-card--geomaru bg-white rounded-3xl shadow-2xl p-8 md:p-14 border-t-8 border-purple-600 border border-gray-100 hover:shadow-purple-900/10 transition-all duration-500">
@@ -285,6 +285,23 @@ get_header();
         </section>
 
     </div>
+
+    <style>
+        /* Explicit Card Spacing Guarantee */
+        .product-card + .product-card {
+            margin-top: 6rem !important;
+        }
+        @media (min-width: 768px) {
+            .product-card + .product-card {
+                margin-top: 8rem !important;
+            }
+        }
+        @media (min-width: 1024px) {
+            .product-card + .product-card {
+                margin-top: 10rem !important;
+            }
+        }
+    </style>
 
     <!-- Bottom High-Impact Contact CTA Section -->
     <section style="background: linear-gradient(135deg, #1F1122 0%, #100812 100%) !important; color: #FFFFFF !important;" class="product-page__cta relative overflow-hidden py-24 mt-36 border-t border-purple-900/50">
