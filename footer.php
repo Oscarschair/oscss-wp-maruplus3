@@ -22,39 +22,78 @@
                 </div>
             </div>
 
-            <!-- Navigation Columns (Right: 8 cols) -->
-            <div class="site-footer__nav-wrapper lg:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-6">
-                <!-- Category 1: サービス・プロダクト -->
-                <div class="site-footer__nav-category site-footer__nav-category--services">
-                    <h5 style="color: #FFFFFF !important; border-bottom: 2px solid #A184A3 !important;" class="site-footer__nav-title text-xs font-bold tracking-widest uppercase mb-3 pb-1 inline-block">
-                        事業・プロダクト
-                    </h5>
-                    <ul class="site-footer__nav-list space-y-2 text-xs list-none p-0 m-0">
-                        <li class="site-footer__nav-item"><a style="color: #DECDE0 !important;" class="site-footer__nav-link hover:text-white hover:underline transition-colors flex items-center" href="<?php echo esc_url(home_url('/services')); ?>"><span class="text-xs opacity-60 mr-1.5">›</span> サービス・事業</a></li>
-                        <li class="site-footer__nav-item"><a style="color: #DECDE0 !important;" class="site-footer__nav-link hover:text-white hover:underline transition-colors flex items-center" href="<?php echo esc_url(home_url('/product')); ?>"><span class="text-xs opacity-60 mr-1.5">›</span> 自社プロダクト</a></li>
-                    </ul>
-                </div>
-
-                <!-- Category 2: 企業情報 -->
-                <div class="site-footer__nav-category site-footer__nav-category--company">
-                    <h5 style="color: #FFFFFF !important; border-bottom: 2px solid #A184A3 !important;" class="site-footer__nav-title text-xs font-bold tracking-widest uppercase mb-3 pb-1 inline-block">
-                        企業情報
-                    </h5>
-                    <ul class="site-footer__nav-list space-y-2 text-xs list-none p-0 m-0">
-                        <li class="site-footer__nav-item"><a style="color: #DECDE0 !important;" class="site-footer__nav-link hover:text-white hover:underline transition-colors flex items-center" href="<?php echo esc_url(home_url('/company')); ?>"><span class="text-xs opacity-60 mr-1.5">›</span> 会社概要・代表</a></li>
-                        <li class="site-footer__nav-item"><a style="color: #DECDE0 !important;" class="site-footer__nav-link hover:text-white hover:underline transition-colors flex items-center" href="<?php echo esc_url(home_url('/news')); ?>"><span class="text-xs opacity-60 mr-1.5">›</span> お知らせ・ブログ</a></li>
-                    </ul>
-                </div>
-
-                <!-- Category 3: サポート・お問い合わせ -->
-                <div class="site-footer__nav-category site-footer__nav-category--contact">
-                    <h5 style="color: #FFFFFF !important; border-bottom: 2px solid #A184A3 !important;" class="site-footer__nav-title text-xs font-bold tracking-widest uppercase mb-3 pb-1 inline-block">
-                        お問い合わせ
-                    </h5>
-                    <ul class="site-footer__nav-list space-y-2 text-xs list-none p-0 m-0">
-                        <li class="site-footer__nav-item"><a style="color: #DECDE0 !important;" class="site-footer__nav-link hover:text-white hover:underline transition-colors flex items-center" href="<?php echo esc_url(home_url('/contact')); ?>"><span class="text-xs opacity-60 mr-1.5">›</span> お問い合わせフォーム</a></li>
-                    </ul>
-                </div>
+            <!-- Navigation Columns (Right: 8 cols) - Using WP Nav Menu (プライマリメニュー) -->
+            <div class="site-footer__nav-wrapper lg:col-span-8 flex flex-col justify-start">
+                <h4 style="color: #FFFFFF !important; border-bottom: 2px solid #A184A3 !important;" class="site-footer__nav-title text-xs font-bold tracking-widest uppercase mb-4 pb-1 inline-block w-fit">
+                    ナビゲーション
+                </h4>
+                <nav class="footer-navigation site-footer__nav">
+                    <?php
+                    if (has_nav_menu('footer-menu')) {
+                        wp_nav_menu(array(
+                            'theme_location' => 'footer-menu',
+                            'menu_id'        => 'footer-primary-menu',
+                            'depth'          => 1,
+                            'container'      => false,
+                            'menu_class'     => 'grid grid-cols-2 sm:grid-cols-3 gap-3.5 text-xs list-none p-0 m-0',
+                        ));
+                    } else {
+                        ?>
+                        <ul id="footer-primary-menu" class="grid grid-cols-2 sm:grid-cols-3 gap-3.5 text-xs list-none p-0 m-0">
+                            <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
+                            <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/services')); ?>">サービス</a></li>
+                            <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/product')); ?>">プロダクト</a></li>
+                            <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/company')); ?>">会社情報</a></li>
+                            <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a></li>
+                            <li><a style="background-color: rgba(255,255,255,0.12) !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.25) !important;" class="footer-btn" href="<?php echo esc_url(home_url('/privacy-policy')); ?>">プライバシーポリシー</a></li>
+                        </ul>
+                        <?php
+                    }
+                    ?>
+                </nav>
+                <style>
+                    .footer-navigation ul {
+                        list-style: none !important;
+                        padding: 0 !important;
+                        margin: 0 !important;
+                        display: grid !important;
+                        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+                        gap: 0.875rem !important;
+                    }
+                    @media (min-width: 640px) {
+                        .footer-navigation ul {
+                            grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+                        }
+                    }
+                    .footer-navigation ul li {
+                        list-style: none !important;
+                        margin: 0 !important;
+                    }
+                    .footer-navigation ul li a,
+                    .footer-btn {
+                        background-color: rgba(255, 255, 255, 0.12) !important;
+                        color: #FFFFFF !important;
+                        border: 1px solid rgba(255, 255, 255, 0.25) !important;
+                        padding: 10px 16px !important;
+                        border-radius: 10px !important;
+                        font-size: 0.875rem !important;
+                        font-weight: 700 !important;
+                        transition: all 0.25s ease !important;
+                        display: flex !important;
+                        align-items: center !important;
+                        justify-content: center !important;
+                        text-decoration: none !important;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+                    }
+                    .footer-navigation ul li a:hover,
+                    .footer-btn:hover {
+                        background-color: #A184A3 !important;
+                        color: #FFFFFF !important;
+                        border-color: #FFFFFF !important;
+                        transform: translateY(-2px) !important;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.25) !important;
+                    }
+                </style>
             </div>
         </div>
 
@@ -68,18 +107,6 @@
                 <li class="site-footer__subnav-item"><span style="color: rgba(255,255,255,0.3);" class="site-footer__subnav-separator">|</span></li>
                 <li class="site-footer__subnav-item"><a style="color: #DECDE0 !important;" class="site-footer__subnav-link hover:text-white hover:underline transition-colors" href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a></li>
             </ul>
-            <style>
-                .site-footer__subnav {
-                    display: flex !important;
-                    flex-wrap: wrap !important;
-                    align-items: center !important;
-                    gap: 0.5rem 1.75rem !important; /* 縦0.5rem、横1.75rem (28px) の明確なギャップ */
-                }
-                .site-footer__subnav-item {
-                    display: inline-flex !important;
-                    align-items: center !important;
-                }
-            </style>
 
             <!-- Copyright -->
             <p style="color: #DECDE0 !important; opacity: 0.85;" class="site-footer__copyright text-xs font-medium tracking-wider">
