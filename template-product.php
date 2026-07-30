@@ -8,7 +8,7 @@
 get_header();
 ?>
 
-<main id="primary" class="site-main product-page font-sans bg-gray-50/70 pb-32">
+<main id="primary" class="site-main product-page font-sans bg-gray-50/70">
     <!-- Hero Section: Ultra High-Contrast Dark Purple Premium Banner -->
     <section class="product-page__hero relative overflow-hidden bg-hero-gradient text-brand-950 pt-24 pb-36">
         <!-- Floating Animated Orbs -->
