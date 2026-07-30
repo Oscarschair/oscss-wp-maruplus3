@@ -85,6 +85,7 @@
                     padding: 0.25rem 0 !important;
                     background: none !important;
                     border: none !important;
+                    border-radius: 0 !important;
                     box-shadow: none !important;
                 }
                 .footer-navigation ul li a:hover {
@@ -92,6 +93,8 @@
                     opacity: 1 !important;
                     text-decoration: underline !important;
                     text-underline-offset: 4px !important;
+                    background: none !important;
+                    transform: none !important;
                 }
             </style>
         </div>
