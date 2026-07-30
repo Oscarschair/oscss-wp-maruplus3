@@ -47,8 +47,8 @@ get_header();
         </svg>
     </div>
 
-    <!-- Main Product List Container: Clean & Completely Unobstructed -->
-    <div class="product-page__main-container container mx-auto px-4 sm:px-6 relative z-20 pt-8 sm:pt-12 pb-12 sm:pb-20 space-y-16 sm:space-y-24 md:space-y-36">
+    <!-- Main Product List Container: Spacious Bottom Padding Added -->
+    <div class="product-page__main-container container mx-auto px-4 sm:px-6 relative z-20 pt-8 sm:pt-12 pb-24 sm:pb-36 md:pb-48 space-y-16 sm:space-y-24 md:space-y-36">
 
         <!-- Product 1: GEOマル (geomaru) -->
         <section id="geomaru" class="product-card product-card--geomaru bg-white rounded-2xl sm:rounded-3xl shadow-xl p-6 sm:p-8 md:p-12 border-t-8 border-purple-600 border border-gray-100 hover:shadow-2xl transition-all duration-500">
