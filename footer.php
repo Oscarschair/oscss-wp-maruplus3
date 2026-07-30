@@ -60,14 +60,26 @@
 
         <!-- 2nd Layer: Bottom Sub-nav & Copyright -->
         <div style="border-top: 1px solid rgba(255, 255, 255, 0.15) !important;" class="site-footer__bottom pt-4 flex flex-col md:flex-row justify-between items-center gap-4">
-            <!-- Inline Sub-navigation -->
-            <ul class="site-footer__subnav flex flex-wrap items-center gap-x-4 gap-y-1 text-xs list-none p-0 m-0">
+            <!-- Inline Sub-navigation with explicit gap -->
+            <ul class="site-footer__subnav flex flex-wrap items-center gap-x-6 md:gap-x-8 gap-y-2 text-xs list-none p-0 m-0">
                 <li class="site-footer__subnav-item"><a style="color: #DECDE0 !important;" class="site-footer__subnav-link hover:text-white hover:underline transition-colors" href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
                 <li class="site-footer__subnav-item"><span style="color: rgba(255,255,255,0.3);" class="site-footer__subnav-separator">|</span></li>
                 <li class="site-footer__subnav-item"><a style="color: #DECDE0 !important;" class="site-footer__subnav-link hover:text-white hover:underline transition-colors" href="<?php echo esc_url(home_url('/privacy-policy')); ?>">プライバシーポリシー</a></li>
                 <li class="site-footer__subnav-item"><span style="color: rgba(255,255,255,0.3);" class="site-footer__subnav-separator">|</span></li>
                 <li class="site-footer__subnav-item"><a style="color: #DECDE0 !important;" class="site-footer__subnav-link hover:text-white hover:underline transition-colors" href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a></li>
             </ul>
+            <style>
+                .site-footer__subnav {
+                    display: flex !important;
+                    flex-wrap: wrap !important;
+                    align-items: center !important;
+                    gap: 0.5rem 1.75rem !important; /* 縦0.5rem、横1.75rem (28px) の明確なギャップ */
+                }
+                .site-footer__subnav-item {
+                    display: inline-flex !important;
+                    align-items: center !important;
+                }
+            </style>
 
             <!-- Copyright -->
             <p style="color: #DECDE0 !important; opacity: 0.85;" class="site-footer__copyright text-xs font-medium tracking-wider">
