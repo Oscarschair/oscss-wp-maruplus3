@@ -1,33 +1,66 @@
-<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="600" height="400" rx="16" fill="#0B0F19"/>
-  <rect x="20" y="20" width="560" height="360" rx="12" fill="#111827" stroke="#1F2937" stroke-width="2"/>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Container Background (Dark Navy) -->
+  <rect width="800" height="500" rx="20" fill="#0B0F19"/>
   
-  <!-- Header Bar -->
-  <rect x="20" y="20" width="560" height="40" rx="12" fill="#1F2937"/>
-  <circle cx="45" cy="40" r="6" fill="#6366F1"/>
-  <circle cx="65" cy="40" r="6" fill="#4F46E5"/>
-  <circle cx="85" cy="40" r="6" fill="#3730A3"/>
-  <rect x="120" y="32" width="240" height="16" rx="8" fill="#111827"/>
+  <!-- Browser Window Shell -->
+  <rect x="20" y="20" width="760" height="460" rx="16" fill="#111827" stroke="#1E293B" stroke-width="2"/>
+  <rect x="20" y="20" width="760" height="48" rx="16" fill="#1F2937"/>
+  <circle cx="48" cy="44" r="7" fill="#EF4444"/>
+  <circle cx="70" cy="44" r="7" fill="#F59E0B"/>
+  <circle cx="92" cy="44" r="7" fill="#10B981"/>
+  <rect x="130" y="34" width="340" height="20" rx="10" fill="#111827" stroke="#374151" stroke-width="1"/>
+  <text x="145" y="48" font-family="sans-serif" font-size="11" font-weight="600" fill="#818CF8">https://stocksmaru.oscarchair.jp/jquants</text>
+
+  <!-- Sidebar -->
+  <rect x="36" y="84" width="160" height="380" rx="12" fill="#1F2937"/>
+  <rect x="52" y="104" width="128" height="32" rx="8" fill="#4F46E5"/>
+  <text x="116" y="125" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">STOCKSマル</text>
   
-  <!-- Content Mockup -->
-  <!-- Main Trading Dashboard Area -->
-  <rect x="40" y="80" width="520" height="100" rx="8" fill="#1E293B" stroke="#334155" stroke-dasharray="4 4"/>
-  <text x="300" y="135" font-family="sans-serif" font-size="16" font-weight="bold" fill="#818CF8" text-anchor="middle">stocksmaru (STOCKSマル) 画像枠</text>
-  <text x="300" y="158" font-family="sans-serif" font-size="12" fill="#34D399" text-anchor="middle">J-Quants API V2 株価分析・リアルタイムランキング プレビュー</text>
+  <!-- Sidebar Menu Items -->
+  <rect x="52" y="152" width="128" height="24" rx="6" fill="#374151"/>
+  <text x="64" y="168" font-family="sans-serif" font-size="11" font-weight="bold" fill="#34D399">📈 四本値・ランキング</text>
+  <rect x="52" y="188" width="128" height="24" rx="6" fill="#111827"/>
+  <text x="64" y="204" font-family="sans-serif" font-size="11" font-weight="600" fill="#9CA3AF">🏢 財務諸表・決算</text>
+  <rect x="52" y="224" width="128" height="24" rx="6" fill="#111827"/>
+  <text x="64" y="240" font-family="sans-serif" font-size="11" font-weight="600" fill="#9CA3AF">🤖 AIポートフォリオ</text>
 
-  <!-- Stock Cards -->
-  <rect x="40" y="200" width="160" height="160" rx="8" fill="#1F2937" stroke="#374151"/>
-  <rect x="55" y="215" width="80" height="12" rx="4" fill="#818CF8"/>
-  <text x="55" y="250" font-family="sans-serif" font-size="20" font-weight="bold" fill="#34D399">+4.85%</text>
-  <path d="M 55 330 L 90 300 L 120 315 L 175 270" fill="none" stroke="#34D399" stroke-width="3"/>
+  <!-- Main Content Trading Dashboard -->
+  <!-- Top Stock Metrics Cards -->
+  <g transform="translate(216, 84)">
+    <!-- Card 1: TOPIX -->
+    <rect x="0" y="0" width="170" height="80" rx="12" fill="#1F2937" stroke="#374151" stroke-width="1.5"/>
+    <text x="16" y="28" font-family="sans-serif" font-size="12" font-weight="bold" fill="#9CA3AF">日経平均 (225)</text>
+    <text x="16" y="58" font-family="sans-serif" font-size="20" font-weight="900" fill="#34D399">¥39,240 <tspan font-size="12" font-weight="bold">+1.85%</tspan></text>
 
-  <rect x="220" y="200" width="160" height="160" rx="8" fill="#1F2937" stroke="#374151"/>
-  <rect x="235" y="215" width="80" height="12" rx="4" fill="#818CF8"/>
-  <text x="235" y="250" font-family="sans-serif" font-size="20" font-weight="bold" fill="#F87171">-1.20%</text>
-  <path d="M 235 280 L 270 310 L 300 295 L 355 335" fill="none" stroke="#F87171" stroke-width="3"/>
+    <!-- Card 2: J-Quants Stream -->
+    <rect x="186" y="0" width="170" height="80" rx="12" fill="#1F2937" stroke="#374151" stroke-width="1.5"/>
+    <text x="202" y="28" font-family="sans-serif" font-size="12" font-weight="bold" fill="#9CA3AF">J-Quants API V2</text>
+    <text x="202" y="58" font-family="sans-serif" font-size="18" font-weight="900" fill="#818CF8">CONNECTED <tspan font-size="11" fill="#34D399">● LIVE</tspan></text>
 
-  <rect x="400" y="200" width="160" height="160" rx="8" fill="#1F2937" stroke="#374151"/>
-  <rect x="415" y="215" width="80" height="12" rx="4" fill="#818CF8"/>
-  <text x="415" y="250" font-family="sans-serif" font-size="20" font-weight="bold" fill="#34D399">+2.10%</text>
-  <path d="M 415 320 L 450 290 L 480 300 L 535 275" fill="none" stroke="#34D399" stroke-width="3"/>
+    <!-- Card 3: Volume -->
+    <rect x="372" y="0" width="172" height="80" rx="12" fill="#1F2937" stroke="#374151" stroke-width="1.5"/>
+    <text x="388" y="28" font-family="sans-serif" font-size="12" font-weight="bold" fill="#9CA3AF">東証プライム 売買代金</text>
+    <text x="388" y="58" font-family="sans-serif" font-size="20" font-weight="900" fill="#FFFFFF">4.82<tspan font-size="12" font-weight="bold"> 兆円</tspan></text>
+  </g>
+
+  <!-- Large Stock Candlestick / Line Chart Mockup -->
+  <g transform="translate(216, 180)">
+    <rect x="0" y="0" width="544" height="270" rx="12" fill="#1F2937" stroke="#374151" stroke-width="1.5"/>
+    <text x="20" y="32" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF">東証プライム リアルタイム株価チャート &amp; デイリー四本値 (OHLC)</text>
+
+    <!-- Chart Grid -->
+    <line x1="20" y1="70" x2="524" y2="70" stroke="#374151" stroke-width="1"/>
+    <line x1="20" y1="120" x2="524" y2="120" stroke="#374151" stroke-width="1"/>
+    <line x1="20" y1="170" x2="524" y2="170" stroke="#374151" stroke-width="1"/>
+
+    <!-- Green Bullish Stock Trend Path -->
+    <path d="M 40 210 L 100 180 L 160 195 L 230 140 L 300 160 L 380 110 L 450 125 L 504 70" fill="none" stroke="#34D399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Candlestick Visual Accents -->
+    <rect x="95" y="175" width="10" height="20" fill="#34D399"/>
+    <rect x="155" y="185" width="10" height="25" fill="#EF4444"/>
+    <rect x="225" y="135" width="10" height="30" fill="#34D399"/>
+    <rect x="375" y="105" width="10" height="35" fill="#34D399"/>
+    <rect x="499" y="65" width="10" height="25" fill="#34D399"/>
+  </g>
 </svg>
