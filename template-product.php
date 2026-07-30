@@ -79,27 +79,27 @@ get_header();
                             ChatGPTやClaudeなどのAI検索エンジン（GEO: Generative Engine Optimization）での可視性を高め、Webサイトの技術的SEOを自動監査・可視化する統合診断ツールセットです。
                         </p>
 
-                        <!-- Features Grid -->
+                        <!-- Features Grid (1rem padding on all feature items) -->
                         <div class="product-card__features grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 mb-6 sm:mb-8">
-                            <div class="product-card__feature-item bg-purple-50/70 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-purple-100/80 shadow-sm">
+                            <div style="padding: 1rem !important;" class="product-card__feature-item bg-purple-50/70 p-4 rounded-xl sm:rounded-2xl border border-purple-100/80 shadow-sm">
                                 <h4 class="product-card__feature-title font-extrabold text-gray-900 text-xs sm:text-sm md:text-base mb-1 flex items-center gap-2">
                                     <span class="text-purple-600">🤖</span> AIクローラーアクセス判定
                                 </h4>
                                 <p class="product-card__feature-desc text-[11px] sm:text-xs md:text-sm text-gray-600 leading-relaxed">robots.txtやmeta属性を自動パースしGPTBot等のブロック状態を検出</p>
                             </div>
-                            <div class="product-card__feature-item bg-purple-50/70 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-purple-100/80 shadow-sm">
+                            <div style="padding: 1rem !important;" class="product-card__feature-item bg-purple-50/70 p-4 rounded-xl sm:rounded-2xl border border-purple-100/80 shadow-sm">
                                 <h4 class="product-card__feature-title font-extrabold text-gray-900 text-xs sm:text-sm md:text-base mb-1 flex items-center gap-2">
                                     <span class="text-purple-600">🔗</span> Canonicalタグ監査
                                 </h4>
                                 <p class="product-card__feature-desc text-[11px] sm:text-xs md:text-sm text-gray-600 leading-relaxed">SEO評価を損ねる欠落・重複・誤設定のcanonicalタグを即座にチェック</p>
                             </div>
-                            <div class="product-card__feature-item bg-purple-50/70 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-purple-100/80 shadow-sm">
+                            <div style="padding: 1rem !important;" class="product-card__feature-item bg-purple-50/70 p-4 rounded-xl sm:rounded-2xl border border-purple-100/80 shadow-sm">
                                 <h4 class="product-card__feature-title font-extrabold text-gray-900 text-xs sm:text-sm md:text-base mb-1 flex items-center gap-2">
                                     <span class="text-purple-600">📝</span> メタタグ & 文字数判定
                                 </h4>
                                 <p class="product-card__feature-desc text-[11px] sm:text-xs md:text-sm text-gray-600 leading-relaxed">日本語の全角文字数基準（タイトル/説明）やOGP・見出し階層を検証</p>
                             </div>
-                            <div class="product-card__feature-item bg-purple-50/70 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-purple-100/80 shadow-sm">
+                            <div style="padding: 1rem !important;" class="product-card__feature-item bg-purple-50/70 p-4 rounded-xl sm:rounded-2xl border border-purple-100/80 shadow-sm">
                                 <h4 class="product-card__feature-title font-extrabold text-gray-900 text-xs sm:text-sm md:text-base mb-1 flex items-center gap-2">
                                     <span class="text-purple-600">📊</span> 構造化データ & XMLマップ
                                 </h4>
@@ -157,27 +157,27 @@ get_header();
                             JPX公式の J-Quants API V2 を活用した次世代株投資分析SaaS。プロレベルの財務データ・株価四本値ランキングをブラウザ上でシームレスに可視化・分析します。
                         </p>
 
-                        <!-- Features Grid -->
+                        <!-- Features Grid (1rem padding on all feature items) -->
                         <div class="product-card__features grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 mb-6 sm:mb-8">
-                            <div class="product-card__feature-item bg-indigo-50/70 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-indigo-100/80 shadow-sm">
+                            <div style="padding: 1rem !important;" class="product-card__feature-item bg-indigo-50/70 p-4 rounded-xl sm:rounded-2xl border border-indigo-100/80 shadow-sm">
                                 <h4 class="product-card__feature-title font-extrabold text-gray-900 text-xs sm:text-sm md:text-base mb-1 flex items-center gap-2">
                                     <span class="text-emerald-600">📈</span> リアルタイム市場ランキング
                                 </h4>
                                 <p class="product-card__feature-desc text-[11px] sm:text-xs md:text-sm text-gray-600 leading-relaxed">売買代金・売買高・値上がり率ランキングをリアルタイムで集計表示</p>
                             </div>
-                            <div class="product-card__feature-item bg-indigo-50/70 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-indigo-100/80 shadow-sm">
+                            <div style="padding: 1rem !important;" class="product-card__feature-item bg-indigo-50/70 p-4 rounded-xl sm:rounded-2xl border border-indigo-100/80 shadow-sm">
                                 <h4 class="product-card__feature-title font-extrabold text-gray-900 text-xs sm:text-sm md:text-base mb-1 flex items-center gap-2">
                                     <span class="text-indigo-600">🔍</span> 株価四本値スクリーニング
                                 </h4>
                                 <p class="product-card__feature-desc text-[11px] sm:text-xs md:text-sm text-gray-600 leading-relaxed">銘柄コード別のデイリーOHLC分析・前日比率・四本値履歴の詳細追跡</p>
                             </div>
-                            <div class="product-card__feature-item bg-indigo-50/70 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-indigo-100/80 shadow-sm">
+                            <div style="padding: 1rem !important;" class="product-card__feature-item bg-indigo-50/70 p-4 rounded-xl sm:rounded-2xl border border-indigo-100/80 shadow-sm">
                                 <h4 class="product-card__feature-title font-extrabold text-gray-900 text-xs sm:text-sm md:text-base mb-1 flex items-center gap-2">
                                     <span class="text-indigo-600">🏢</span> 財務諸表 / 決算自動監査
                                 </h4>
                                 <p class="product-card__feature-desc text-[11px] sm:text-xs md:text-sm text-gray-600 leading-relaxed">売上高・営業利益・EPSの進捗と変化度合いを自動計算・判定</p>
                             </div>
-                            <div class="product-card__feature-item bg-indigo-50/70 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-indigo-100/80 shadow-sm">
+                            <div style="padding: 1rem !important;" class="product-card__feature-item bg-indigo-50/70 p-4 rounded-xl sm:rounded-2xl border border-indigo-100/80 shadow-sm">
                                 <h4 class="product-card__feature-title font-extrabold text-gray-900 text-xs sm:text-sm md:text-base mb-1 flex items-center gap-2">
                                     <span class="text-emerald-600">🤖</span> AIポートフォリオ監査
                                 </h4>
@@ -235,27 +235,27 @@ get_header();
                             フリーランス・副業ワーカー・個人事業主・AI一人企業の「成長（Rise）」を丸ごと（maru）サポート。求人管理から履歴書生成、受注後の顧客管理までを一気通貫でカバーします。
                         </p>
 
-                        <!-- Features Grid -->
+                        <!-- Features Grid (1rem padding on all feature items) -->
                         <div class="product-card__features grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 mb-6 sm:mb-8">
-                            <div class="product-card__feature-item bg-rose-50/70 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-rose-100/80 shadow-sm">
+                            <div style="padding: 1rem !important;" class="product-card__feature-item bg-rose-50/70 p-4 rounded-xl sm:rounded-2xl border border-rose-100/80 shadow-sm">
                                 <h4 class="product-card__feature-title font-extrabold text-gray-900 text-xs sm:text-sm md:text-base mb-1 flex items-center gap-2">
                                     <span class="text-emerald-700 bg-emerald-100 text-[10px] sm:text-xs font-black px-1.5 sm:px-2 py-0.5 rounded">無料</span> 履歴書・職務経歴書 Engine
                                 </h4>
                                 <p class="product-card__feature-desc text-[11px] sm:text-xs md:text-sm text-gray-600 leading-relaxed">入力データからJIS規格等のきれいなPDF/Markdownを非AIで無料生成</p>
                             </div>
-                            <div class="product-card__feature-item bg-rose-50/70 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-rose-100/80 shadow-sm">
+                            <div style="padding: 1rem !important;" class="product-card__feature-item bg-rose-50/70 p-4 rounded-xl sm:rounded-2xl border border-rose-100/80 shadow-sm">
                                 <h4 class="product-card__feature-title font-extrabold text-gray-900 text-xs sm:text-sm md:text-base mb-1 flex items-center gap-2">
                                     <span class="text-emerald-700 bg-emerald-100 text-[10px] sm:text-xs font-black px-1.5 sm:px-2 py-0.5 rounded">無料</span> 応募ステータス & 顧客化
                                 </h4>
                                 <p class="product-card__feature-desc text-[11px] sm:text-xs md:text-sm text-gray-600 leading-relaxed">求人応募管理から成約時の「顧客・プロジェクト自動昇格」フロー</p>
                             </div>
-                            <div class="product-card__feature-item bg-rose-50/70 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-rose-100/80 shadow-sm">
+                            <div style="padding: 1rem !important;" class="product-card__feature-item bg-rose-50/70 p-4 rounded-xl sm:rounded-2xl border border-rose-100/80 shadow-sm">
                                 <h4 class="product-card__feature-title font-extrabold text-gray-900 text-xs sm:text-sm md:text-base mb-1 flex items-center gap-2">
                                     <span class="text-rose-800 bg-rose-200 text-[10px] sm:text-xs font-black px-1.5 sm:px-2 py-0.5 rounded">AI機能</span> 求人AIマッチ度診断
                                 </h4>
                                 <p class="product-card__feature-desc text-[11px] sm:text-xs md:text-sm text-gray-600 leading-relaxed">貼った求人URLと自身の経歴をAIが分析し適合スコア(%)と助言を出力</p>
                             </div>
-                            <div class="product-card__feature-item bg-rose-50/70 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-rose-100/80 shadow-sm">
+                            <div style="padding: 1rem !important;" class="product-card__feature-item bg-rose-50/70 p-4 rounded-xl sm:rounded-2xl border border-rose-100/80 shadow-sm">
                                 <h4 class="product-card__feature-title font-extrabold text-gray-900 text-xs sm:text-sm md:text-base mb-1 flex items-center gap-2">
                                     <span class="text-rose-800 bg-rose-200 text-[10px] sm:text-xs font-black px-1.5 sm:px-2 py-0.5 rounded">AI機能</span> 自己PR・経歴最適化
                                 </h4>
