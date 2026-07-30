@@ -17,7 +17,7 @@ get_header();
             <div class="product-page__hero-orb product-page__hero-orb--2 absolute w-72 h-72 md:w-96 md:h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-35 animate-pulse-slow" style="top: 10%; right: -10%; background-color: #B2AC88;"></div>
         </div>
 
-        <div class="product-page__hero-container container mx-auto px-4 sm:px-6 relative z-10 text-center">
+        <div style="padding: 2rem !important;" class="product-page__hero-container container mx-auto p-8 px-4 sm:px-8 relative z-10 text-center">
             <!-- Pastel Badge -->
             <div style="background: rgba(126, 34, 206, 0.08) !important; border: 1px solid rgba(126, 34, 206, 0.2) !important;" class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full mb-6 shadow-sm">
                 <span style="color: #6B21A8 !important;" class="text-xs sm:text-sm font-black uppercase tracking-widest">Flexible 3-Plus SaaS Suite</span>
